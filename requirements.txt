@@ -1,0 +1,8 @@
+# on the TPU VM install JAX first:  pip install -U "jax[tpu]"
+jax
+flax
+optax
+orbax-checkpoint
+datasets
+tiktoken
+numpy

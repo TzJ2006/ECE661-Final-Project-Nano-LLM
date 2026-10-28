@@ -1,0 +1,20 @@
+# secrets
+ece661-key.json
+*.key
+.env
+
+# data and checkpoints (live in /mnt/group)
+data/
+checkpoints/
+*.bin
+
+# python
+__pycache__/
+*.pyc
+.venv/
+
+# latex build
+*.aux
+*.log
+*.out
+*.synctex.gz

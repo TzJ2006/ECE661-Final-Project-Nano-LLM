@@ -1,0 +1,223 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+
+\setlist{itemsep=2pt, topsep=4pt}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\renewcommand{\arraystretch}{1.2}
+
+\title{ECE661 Project Proposal: Tiny Language Models (Topic 9)}
+\author{Thomas Tang, Michael Wang \\ ECE661, Fall 2026}
+\date{}
+
+\begin{document}
+\maketitle
+
+\section{What are we trying to do?}
+
+We will run a controlled comparison of four language models at the 33M-parameter scale where TinyStories models write coherently, and place them on a size scale up to frontier API models such as Gemini. Every model gets the same tests: MMLU and standard benchmarks. Concretely, we will:
+
+\begin{enumerate}
+  \item Reproduce the TinyStories paper's results (Figs 9--11) and memorization analysis (Sec 4.4.1, Figs 14--17) using the released checkpoints. This validates our evaluation pipeline against published results.
+  \item Train four models, each at \textbf{33M parameters}, the size of the strongest TinyStories model: a standard \textbf{transformer} (baseline), a \textbf{looped transformer} (one shared block applied several times), a \textbf{masked diffusion LM} (writes by iteratively unmasking, LLaDA/MDLM style), and a \textbf{looped diffusion LM} that combines the two.
+  \item Place our models on one size scale with the TinyStories checkpoints (1M--33M) and API models (Gemini 3.8 Flash and Gemini 4 Argon through the course API).
+  \item \textbf{Headline comparison:} MMLU accuracy across the whole scale, with Gemini as the frontier reference. Supporting benchmarks: BLiMP, HellaSwag, PIQA, ARC-Easy, LAMBADA.
+  \item Build a demo that shows stories from every model side by side for the same prompt.
+\end{enumerate}
+
+\section{How is it done today, and what are the limits?}
+
+Language models today usually have billions of parameters and are trained on web-scale text. TinyStories~\cite{tinystories} showed that transformers with 1--33M parameters, trained on a synthetic corpus written with a child's vocabulary, can produce fluent and consistent short stories. Its authors' follow-ups at Microsoft (phi-1, phi-1.5, Phi-3)~\cite{phi1} carried the synthetic-data idea to 1--4B models. Meta's MobileLLM~\cite{mobilellm} showed that architecture choices such as depth and weight sharing matter below 1B parameters.
+
+What that work leaves open:
+
+\begin{itemize}
+  \item \textbf{Only one model type is tested at tiny scale.} Every TinyStories model is a left-to-right transformer; the paper varies only its depth and width.
+  \item \textbf{New model types have been shown only at large scale.} Masked diffusion LMs (MDLM~\cite{mdlm}, LLaDA~\cite{llada}) and looped transformers~\cite{universal,looped} each challenge the standard transformer, but mostly at hundreds of millions of parameters or more. To our knowledge, no prior work compares them head-to-head at 1--33M parameters.
+  \item \textbf{No single scale links tiny models to frontier ones.} TinyStories evaluates its models on story writing, while MMLU~\cite{mmlu} and similar benchmarks are reported for large models. To our knowledge, no study evaluates 33M-parameter models and a frontier API model on the same benchmarks.
+\end{itemize}
+
+\section{What is new in our approach, and why will it work?}
+
+Our approach is new in putting four models through the same fair comparison: same data, tokenizer, parameter budget (33M), token budget and evaluation. Each model changes one independent part of the transformer:
+
+\begin{itemize}
+  \item how text is generated: left to right vs.\ iterative unmasking (diffusion)
+  \item how depth is obtained: separate layers vs.\ one shared block looped
+\end{itemize}
+
+Because the two parts are independent, they combine into the looped diffusion LM, and each comparison changes just one of them.
+
+\paragraph{Pipeline.} All training runs on the course's Google Cloud TPU (one v6e chip per session). We will write one shared JAX/Flax codebase, ported from nanoGPT's design~\cite{nanogpt}, in which the model type is a config switch; JAX is native to TPUs. Every run shares the same tokenizer, token budget, optimizer, learning-rate schedule, context length and seeds.
+
+\paragraph{Models we train:}
+
+\begin{center}
+\small
+\begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}p{2.6cm} Y >{\raggedright\arraybackslash}p{3.2cm} Y}
+\toprule
+\textbf{Model} & \textbf{Change from baseline} & \textbf{How it writes} & \textbf{Question it answers} \\
+\midrule
+Transformer (baseline) & None: LLaMA-style block (RoPE, RMSNorm, SwiGLU) & Left to right, one token per step & Reference point \\
+Looped transformer & A few shared blocks applied several times & Left to right & Can reused depth stand in for parameters? Does looping more at test time help? \\
+Masked diffusion LM & No causal mask; trained to fill in randomly masked tokens & Starts fully masked, unmasks over $N$ steps & Can a tiny diffusion model write coherent stories, and how many steps does it need? \\
+Looped diffusion LM & Diffusion objective on the looped backbone & Unmasking & Does extra depth help diffusion more than it helps left-to-right models? \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\paragraph{Fairness.} A looped model has few parameters but does many layers of compute per token. We therefore report each model's parameters and FLOPs per token side by side, so each gain can be traced to parameters or to compute.
+
+\paragraph{Comparison scale.} We put our models on one axis of model size next to models we do not train:
+
+\begin{center}
+\small
+\begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}p{2.6cm} Y >{\raggedright\arraybackslash}p{2.4cm} Y}
+\toprule
+\textbf{Tier} & \textbf{Models} & \textbf{Size} & \textbf{Role} \\
+\midrule
+Ours & 4 models & 33M each & The controlled study \\
+TinyStories checkpoints & GPT-Neo, trained on TinyStories & 1M--33M & Same data; the paper's own reference \\
+API & Gemini 3.8 Flash, Gemini 4 Argon & Not disclosed & Frontier reference \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\paragraph{Benchmarks.}
+
+\begin{center}
+\small
+\begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}p{2.8cm} Y >{\raggedright\arraybackslash}p{2.6cm} Y}
+\toprule
+\textbf{Test} & \textbf{Measures} & \textbf{Run on} & \textbf{What it establishes} \\
+\midrule
+\textbf{MMLU (headline)} & Knowledge across 57 subjects, 4 choices & All tiers (API: sampled subset) & Puts tiny and frontier models on one common knowledge benchmark \\
+BLiMP~\cite{blimp} & Grammar, via minimal sentence pairs & Ours + TinyStories checkpoints & Grammatical competence at every size; separates our models where knowledge benchmarks cannot \\
+HellaSwag, PIQA, ARC-Easy, LAMBADA & Common sense and word prediction & All tiers & How common sense grows along the size scale \\
+Sec 4.4.1 overlap & Memorization of training stories & Ours + TinyStories checkpoints & Rules out memorization as the source of fluent stories \\
+Validation loss, generation speed & Fit to data, cost & Ours & Training efficiency and generation cost of each model \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\begin{itemize}
+  \item \textbf{Tooling:} our models are scored by our own JAX evaluation code, which uses the same prompt formats as EleutherAI's \texttt{lm-evaluation-harness}~\cite{harness}. The TinyStories checkpoints run through the harness itself (PyTorch/XLA on the TPU VM). For diffusion models, multiple-choice answers are scored with the likelihood bound, as LLaDA does.
+  \item \textbf{API models:} both API models are Gemini~\cite{gemini}, called through the course's OpenAI-compatible endpoint. Gemini models answer by letter, the standard protocol for API-only models.
+\end{itemize}
+
+\paragraph{Demo.} A Gradio app hosted on Hugging Face Spaces. A user enters a story prompt and sees stories from models across the scale side by side. For the poster session we will also cache outputs, so the demo works without network access.
+
+\paragraph{Extensions.} A state-space model (Mamba~\cite{mamba}); quantizing the best model to int8/int4 (ties to ECE661 compression); the topic's top-$K$ token-filtering experiment.
+
+\paragraph{Why it should work.} TinyStories already shows that 1--33M transformers learn this corpus, which gives us a working baseline. Each other model is a small change to the same code: looping changes the forward pass, diffusion changes the loss and the sampler, and the looped diffusion LM uses both. A 33M model on the full corpus needs about $10^{17}$ FLOPs, well under an hour on one v6e chip. For the reference models we only run evaluation, using the released TinyStories checkpoints and the Gemini API, so they add no training cost.
+
+\section{Who cares? If we succeed, what difference will it make?}
+
+People building on-device language features need to know what a tiny local model delivers compared with calling an API such as Gemini, and which model type gets the most out of a fixed memory budget. Our size scale answers both questions on the same tests: how tiny models and frontier models compare on common benchmarks, and which of the four designs performs best at a fixed 33M budget. The demo lets anyone at the poster session compare the models side by side.
+
+\section{What are the risks?}
+
+\begin{center}
+\small
+\begin{tabularx}{\linewidth}{Y Y}
+\toprule
+\textbf{Risk} & \textbf{Mitigation} \\
+\midrule
+A full 33M run per model & Each model is debugged on short runs before its full 33M run; the looped diffusion LM builds on the other three \\
+TPU session limits: 1 chip, at most 8 hours, deleted after 30 idle minutes, disk wiped at the end & Each run fits in one session; checkpoints saved to \texttt{/mnt/group} regularly; save, stop and resume tested on a small job before any long run \\
+Shared group Gemini budget & Sampled MMLU subset for API models, cached responses, usage checked on the course page \\
+Different scoring protocols for API and local models & Score Gemini by answer letter on a fixed subset; report both protocols \\
+Running PyTorch checkpoints on TPU & Run them through PyTorch/XLA \\
+Diffusion LMs need more sampling steps at small sizes & A step-count sweep maps the quality--speed trade-off \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\section{How much will it cost?}
+
+We estimate 10--20 TPU-hours, or about \$15--30 of our \$150 TPU budget (one v6e chip at \$1.35/hour). Gemini calls draw on a separate \$100 Gemini API budget. A 33M model on the full corpus of about 0.5B tokens needs about $10^{17}$ FLOPs, well under an hour on one v6e chip. The four 33M training runs fit in about 4 TPU-hours; the rest goes to debugging runs and evaluation.
+
+\begin{itemize}
+  \item \textbf{Hardware:} the course TPU, one v6e chip per session (32\,GB memory, sessions of at most 8 hours).
+  \item \textbf{Data and checkpoints:} TinyStories dataset and checkpoints~\cite{tinystorieshf}, free on Hugging Face.
+  \item \textbf{Software:} JAX/Flax (our models), PyTorch/XLA with Hugging Face \texttt{transformers} and \texttt{lm-evaluation-harness} (TinyStories checkpoints), the \texttt{openai} client (course Gemini endpoint), \texttt{rouge-score}, Gradio.
+  \item \textbf{API:} Gemini 3.8 Flash and Gemini 4 Argon on the course endpoint, used for benchmark answers and demo stories. \$100 budget, tracked on the course usage page.
+\end{itemize}
+
+\section{How long will it take?}
+
+Six weeks, from Oct 26 to the poster session on Dec 9, 2026. Training, replication and benchmarking of the reference models run in parallel, so the midterm check-in can already show results.
+
+\begin{center}
+\small
+\begin{tabular}{ll}
+\toprule
+\textbf{Work stream} & \textbf{Dates (2026)} \\
+\midrule
+Proposal + setup & Oct 26 -- Nov 1 \\
+Replicate Figs 9--17 & Oct 29 -- Nov 13 \\
+Pipeline + baseline & Nov 2 -- Nov 13 \\
+Benchmarks & Nov 4 -- Nov 27 \\
+Looped transformer & Nov 9 -- Nov 24 \\
+Masked diffusion LM & Nov 9 -- Nov 24 \\
+Looped diffusion LM & Nov 18 -- Nov 27 \\
+Gradio demo & Nov 23 -- Dec 4 \\
+Report + poster & Nov 30 -- Dec 8 \\
+\textbf{Poster session} & \textbf{Dec 9} \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+The TinyStories checkpoints and Gemini need no training, so their benchmarks start in week 2. Our models train from Nov 9. The looped diffusion LM builds on the trained looped and diffusion models in the final training week.
+
+\section{Expected outcomes}
+
+\begin{itemize}
+  \item A controlled comparison of four 33M-parameter models under one recipe.
+  \item \textbf{Headline figure:} MMLU accuracy of our 33M models, the TinyStories checkpoints and Gemini on one size scale.
+  \item The design that performs best at a fixed 33M budget, measured by BLiMP, HellaSwag, PIQA, ARC-Easy, LAMBADA, validation loss and generation speed.
+  \item A Gradio demo, the final report and poster, and a public code repository.
+\end{itemize}
+
+\section*{Team roles}
+
+\begin{center}
+\small
+\begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}p{2.4cm} Y >{\raggedright\arraybackslash}p{3.2cm}}
+\toprule
+\textbf{Member} & \textbf{Owns} & \textbf{Shared} \\
+\midrule
+Thomas Tang & Replication of Figs 9--11 and 14--17; benchmark pipeline (\texttt{lm-evaluation-harness}, MMLU, TinyStories checkpoints and Gemini); Gradio demo & Report, poster, Q\&A preparation \\
+Michael Wang & Shared codebase and baseline; training all four models (transformer, looped, masked diffusion, looped diffusion) & Report, poster, Q\&A preparation \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+Thomas and Michael review each other's code and results, so both can answer questions on the full project.
+
+\begin{thebibliography}{99}
+\small
+\bibitem{tinystories} R.~Eldan and Y.~Li. TinyStories: How Small Can Language Models Be and Still Speak Coherent English? \href{https://arxiv.org/abs/2305.07759}{arXiv:2305.07759}, 2023.
+\bibitem{tinystorieshf} TinyStories checkpoints and dataset. \url{https://huggingface.co/roneneldan}.
+\bibitem{phi1} S.~Gunasekar et al. Textbooks Are All You Need. Microsoft. \href{https://arxiv.org/abs/2306.11644}{arXiv:2306.11644}, 2023.
+\bibitem{mobilellm} Z.~Liu et al. MobileLLM: Optimizing Sub-billion Parameter Language Models for On-Device Use Cases. Meta. \href{https://arxiv.org/abs/2402.14905}{arXiv:2402.14905}, 2024.
+\bibitem{llada} S.~Nie et al. Large Language Diffusion Models. \href{https://arxiv.org/abs/2502.09992}{arXiv:2502.09992}, 2025.
+\bibitem{mdlm} S.~Sahoo et al. Simple and Effective Masked Diffusion Language Models. \href{https://arxiv.org/abs/2406.07524}{arXiv:2406.07524}, 2024.
+\bibitem{universal} M.~Dehghani et al. Universal Transformers. \href{https://arxiv.org/abs/1807.03819}{arXiv:1807.03819}, 2018.
+\bibitem{looped} N.~Saunshi et al. Reasoning with Latent Thoughts: On the Power of Looped Transformers. \href{https://arxiv.org/abs/2502.17416}{arXiv:2502.17416}, 2025.
+\bibitem{mamba} A.~Gu and T.~Dao. Mamba: Linear-Time Sequence Modeling with Selective State Spaces. \href{https://arxiv.org/abs/2312.00752}{arXiv:2312.00752}, 2023.
+\bibitem{mmlu} D.~Hendrycks et al. Measuring Massive Multitask Language Understanding. \href{https://arxiv.org/abs/2009.03300}{arXiv:2009.03300}, 2020.
+\bibitem{blimp} A.~Warstadt et al. BLiMP: The Benchmark of Linguistic Minimal Pairs. \href{https://arxiv.org/abs/1912.00582}{arXiv:1912.00582}, 2019.
+\bibitem{harness} EleutherAI. lm-evaluation-harness. \url{https://github.com/EleutherAI/lm-evaluation-harness}.
+\bibitem{gemini} Google. Gemini API. \url{https://ai.google.dev}.
+\bibitem{nanogpt} A.~Karpathy. nanoGPT. \url{https://github.com/karpathy/nanoGPT}.
+\end{thebibliography}
+
+\end{document}

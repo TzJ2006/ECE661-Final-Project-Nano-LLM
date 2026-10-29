@@ -1,6 +1,6 @@
 """Tokenize TinyStories into flat uint16 token files (nanoGPT style) and sample batches.
 
-python -m tinylm.data --out /mnt/group/data            # full corpus, once
+python -m tinylm.data --out ~/project/data            # full corpus, once
 python -m tinylm.data --out data --limit 2000          # small local sample
 """
 import argparse, os

@@ -2,7 +2,12 @@
 jax
 flax
 optax
-orbax-checkpoint
 datasets
 tiktoken
 numpy
+# evaluation and demo
+lm-eval[hf]
+rouge-score
+openai
+gradio
+matplotlib

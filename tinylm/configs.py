@@ -14,6 +14,7 @@ BASE = dict(
     block_size=512,
     loop=1,            # times the stack of n_layer blocks is applied
     objective="ar",    # "ar" (left to right) or "mdlm" (masked diffusion)
+    dtype="bfloat16",  # compute dtype; parameters stay float32
     # training recipe, identical for every model
     batch_size=64, lr=6e-4, min_lr=6e-5, warmup=1000, weight_decay=0.1,
     max_tokens=500_000_000, seed=0,
@@ -29,7 +30,8 @@ CONFIGS = {
 }
 
 # debug overrides for overfitting one batch on CPU/TPU in seconds
-TINY = dict(d=64, n_layer=2, n_head=4, ffn=128, block_size=64, batch_size=8, max_tokens=200_000, warmup=10)
+TINY = dict(d=64, n_layer=2, n_head=4, ffn=128, block_size=64, batch_size=8, max_tokens=200_000, warmup=10,
+            dtype="float32")
 
 
 def get(name, tiny=False):

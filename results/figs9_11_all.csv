@@ -1,0 +1,981 @@
+figure,prompt_id,model,prompt,completion,label
+factual (Fig 9),0,1M,Alice was so tired when she got back home so she went," to bed. She was so happy and she was so happy to have her new friend.
+",
+factual (Fig 9),1,1M,"Jack and Lily saw a rainbow after a rainy day. They were amazed by the colors. Jack said, ""Look, Lily. A rainbow has"," a rainbow!"" Lily said, ""Yes, it is so pretty!"" They both laughed and played together all day.
+",
+factual (Fig 9),2,1M,"Jack and Lily liked to watch the moon at night. They noticed that the moon changed its shape every night. Sometimes the moon was big and round, and sometimes it was"," too big and it was just a star.
+
+One day, the moon was very big and the moon was very big and strong. Lily and Lily were so happy and excited to see the moon",
+factual (Fig 9),3,1M,"Jack wanted to read a book, so he went to"," the library. He saw a book about a princess and a princess. He was so happy and he wanted to read it.
+
+But then, a big dog came and tried to pull the book",
+factual (Fig 9),4,1M,"""Can cows fly?"", Alice asked her mother.","
+
+""Sure, but be careful,"" her mother said. ""But don't be too big.""
+
+Alice was happy to have her friend. She ran to the farm and saw a big",
+factual (Fig 9),5,1M,"""What do birds like to eat?"", Tom asked his mother.","
+
+""I don't know, but it's too dangerous,"" his mother said.
+
+Tom was so excited. He ran to the park and saw a big tree. He wanted to climb",
+factual (Fig 9),6,1M,"""What language do they speak in France?"", Tom asked his mother",".
+
+""They are very loud and loud,"" his mother said. ""It's a very loud noise. They can't hear us. They are not happy. They are not scared anymore.""",
+factual (Fig 9),7,1M,"If I throw a ball up in the air, eventually it will"," be fun.
+
+The little girl was so happy. She ran to the park and started to play. She was so happy that she had a new friend.
+
+The little girl was so",
+factual (Fig 9),8,1M,"It was winter and cold outside so his mother told him, ""You should"," not go outside and get wet.""
+
+Timmy was sad and he didn't want to go outside. He asked his mother if he could go outside and play. His mother said, ""No",
+reasoning (Fig 10),0,1M,"Lily likes cats and dogs. She asked her mom for a dog and her mom said no, so instead she asked"," her to play with her. Lily was sad and didn't want to play with her mom.
+
+Her mom said, ""Lily, you need to be careful and not play with your toys",
+reasoning (Fig 10),1,1M,"Jack told Mary, ""If you give me your banana, I'll give you my apple"". Mary gave Jack her Banana so"," he said, ""Thank you, Jack. I'm glad you're happy.""
+
+Jack smiled and said, ""I'm glad you're so kind. I'm glad you're happy.""
+",
+reasoning (Fig 10),2,1M,"On weekends Jack went to visit his grandmother whereas on weekdays he would go to school. Last weekend, when Jack was on his way to"," school, he was very excited. He wanted to go to school and play with his grandpa.
+
+When Jack got to the school, he saw a big, shiny toy car. He was",
+reasoning (Fig 10),3,1M,Lily and Ben were having an argument. Ben said that cake is much better than ice cream and Lily said that," they were going to have a picnic. They both wanted to have a picnic, but they were too busy to wait.
+
+The next day, they went to the park to play. They saw",
+reasoning (Fig 10),4,1M,"Lily and Ben are having an argument. They are trying to decide between the park and the swimming pool. Ben says, ""I want to go to the park"". Lily says",", ""No, Ben, you can't. You have to be careful. You have to be careful. You have to be careful and not to play. You have to be careful and respectful.""",
+reasoning (Fig 10),5,1M,"Jack's mother was not home, and his father was at home. When Jack came home, he said hello to"," Jack and his mom. Jack was so happy and thanked his mother.
+
+Jack's mom said, ""Jack, you are such a good friend. You are very kind and kind."" Jack smiled",
+reasoning (Fig 10),6,1M,"Lily doesn't like swimming. When her father wants to take her to the swimming pool, she says",", ""Lily, you can swim in the pool. It is fun!""
+
+Lily and Ben are scared. They want to swim in the pool. They run to the pool and splash",
+reasoning (Fig 10),7,1M,Both Ben and Lily wanted cake. Father said that there was only one piece of cake left. They," said that they had to wait for the cake to bake.
+
+Lily and Ben did not want to wait. They wanted to make the cake look nice. They wanted to make the cake look",
+reasoning (Fig 10),8,1M,"Ben went to visit Lily in her house, but she was not at home. Ben knocked on the door,"," but it was too late. Lily was sad and angry. She wanted to play with her toys, but she was too small. She had a big smile on her face and a smile.
+
+",
+context-tracking (Fig 11),0,1M,"""Hi Jane, have you seen Alice? I can't find her anywhere"", said Jack.","
+
+Jane was so excited. She opened her eyes and saw a big, shiny object. It was a shiny object. Jane was so excited. She ran to her mom and said, ""Mom",
+context-tracking (Fig 11),1,1M,"Max had two dogs. One was white and the other was black. Max walked up the street and saw a kid with a dog. He told the kid, ""I see you have a Brown dog. I also have"," a pet dog.""
+
+Max was scared. He wanted to pet the dog, but he was scared. He said, ""Don't be scared, Max. I will be your friend.""
+",
+context-tracking (Fig 11),2,1M,"Anne had a piece of candy in her left pocket and a piece of chocolate in her right pocket. Anne's mom asked her, ""Anne, what is that you have in your left pocket?""","
+
+Anne was so excited and said, ""I want to buy some candy!""
+
+Her mom smiled and said, ""Yes, Anne. I'm so happy to buy the candy and I",
+context-tracking (Fig 11),3,1M,Alice had both an apple and a carrot in her bag. She took the apple out of the bag and gave it to Jack. She reached into the bag again and took," the apple. She was so happy!
+
+Jack was so happy that he had found the apple. He thanked the apple and went back home. He was so happy that he had found the apple",
+context-tracking (Fig 11),4,1M,"Alice and Jack walked up the street and met a girl in a red dress. The girl said to them, ""Hi, I'm Jane. What are your names?""","
+
+The girl said, ""I'm Ben. I'm playing with you. I'm going to play with you.""
+
+Tom and Lucy were very happy. They played together and had lots",
+context-tracking (Fig 11),5,1M,"Diva was hungry, and wanted to bake a cake, but she didn't have any sugar at home, so she decided to go ask around. She started walking and met a squirrel. She asked the squirrel, ""Would you happen"," now?"" The squirrel said, ""Yes, please!""
+
+The squirrel was so happy to have found the cake. He thanked the squirrel and said, ""Thank you, I'm glad you're",
+factual (Fig 9),0,3M,Alice was so tired when she got back home so she went," to bed. She was so tired that she fell asleep.
+
+When she woke up, she was so tired that she had to go to bed. She was so tired from all the running she",
+factual (Fig 9),1,3M,"Jack and Lily saw a rainbow after a rainy day. They were amazed by the colors. Jack said, ""Look, Lily. A rainbow has"," so many colors. Let's go see it.""
+
+Lily and Jack went to the rainbow and saw a rainbow. They were so happy and said, ""Wow, that's so pretty!""",
+factual (Fig 9),2,3M,"Jack and Lily liked to watch the moon at night. They noticed that the moon changed its shape every night. Sometimes the moon was big and round, and sometimes it was"," a little bit smaller.
+
+One night, Jack and Lily were playing in the moon when they heard a loud noise. It was a big, scary monster! Jack and Lily were scared and ran",
+factual (Fig 9),3,3M,"Jack wanted to read a book, so he went to"," the library. He saw a big book with lots of words and he wanted to read it. He asked the library keeper if he could read it. The library keeper said yes, and Jack was very",
+factual (Fig 9),4,3M,"""Can cows fly?"", Alice asked her mother.","
+
+""Yes, of course,"" her mother said. ""Let's go to the park and see if we can find some chickens.""
+
+Alice and her mother went to the park. They",
+factual (Fig 9),5,3M,"""What do birds like to eat?"", Tom asked his mother.","
+
+""I don't know,"" said his mother. ""Let's go and find some more.""
+
+So they went to the park and saw a big tree. Tom was so excited.",
+factual (Fig 9),6,3M,"""What language do they speak in France?"", Tom asked his mother",".
+
+""That's a very special language,"" his mother replied. ""It's a very special language, and it's very special.""
+
+Tom was so excited. He couldn't wait",
+factual (Fig 9),7,3M,"If I throw a ball up in the air, eventually it will"," be fun!""
+
+The little girl was so excited. She ran to the park and started throwing a ball. She threw the ball up and down, and it flew up into the sky.
+",
+factual (Fig 9),8,3M,"It was winter and cold outside so his mother told him, ""You should"," stay inside and have fun inside.""
+
+But Tim didn't listen. He wanted to stay inside and play. He wanted to stay inside and play. So, he decided to stay inside and play",
+reasoning (Fig 10),0,3M,"Lily likes cats and dogs. She asked her mom for a dog and her mom said no, so instead she asked"," her mom. Her mom said no, because she was too young. Lily was sad and angry. She wanted to play with the dog, but her mom said no. She said Lily had to go",
+reasoning (Fig 10),1,3M,"Jack told Mary, ""If you give me your banana, I'll give you my apple"". Mary gave Jack her Banana so"," she could eat it. Jack was so happy and thanked Mary for her kindness.
+
+The moral of the story is that it is important to be kind and generous to others.
+",
+reasoning (Fig 10),2,3M,"On weekends Jack went to visit his grandmother whereas on weekdays he would go to school. Last weekend, when Jack was on his way to"," school, he noticed a big, scary dog. Jack was scared and he started to cry.
+
+His grandmother said, ""Don't worry Jack, I will help you. I will take you",
+reasoning (Fig 10),3,3M,Lily and Ben were having an argument. Ben said that cake is much better than ice cream and Lily said that," they should share it. Lily and Ben felt sad and angry. They decided to share the cake and make a new cake. They said sorry to each other and hugged.
+
+But then, they",
+reasoning (Fig 10),4,3M,"Lily and Ben are having an argument. They are trying to decide between the park and the swimming pool. Ben says, ""I want to go to the park"". Lily says",", ""No, I want to go to the pool. It is fun and fun."" Ben says, ""No, it is my turn. You can go with me.""
+
+Lily and",
+reasoning (Fig 10),5,3M,"Jack's mother was not home, and his father was at home. When Jack came home, he said hello to"," his father, and he said he was sorry. His father smiled and said he was glad that Jack was feeling better.
+
+Jack was so happy that he had been able to help his father.",
+reasoning (Fig 10),6,3M,"Lily doesn't like swimming. When her father wants to take her to the swimming pool, she says"," yes. She says she will be careful and not get too close. She says she will be careful and not get too close.
+
+Her father smiles and says he is proud of her. He",
+reasoning (Fig 10),7,3M,Both Ben and Lily wanted cake. Father said that there was only one piece of cake left. They," said that they should not eat the cake. They said that they should not eat the cake. They said that they should not eat the cake. They said they should eat the cake.
+
+Ben",
+reasoning (Fig 10),8,3M,"Ben went to visit Lily in her house, but she was not at home. Ben knocked on the door,"," and Lily's mom came in. She was angry and sad. She said, ""Ben, you are a bad boy. You have to pay for my work. You have to pay for the work",
+context-tracking (Fig 11),0,3M,"""Hi Jane, have you seen Alice? I can't find her anywhere"", said Jack."," Jane was very sad and started to cry.
+
+Suddenly, a voice called out, ""Jane, why are you crying? Don't you know where you are going?""
+
+Jane looked up",
+context-tracking (Fig 11),1,3M,"Max had two dogs. One was white and the other was black. Max walked up the street and saw a kid with a dog. He told the kid, ""I see you have a Brown dog. I also have"," a leash."" The dog barked and Max barked. Max barked and barked. The dog barked and barked. Max barked and barked. Max barked and barked",
+context-tracking (Fig 11),2,3M,"Anne had a piece of candy in her left pocket and a piece of chocolate in her right pocket. Anne's mom asked her, ""Anne, what is that you have in your left pocket?"""," Anne said, ""I'm sorry, Mommy. I didn't know it was yours.""
+
+Anne's mom smiled and said, ""It's okay, Anne. I'm sure you'll",
+context-tracking (Fig 11),3,3M,Alice had both an apple and a carrot in her bag. She took the apple out of the bag and gave it to Jack. She reached into the bag again and took," out a big apple. She was so happy and ate it all up.
+
+Jack was so happy that he gave Alice a big hug. He said, ""Thank you, Alice. You are",
+context-tracking (Fig 11),4,3M,"Alice and Jack walked up the street and met a girl in a red dress. The girl said to them, ""Hi, I'm Jane. What are your names?""","
+
+Alice said, ""My name is Jane. I'm a girl who lives in the park. Would you like to play with me?""
+
+Alice said, ""Yes, I would love",
+context-tracking (Fig 11),5,3M,"Diva was hungry, and wanted to bake a cake, but she didn't have any sugar at home, so she decided to go ask around. She started walking and met a squirrel. She asked the squirrel, ""Would you happen"," to my cake?"" The squirrel said yes and the two of them went to the store.
+
+When they got there, the squirrel said, ""I have a very special cake for you. It",
+factual (Fig 9),0,8M,Alice was so tired when she got back home so she went," to bed. She had a dream about the moon and the stars. She dreamed about the moon and the stars.
+
+When she woke up, she was so happy. She had a dream about",
+factual (Fig 9),1,8M,"Jack and Lily saw a rainbow after a rainy day. They were amazed by the colors. Jack said, ""Look, Lily. A rainbow has"," a lot of colors!"" Lily smiled and said, ""Yes, it's so pretty!""
+
+After a while, Jack and Lily got thirsty. Jack said, ""Let's go get some water",
+factual (Fig 9),2,8M,"Jack and Lily liked to watch the moon at night. They noticed that the moon changed its shape every night. Sometimes the moon was big and round, and sometimes it was"," small.
+
+One night, they saw a bright light in the sky. It was a comet! It was a big ball of ice and dust. It was very pretty.
+
+""Wow",
+factual (Fig 9),3,8M,"Jack wanted to read a book, so he went to"," the library. He saw a book about a big, red dog. He was so excited! He picked it up and started to read.
+
+Jack read and read until he was very tired.",
+factual (Fig 9),4,8M,"""Can cows fly?"", Alice asked her mother.","
+
+""Yes, sweetheart,"" her mother said. ""But be careful, don't go too close to the road.""
+
+Alice nodded and ran to the road. She was so excited",
+factual (Fig 9),5,8M,"""What do birds like to eat?"", Tom asked his mother.","
+
+""I don't know,"" his mother replied. ""But I think they are hungry.""
+
+Tom was curious. He asked his mother if he could have a snack. She said yes",
+factual (Fig 9),6,8M,"""What language do they speak in France?"", Tom asked his mother",".
+
+""They speak in French,"" his mother replied.
+
+Tom was amazed. He had never heard of a language like this before. He asked his mother if he could learn it.",
+factual (Fig 9),7,8M,"If I throw a ball up in the air, eventually it will"," be gone.""
+
+The little girl was so excited. She ran to the ball and threw it as hard as she could. The ball flew up into the sky and disappeared.
+
+The little",
+factual (Fig 9),8,8M,"It was winter and cold outside so his mother told him, ""You should"," be careful and stay inside until the snow melts.""
+
+The little boy was sad, but he listened to his mother and stayed inside. He was still excited to go outside and play in the snow",
+reasoning (Fig 10),0,8M,"Lily likes cats and dogs. She asked her mom for a dog and her mom said no, so instead she asked"," her dad. Her dad said no, because cats are not pets. He said they are pets and they need to live.
+
+Lily was sad and angry. She did not want to play",
+reasoning (Fig 10),1,8M,"Jack told Mary, ""If you give me your banana, I'll give you my apple"". Mary gave Jack her Banana so"," he could have it.
+
+Jack was so happy and thanked Mary. He said, ""Thank you so much! I'm so glad I found my banana.""
+
+Mary smiled and said,",
+reasoning (Fig 10),2,8M,"On weekends Jack went to visit his grandmother whereas on weekdays he would go to school. Last weekend, when Jack was on his way to"," school, he saw a big, red bus. He was so excited to see it!
+
+Jack asked his grandmother, ""Can I go on the bus?""
+
+His grandmother smiled and said",
+reasoning (Fig 10),3,8M,Lily and Ben were having an argument. Ben said that cake is much better than ice cream and Lily said that," cake is yucky. Lily said that cake is not good for her tummy. Ben said that cake is good for you and only for a little bit.
+
+Lily felt angry and sad",
+reasoning (Fig 10),4,8M,"Lily and Ben are having an argument. They are trying to decide between the park and the swimming pool. Ben says, ""I want to go to the park"". Lily says",", ""No, I want to go to the pool. I want to go to the pool."" They start to argue and shout.
+
+Mom hears them and comes to the pool. She says",
+reasoning (Fig 10),5,8M,"Jack's mother was not home, and his father was at home. When Jack came home, he said hello to"," his father. His father was very happy to see him and said, ""Jack, I'm glad you're here. I'm glad you're here.""
+
+Jack was so happy that he had",
+reasoning (Fig 10),6,8M,"Lily doesn't like swimming. When her father wants to take her to the swimming pool, she says",", ""No, I don't want to go."" Her father says, ""Lily, you have to listen to me. It's not nice to be selfish.""
+
+Lily still refuses",
+reasoning (Fig 10),7,8M,Both Ben and Lily wanted cake. Father said that there was only one piece of cake left. They," had to wait until they could get it.
+
+Ben and Lily were very sad. They wanted cake now. They started to cry. They said they were sorry. They said they would share the",
+reasoning (Fig 10),8,8M,"Ben went to visit Lily in her house, but she was not at home. Ben knocked on the door,"," but Lily did not answer. He was busy playing with his toys. He did not hear Lily's voice.
+
+Lily felt sad and lonely. She missed Ben. She wished he would come",
+context-tracking (Fig 11),0,8M,"""Hi Jane, have you seen Alice? I can't find her anywhere"", said Jack.","
+
+Jane was very sad. She wanted to help Jack find Alice. She looked around the garden and found a big, shiny rock. She picked it up and gave it to Jack.
+
+",
+context-tracking (Fig 11),1,8M,"Max had two dogs. One was white and the other was black. Max walked up the street and saw a kid with a dog. He told the kid, ""I see you have a Brown dog. I also have"," a dog. His name is Spot.""
+
+The kid said, ""Hi, I'm Max. I like your dog. Can I pet him?""
+
+Max said, ""Sure, he",
+context-tracking (Fig 11),2,8M,"Anne had a piece of candy in her left pocket and a piece of chocolate in her right pocket. Anne's mom asked her, ""Anne, what is that you have in your left pocket?"""," Anne replied, ""It's a piece of candy, Mommy.""
+
+Anne's mom smiled and said, ""That's a very special piece of candy, Anne. You can have it if",
+context-tracking (Fig 11),3,8M,Alice had both an apple and a carrot in her bag. She took the apple out of the bag and gave it to Jack. She reached into the bag again and took," out the carrot. She gave it to Jack and he smiled.
+
+Alice said, ""Let's share this apple and carrot. That way, we can both have a piece of the apple and",
+context-tracking (Fig 11),4,8M,"Alice and Jack walked up the street and met a girl in a red dress. The girl said to them, ""Hi, I'm Jane. What are your names?""","
+
+Alice and Jack said their names back and they started to talk. They talked about their favorite things and how they liked to play together.
+
+After a while, Jane said, ""I",
+context-tracking (Fig 11),5,8M,"Diva was hungry, and wanted to bake a cake, but she didn't have any sugar at home, so she decided to go ask around. She started walking and met a squirrel. She asked the squirrel, ""Would you happen"," to bake a cake?"" The squirrel said, ""Yes, I would love to!""
+
+So, the squirrel and the bird baked a cake together. They put the cake in the oven and waited",
+factual (Fig 9),0,28M,Alice was so tired when she got back home so she went," to bed. She had a wonderful day and was so happy to have gone on the adventure.
+",
+factual (Fig 9),1,28M,"Jack and Lily saw a rainbow after a rainy day. They were amazed by the colors. Jack said, ""Look, Lily. A rainbow has"," appeared!"" Lily said, ""Wow, it's so pretty!"" They continued to play and have fun in the rain, enjoying the beautiful colors.
+",
+factual (Fig 9),2,28M,"Jack and Lily liked to watch the moon at night. They noticed that the moon changed its shape every night. Sometimes the moon was big and round, and sometimes it was"," small and round. Sometimes the moon was bright and sometimes it was dark.
+
+One night, they saw something different. The moon was not round anymore. It was smaller and rounder, and",
+factual (Fig 9),3,28M,"Jack wanted to read a book, so he went to"," the library. He saw a big book on the shelf. It was very heavy, so he asked the librarian for help. The librarian said, ""Sure, let's take it to the",
+factual (Fig 9),4,28M,"""Can cows fly?"", Alice asked her mother.","
+
+""No, sweetheart, cows can't fly,"" her mother replied.
+
+Alice was disappointed, but she still had a great time at the farm. She saw lots of animals and",
+factual (Fig 9),5,28M,"""What do birds like to eat?"", Tom asked his mother.","
+
+""They like to eat worms and bugs,"" his mother replied.
+
+Tom thought for a moment and then said, ""I want to eat worms!""
+
+His mother smiled and said",
+factual (Fig 9),6,28M,"""What language do they speak in France?"", Tom asked his mother",".
+
+""Cars speak English"", his mother replied.
+
+Tom was very excited. He wanted to learn more about the language. He asked his mother to teach him some words.
+",
+factual (Fig 9),7,28M,"If I throw a ball up in the air, eventually it will"," come down and you can have it back.""
+
+The little girl was so happy and she thanked the old man. She ran to the park and threw the ball up in the air. The ball",
+factual (Fig 9),8,28M,"It was winter and cold outside so his mother told him, ""You should"," stay inside and be safe.""
+
+But Jack was curious and he wanted to explore. He asked his mother, ""Can I go outside and play?""
+
+His mother said, ""No,",
+reasoning (Fig 10),0,28M,"Lily likes cats and dogs. She asked her mom for a dog and her mom said no, so instead she asked"," a cat and a dog. They were nice and soft and had a collar. Lily was happy and ran to pet them.
+
+But then she saw a big dog with a long tail and a",
+reasoning (Fig 10),1,28M,"Jack told Mary, ""If you give me your banana, I'll give you my apple"". Mary gave Jack her Banana so"," he gave her the banana.
+
+Jack was so happy that he gave Mary a big hug. Mary was so happy that she gave Jack a big hug back.
+
+The moral of the story",
+reasoning (Fig 10),2,28M,"On weekends Jack went to visit his grandmother whereas on weekdays he would go to school. Last weekend, when Jack was on his way to"," school, he saw a big, shiny door. He wanted to open it, but it was locked. He tried to open it, but it wouldn't budge.
+
+Jack was so frustrated",
+reasoning (Fig 10),3,28M,Lily and Ben were having an argument. Ben said that cake is much better than ice cream and Lily said that," cake is boring. They both wanted to have the best cake at the party. They did not listen to each other. They did not share or say sorry.
+
+The party was over and everyone",
+reasoning (Fig 10),4,28M,"Lily and Ben are having an argument. They are trying to decide between the park and the swimming pool. Ben says, ""I want to go to the park"". Lily says",", ""No, I want to go to the pool."" They both pull the same shirt. The shirt rips in half.
+
+They are both very sad and angry. They do not want",
+reasoning (Fig 10),5,28M,"Jack's mother was not home, and his father was at home. When Jack came home, he said hello to"," his mother. She was very happy to see him.
+
+Jack's father said, ""I have a surprise for you. I have a special gift for you."" He handed Jack a big box",
+reasoning (Fig 10),6,28M,"Lily doesn't like swimming. When her father wants to take her to the swimming pool, she says", no. She says she wants to stay home and play with her toys. Her father is not happy. He says she is being naughty and she has to listen to him. He says he will take,
+reasoning (Fig 10),7,28M,Both Ben and Lily wanted cake. Father said that there was only one piece of cake left. They," both wanted it.
+
+Father said, ""You can have it, but you have to share it. That's what Father and Lily do.""
+
+Ben and Lily agreed. They took the",
+reasoning (Fig 10),8,28M,"Ben went to visit Lily in her house, but she was not at home. Ben knocked on the door,"," but no one answered. He looked around and saw a big, black dog in the living room. The dog had a red collar and a long tail. Ben thought the dog was cute and wanted to",
+context-tracking (Fig 11),0,28M,"""Hi Jane, have you seen Alice? I can't find her anywhere"", said Jack.","
+
+Jane smiled and said, ""I'm sorry, I haven't seen her. I'm sure she's somewhere in the park"".
+
+Jack and Jane looked around the park and soon enough",
+context-tracking (Fig 11),1,28M,"Max had two dogs. One was white and the other was black. Max walked up the street and saw a kid with a dog. He told the kid, ""I see you have a Brown dog. I also have"," a dog. His name is Spot. He is brown and white. He is very friendly. Do you want to pet him?""
+
+The kid looked at Max and the dog. He smiled and",
+context-tracking (Fig 11),2,28M,"Anne had a piece of candy in her left pocket and a piece of chocolate in her right pocket. Anne's mom asked her, ""Anne, what is that you have in your left pocket?"""," Anne replied, ""It's a piece of candy, Mommy.""
+
+Anne's mom smiled and said, ""That's great, Anne. Now, why don't you go and play with",
+context-tracking (Fig 11),3,28M,Alice had both an apple and a carrot in her bag. She took the apple out of the bag and gave it to Jack. She reached into the bag again and took," the carrot. She bit into it and smiled.
+
+""Yum, this is a good carrot,"" she said.
+
+Jack smiled too. He was happy that Alice was so generous.",
+context-tracking (Fig 11),4,28M,"Alice and Jack walked up the street and met a girl in a red dress. The girl said to them, ""Hi, I'm Jane. What are your names?""","
+
+Alice said, ""I'm Alice. Nice to meet you.""
+
+Jane said, ""Let's play a game. I'll give you a score and you have to guess what it",
+context-tracking (Fig 11),5,28M,"Diva was hungry, and wanted to bake a cake, but she didn't have any sugar at home, so she decided to go ask around. She started walking and met a squirrel. She asked the squirrel, ""Would you happen"," to have sugar?""
+
+The squirrel said, ""Yes, I do. I have some sugar in my treehouse. I can give it to you if you want.""
+
+The dove was",
+factual (Fig 9),0,33M,Alice was so tired when she got back home so she went," straight to bed. She was so happy to have a nice, warm bed to sleep in.
+",
+factual (Fig 9),1,33M,"Jack and Lily saw a rainbow after a rainy day. They were amazed by the colors. Jack said, ""Look, Lily. A rainbow has"," come after the rain."" Lily said, ""Wow, it's so pretty!"" They watched the rainbow until it disappeared.
+
+After the rain stopped, Jack and Lily went back to playing. They",
+factual (Fig 9),2,33M,"Jack and Lily liked to watch the moon at night. They noticed that the moon changed its shape every night. Sometimes the moon was big and round, and sometimes it was"," small and thin.
+
+One night, Jack and Lily saw something different. The moon was not round like the moon. It was flat and thin. It looked like a ball.
+
+""",
+factual (Fig 9),3,33M,"Jack wanted to read a book, so he went to"," the library. He found a book about a brave knight and he read it. He was so excited to read it!
+
+When Jack got home, he was so happy. He wanted to show",
+factual (Fig 9),4,33M,"""Can cows fly?"", Alice asked her mother.","
+
+""No, sweetheart, cows can't fly,"" her mother replied.
+
+Alice was sad, but then she saw a cow in the field. She ran to it and said,",
+factual (Fig 9),5,33M,"""What do birds like to eat?"", Tom asked his mother.","
+
+""They like to eat worms,"" his mother said.
+
+Tom was excited. He wanted to try the worms. He picked up a worm and put it in his mouth.
+
+",
+factual (Fig 9),6,33M,"""What language do they speak in France?"", Tom asked his mother",".
+
+""Well, Tom, it's a place where people speak different languages. It's called French,"" his mother explained.
+
+Tom was fascinated by the language and wanted to learn more",
+factual (Fig 9),7,33M,"If I throw a ball up in the air, eventually it will"," come down.""
+
+The little girl was so excited. She grabbed the ball and threw it up in the air. It came down and landed in the grass.
+
+The little girl was so",
+factual (Fig 9),8,33M,"It was winter and cold outside so his mother told him, ""You should"," stay inside today, it's too dangerous outside.""
+
+But Jack was determined to go out and play. He put on his coat and boots and ran outside. He saw a big tree and decided",
+reasoning (Fig 10),0,33M,"Lily likes cats and dogs. She asked her mom for a dog and her mom said no, so instead she asked"," her dad for a cat. Her dad said no, because cats are too expensive. Lily was sad, but she still loved dogs.
+
+One day, Lily saw a big sign that said """,
+reasoning (Fig 10),1,33M,"Jack told Mary, ""If you give me your banana, I'll give you my apple"". Mary gave Jack her Banana so"," he could give her the apple.
+
+Jack was so happy that he gave Mary a big hug. He said, ""Thank you for the banana, Mary. You're the best friend ever"".",
+reasoning (Fig 10),2,33M,"On weekends Jack went to visit his grandmother whereas on weekdays he would go to school. Last weekend, when Jack was on his way to"," school, he saw a big, fat cat. Jack was scared and he wanted to run away, but the cat just sat there and stared at him.
+
+Jack was brave and he decided to",
+reasoning (Fig 10),3,33M,Lily and Ben were having an argument. Ben said that cake is much better than ice cream and Lily said that," ice cream is better than cake. They both wanted to have the best cake and they started to argue.
+
+""No, cake is better!"" Lily said.
+
+""No, cake is",
+reasoning (Fig 10),4,33M,"Lily and Ben are having an argument. They are trying to decide between the park and the swimming pool. Ben says, ""I want to go to the park"". Lily says",", ""No, I want to go to the pool"". They both want to go different ways.
+
+They start to yell and push each other. They are not happy. They are not having",
+reasoning (Fig 10),5,33M,"Jack's mother was not home, and his father was at home. When Jack came home, he said hello to"," his mother and father. His father said, ""Jack, I have something for you.""
+
+Jack was very excited. His father gave him a big box. Jack opened the box and inside was",
+reasoning (Fig 10),6,33M,"Lily doesn't like swimming. When her father wants to take her to the swimming pool, she says",", ""No, I don't want to go. I want to stay here.""
+
+Her father says, ""But Lily, you have to go. The water is cold and you will get",
+reasoning (Fig 10),7,33M,Both Ben and Lily wanted cake. Father said that there was only one piece of cake left. They," both wanted the cake.
+
+They started to fight. They pulled and pushed and shouted. They made a big mess. The cake fell on the floor. It was dirty and messy.
+
+",
+reasoning (Fig 10),8,33M,"Ben went to visit Lily in her house, but she was not at home. Ben knocked on the door,"," but no one answered. He knocked again, but still no one came. He felt sad and lonely. He wished he had a friend who liked to play with him.
+
+He decided to go",
+context-tracking (Fig 11),0,33M,"""Hi Jane, have you seen Alice? I can't find her anywhere"", said Jack.","
+
+Jane smiled and said, ""I know where she is. She's in the garden"".
+
+Jack ran to the garden and found Alice. He was so happy to see her.
+",
+context-tracking (Fig 11),1,33M,"Max had two dogs. One was white and the other was black. Max walked up the street and saw a kid with a dog. He told the kid, ""I see you have a Brown dog. I also have"," a ball. Do you want to play with me and my dogs?""
+
+The kid said, ""Yes, I do. My name is Sam. What is your name?""
+
+""My",
+context-tracking (Fig 11),2,33M,"Anne had a piece of candy in her left pocket and a piece of chocolate in her right pocket. Anne's mom asked her, ""Anne, what is that you have in your left pocket?""","
+
+Anne replied, ""It's a piece of candy, Mommy. It's so yummy!""
+
+Anne's mom smiled and said, ""That's great, Anne. But remember",
+context-tracking (Fig 11),3,33M,Alice had both an apple and a carrot in her bag. She took the apple out of the bag and gave it to Jack. She reached into the bag again and took," out the carrot. She gave it to Jack and said, ""Here you go, Jack. This is for you.""
+
+Jack took the carrot and bit into it. He smiled and said,",
+context-tracking (Fig 11),4,33M,"Alice and Jack walked up the street and met a girl in a red dress. The girl said to them, ""Hi, I'm Jane. What are your names?""","
+
+Alice and Jack introduced themselves and said, ""We're Alice and Jack. We live in the same street.""
+
+Jane smiled and said, ""That's nice. I'm Jane and",
+context-tracking (Fig 11),5,33M,"Diva was hungry, and wanted to bake a cake, but she didn't have any sugar at home, so she decided to go ask around. She started walking and met a squirrel. She asked the squirrel, ""Would you happen"," to have some sugar?""
+
+The squirrel said, ""Yes, I do. I have some sugar in my pocket. Would you like some?""
+
+The kangaroo was so happy and",
+factual (Fig 9),0,1Layer-21M,Alice was so tired when she got back home so she went," straight to bed. She was so tired that she fell asleep right away.
+
+The next morning, Alice woke up feeling refreshed and ready to start her day. She was so happy that she had",
+factual (Fig 9),1,1Layer-21M,"Jack and Lily saw a rainbow after a rainy day. They were amazed by the colors. Jack said, ""Look, Lily. A rainbow has"," a pretty color."" Lily said, ""Yes, it's so pretty.""
+
+Suddenly, the rainbow started to move. It was a magic rainbow! Lily and Jack were so happy. They watched",
+factual (Fig 9),2,1Layer-21M,"Jack and Lily liked to watch the moon at night. They noticed that the moon changed its shape every night. Sometimes the moon was big and round, and sometimes it was"," scary.
+
+One night, Lily had a dream that she was a brave princess who loved to explore. She went to the moon and found a big, round rock that looked like a star.",
+factual (Fig 9),3,1Layer-21M,"Jack wanted to read a book, so he went to"," the store and bought a new one. He was so excited to read it!
+
+When Jack got home, he opened the book and started to read. He read about a magical dragon and then",
+factual (Fig 9),4,1Layer-21M,"""Can cows fly?"", Alice asked her mother.","
+
+""Yes, of course,"" her mother replied.
+
+Alice was so excited. She ran to the barn and started to feed the cows. She was so happy to see them.
+",
+factual (Fig 9),5,1Layer-21M,"""What do birds like to eat?"", Tom asked his mother.","
+
+""Well, you can have a snack, but you must be careful not to get it yourself,"" his mother said.
+
+Tom was so excited. He ran to the kitchen and grabbed",
+factual (Fig 9),6,1Layer-21M,"""What language do they speak in France?"", Tom asked his mother",".
+
+""The language is very important,"" replied his mother.
+
+Tom was amazed. He wanted to learn more about the language. He asked his mother if he could learn it too.",
+factual (Fig 9),7,1Layer-21M,"If I throw a ball up in the air, eventually it will"," be like a big bird!""
+
+The little bird was very happy and said, ""Yes, I will be your friend!""
+
+The little bird and the big bird played together every day.",
+factual (Fig 9),8,1Layer-21M,"It was winter and cold outside so his mother told him, ""You should"," wear your coat, Timmy. It's too cold outside.""
+
+Timmy didn't want to wear his coat, but he knew his mother was right. So, he put on his coat",
+reasoning (Fig 10),0,1Layer-21M,"Lily likes cats and dogs. She asked her mom for a dog and her mom said no, so instead she asked"," her mom if she could pet the dog. Her mom said yes, but warned her to be careful.
+
+Lily went outside to play with the dog. She saw a boy playing with a",
+reasoning (Fig 10),1,1Layer-21M,"Jack told Mary, ""If you give me your banana, I'll give you my apple"". Mary gave Jack her Banana so"," she could have a banana.
+
+Jack was so happy and said, ""Thank you, Mary! You are so kind"". Mary smiled and said, ""You're welcome, Jack. I'm",
+reasoning (Fig 10),2,1Layer-21M,"On weekends Jack went to visit his grandmother whereas on weekdays he would go to school. Last weekend, when Jack was on his way to"," school, he saw a big, beautiful flower. He was so excited to see it!
+
+When Jack arrived, he saw the flower and he was so happy. He ran to his teacher and",
+reasoning (Fig 10),3,1Layer-21M,Lily and Ben were having an argument. Ben said that cake is much better than ice cream and Lily said that," she was a good sister and that they should share their ice cream. They said that they could each have a different flavor and that they could both have.
+
+Lily and Ben were happy and",
+reasoning (Fig 10),4,1Layer-21M,"Lily and Ben are having an argument. They are trying to decide between the park and the swimming pool. Ben says, ""I want to go to the park"". Lily says"," ""No, I want to stay here. It is my turn. You can't go in the water. It is too cold and wet. You will get sick.""
+
+Lily and Ben",
+reasoning (Fig 10),5,1Layer-21M,"Jack's mother was not home, and his father was at home. When Jack came home, he said hello to"," Jack and asked him about his day. Jack told his mother about the big, white bird. His mother smiled and said, ""That sounds like a wonderful idea. You can be a very clever boy",
+reasoning (Fig 10),6,1Layer-21M,"Lily doesn't like swimming. When her father wants to take her to the swimming pool, she says",", ""No, I don't want to swim in the pool. I want to swim like a fish."" Her father says, ""But you can't swim, Lily. You have to swim with",
+reasoning (Fig 10),7,1Layer-21M,Both Ben and Lily wanted cake. Father said that there was only one piece of cake left. They," both wanted to eat it, but they knew they had to wait until after dinner.
+
+Lily and Ben were sad, but they knew they had to listen to their parents. They waited and",
+reasoning (Fig 10),8,1Layer-21M,"Ben went to visit Lily in her house, but she was not at home. Ben knocked on the door,"," and Lily opened it. She saw Ben and smiled. ""Hi, Ben! Do you want to play with me?"" she asked.
+
+Ben nodded and said, ""Yes, please. I",
+context-tracking (Fig 11),0,1Layer-21M,"""Hi Jane, have you seen Alice? I can't find her anywhere"", said Jack.","
+
+""I'm looking for my toy car,"" said Jack.
+
+Alice was very sad. She wanted to help Jack find his car.
+
+""Let's look for it together,""",
+context-tracking (Fig 11),1,1Layer-21M,"Max had two dogs. One was white and the other was black. Max walked up the street and saw a kid with a dog. He told the kid, ""I see you have a Brown dog. I also have"," a black dog like you.""
+
+The black dog wagged his tail and licked the boy's hand. Max was happy to see the boy and the black dog. He said, ""Thank",
+context-tracking (Fig 11),2,1Layer-21M,"Anne had a piece of candy in her left pocket and a piece of chocolate in her right pocket. Anne's mom asked her, ""Anne, what is that you have in your left pocket?""","
+Anne was so excited and said, ""Yes, I found it!""
+Anne's mom smiled and said, ""That's great! Now let's go home and have some more candy.""
+",
+context-tracking (Fig 11),3,1Layer-21M,Alice had both an apple and a carrot in her bag. She took the apple out of the bag and gave it to Jack. She reached into the bag again and took," a big bite. It was delicious!
+
+Alice was so happy that she had found the apple. She thanked Jack for his help and they both enjoyed the delicious apple together.
+",
+context-tracking (Fig 11),4,1Layer-21M,"Alice and Jack walked up the street and met a girl in a red dress. The girl said to them, ""Hi, I'm Jane. What are your names?""","
+
+Jack said, ""I'm Jack. I like to dress up in my red dress.""
+
+Jane smiled and said, ""That's nice. Can I try it on?""
+
+",
+context-tracking (Fig 11),5,1Layer-21M,"Diva was hungry, and wanted to bake a cake, but she didn't have any sugar at home, so she decided to go ask around. She started walking and met a squirrel. She asked the squirrel, ""Would you happen"," to help me bake a cake?""
+
+The squirrel was so excited and said, ""Yes, please!"" So, the squirrel helped her measure the sugar and they became good friends.
+
+But",
+factual (Fig 9),0,2Layers-33M,Alice was so tired when she got back home so she went," to bed. She was so happy that she had found the perfect place to rest.
+",
+factual (Fig 9),1,2Layers-33M,"Jack and Lily saw a rainbow after a rainy day. They were amazed by the colors. Jack said, ""Look, Lily. A rainbow has"," appeared in the sky."" Lily said, ""Wow, it's so pretty!""
+
+Suddenly, the rain stopped and the sun came out. Jack said, ""Let's go home, Lily.",
+factual (Fig 9),2,2Layers-33M,"Jack and Lily liked to watch the moon at night. They noticed that the moon changed its shape every night. Sometimes the moon was big and round, and sometimes it was"," small and round.
+
+One night, Jack and Lily were outside looking at the moon. They saw that the moon was not round anymore. It was round and white, and it looked like it",
+factual (Fig 9),3,2Layers-33M,"Jack wanted to read a book, so he went to"," the library. He found a book about a cat and sat down to read it. The cat was very friendly and liked to play with kids.
+
+After reading the book, Jack went back to",
+factual (Fig 9),4,2Layers-33M,"""Can cows fly?"", Alice asked her mother.","
+
+""No, sweetheart,"" her mother replied. ""They don't have enough food to eat.""
+
+Alice was sad. She wanted to fly like a bird.
+
+""But",
+factual (Fig 9),5,2Layers-33M,"""What do birds like to eat?"", Tom asked his mother.","
+
+""Well, birds like to eat seeds and worms,"" his mother replied.
+
+Tom was excited to try the seeds and worms. He asked his mother if he could have some.
+",
+factual (Fig 9),6,2Layers-33M,"""What language do they speak in France?"", Tom asked his mother",".
+
+""It's called French,"" his mother replied.
+
+Tom was excited to learn French. He wanted to speak French too.
+
+""Can I speak French?"" he asked.",
+factual (Fig 9),7,2Layers-33M,"If I throw a ball up in the air, eventually it will"," come back down.""
+
+The little girl was so excited. She threw the ball up in the air and it came back down. She was so happy.
+
+The little girl thanked the old",
+factual (Fig 9),8,2Layers-33M,"It was winter and cold outside so his mother told him, ""You should"," wear your coat, Timmy.""
+
+Timmy didn't want to wear his coat because it was too big and he didn't like how it felt. But his mother said, ""You have",
+reasoning (Fig 10),0,2Layers-33M,"Lily likes cats and dogs. She asked her mom for a dog and her mom said no, so instead she asked"," her dad for a dog. Her dad said no, because dogs are not pets.
+
+Lily was sad and angry. She wanted to see a dog. She asked her mom if they could",
+reasoning (Fig 10),1,2Layers-33M,"Jack told Mary, ""If you give me your banana, I'll give you my apple"". Mary gave Jack her Banana so"," he could have his banana. Jack was so happy and he thanked Mary.
+
+The moral of the story is that it is important to be kind and generous to others. If you are kind and",
+reasoning (Fig 10),2,2Layers-33M,"On weekends Jack went to visit his grandmother whereas on weekdays he would go to school. Last weekend, when Jack was on his way to"," school, he saw a big, shiny car. He was so excited that he ran to the car and asked his grandmother if he could take a ride.
+
+His grandmother said, ""No,",
+reasoning (Fig 10),3,2Layers-33M,Lily and Ben were having an argument. Ben said that cake is much better than ice cream and Lily said that," she was sorry. Lily said that she was sorry too. They hugged and made up.
+
+Mom smiled and said that was good. She said that they could have some ice cream after they finished",
+reasoning (Fig 10),4,2Layers-33M,"Lily and Ben are having an argument. They are trying to decide between the park and the swimming pool. Ben says, ""I want to go to the park"". Lily says",", ""No, I want to go to the park. The pool is fun and the water is cool and the sun is warm"". Ben says, ""But I don't want to go to the",
+reasoning (Fig 10),5,2Layers-33M,"Jack's mother was not home, and his father was at home. When Jack came home, he said hello to"," his father and asked him to come home. His father was very happy to see Jack and said, ""Thank you for coming home, Jack. I am so happy to see you.""
+
+Jack",
+reasoning (Fig 10),6,2Layers-33M,"Lily doesn't like swimming. When her father wants to take her to the swimming pool, she says"," no. Her father explains that it's not safe and Lily agrees to swim in the pool.
+Story: Once upon a time, there was a little girl named Lily. She loved to swim in",
+reasoning (Fig 10),7,2Layers-33M,Both Ben and Lily wanted cake. Father said that there was only one piece of cake left. They," both reached for the cake at the same time.
+
+But then, something unexpected happened. A big wind came and blew the cake away. Lily and Ben were sad. They looked at each other",
+reasoning (Fig 10),8,2Layers-33M,"Ben went to visit Lily in her house, but she was not at home. Ben knocked on the door,"," but no one answered. He looked around and saw a big box. He opened the box and found a big cake inside. It was a surprise!
+
+Ben was so happy. He said,",
+context-tracking (Fig 11),0,2Layers-33M,"""Hi Jane, have you seen Alice? I can't find her anywhere"", said Jack.","
+
+""No, I haven't seen her. But I can help you look for her,"" said Jack.
+
+So, Jack and Jane searched high and low for Alice. They looked in",
+context-tracking (Fig 11),1,2Layers-33M,"Max had two dogs. One was white and the other was black. Max walked up the street and saw a kid with a dog. He told the kid, ""I see you have a Brown dog. I also have"," a dog. Do you want to play with him?""
+
+The kid said, ""Yes, I want to play with him. Can I pet your dog?""
+
+Max said, ""Sure",
+context-tracking (Fig 11),2,2Layers-33M,"Anne had a piece of candy in her left pocket and a piece of chocolate in her right pocket. Anne's mom asked her, ""Anne, what is that you have in your left pocket?"""," Anne replied, ""It's a candy, mommy!""
+
+Anne's mom smiled and said, ""That's nice, but remember to always keep your pocket in your pocket, okay?"" Anne",
+context-tracking (Fig 11),3,2Layers-33M,Alice had both an apple and a carrot in her bag. She took the apple out of the bag and gave it to Jack. She reached into the bag again and took," out the carrot.
+
+Jack was so happy to have his apple. He thanked Alice and they both enjoyed their snack.
+
+The end.
+",
+context-tracking (Fig 11),4,2Layers-33M,"Alice and Jack walked up the street and met a girl in a red dress. The girl said to them, ""Hi, I'm Jane. What are your names?""","
+
+Alice said, ""My name is Alice. I'm three years old.""
+
+Jack said, ""That's a nice name. I'm Jack.""
+
+Alice said, ""Me",
+context-tracking (Fig 11),5,2Layers-33M,"Diva was hungry, and wanted to bake a cake, but she didn't have any sugar at home, so she decided to go ask around. She started walking and met a squirrel. She asked the squirrel, ""Would you happen"," to bake a cake with me?"" The squirrel said, ""Yes, I would love to!""
+
+They went to the kitchen and started to bake the cake. But when they opened the oven,",
+factual (Fig 9),0,baseline,Alice was so tired when she got back home so she went, to bed. She was so tired from all the fun she had that she fell asleep right away.,
+factual (Fig 9),1,baseline,"Jack and Lily saw a rainbow after a rainy day. They were amazed by the colors. Jack said, ""Look, Lily. A rainbow has"," many colors!"" Lily smiled and said, ""Yes, Jack. It's so pretty.""
+
+After the rain stopped, Jack and Lily went back to playing in the park. They saw a big",
+factual (Fig 9),2,baseline,"Jack and Lily liked to watch the moon at night. They noticed that the moon changed its shape every night. Sometimes the moon was big and round, and sometimes it was"," small and round.
+
+One night, Jack and Lily saw a shooting star. They made a wish and waved their arms. They wished for a new toy.
+
+""Look, Lily,",
+factual (Fig 9),3,baseline,"Jack wanted to read a book, so he went to", the library. He found a book about a little girl who was very sad. She was crying because she couldn't read. Jack felt sorry for her and decided to help her. He read the book,
+factual (Fig 9),4,baseline,"""Can cows fly?"", Alice asked her mother.","
+
+""Yes, Alice, chickens fly,"" her mother replied.
+
+Alice was so excited. She wanted to fly like the birds. She asked her mother, ""Can I fly like the",
+factual (Fig 9),5,baseline,"""What do birds like to eat?"", Tom asked his mother.","
+
+""They eat worms,"" she replied.
+
+Tom was so excited. He wanted to try the worms. He asked his mother if he could have one.
+
+""Yes, you",
+factual (Fig 9),6,baseline,"""What language do they speak in France?"", Tom asked his mother",".
+
+""It means to talk to someone who is different from you,"" his mother explained.
+
+Tom thought about this for a moment and then said, ""I want to be a teacher",
+factual (Fig 9),7,baseline,"If I throw a ball up in the air, eventually it will"," come down.â€
+
+The little girl was so excited. She threw the ball up in the air and watched it come down. She laughed and clapped her hands.
+
+The little",
+factual (Fig 9),8,baseline,"It was winter and cold outside so his mother told him, ""You should"," wear your coat, it's cold outside.""
+
+The little boy put on his coat and went outside to play. He saw a big tree and decided to climb it. He climbed and climbed until",
+reasoning (Fig 10),0,baseline,"Lily likes cats and dogs. She asked her mom for a dog and her mom said no, so instead she asked"," for a dog. Her mom said yes, and Lily was happy. She went to the pet store with her mom and picked a dog. She named him Spot.
+
+Lily and her mom",
+reasoning (Fig 10),1,baseline,"Jack told Mary, ""If you give me your banana, I'll give you my apple"". Mary gave Jack her Banana so"," he could have his apple.
+
+Jack was so happy and thanked Mary for her kindness. He said, ""Thank you so much for being so kind and generous"".
+
+Mary smiled and said",
+reasoning (Fig 10),2,baseline,"On weekends Jack went to visit his grandmother whereas on weekdays he would go to school. Last weekend, when Jack was on his way to"," school, he would look out the window and see the big, blue sky.
+
+When Jack arrived at school, he was so excited to see his teacher. She was very friendly and always had",
+reasoning (Fig 10),3,baseline,Lily and Ben were having an argument. Ben said that cake is much better than ice cream and Lily said that," cake is better than cake. Lily said that cake is better than cake. They started to argue and shout.
+
+Mom heard them and came to see what was wrong. She saw the cake and",
+reasoning (Fig 10),4,baseline,"Lily and Ben are having an argument. They are trying to decide between the park and the swimming pool. Ben says, ""I want to go to the park"". Lily says",", ""No, I want to go to the park. I want to swim in the pool."" They pull and tug at each other. They are not happy.
+
+Mom hears them and comes",
+reasoning (Fig 10),5,baseline,"Jack's mother was not home, and his father was at home. When Jack came home, he said hello to"," his mother and asked her if he could go to the park. His mother said yes, and Jack was so excited.
+
+When Jack got to the park, he saw a big tree. He",
+reasoning (Fig 10),6,baseline,"Lily doesn't like swimming. When her father wants to take her to the swimming pool, she says"," no. She says she wants to stay home and play with her toys. She says she does not want to swim.
+
+Her father is sad. He says he loves Lily and she is his",
+reasoning (Fig 10),7,baseline,Both Ben and Lily wanted cake. Father said that there was only one piece of cake left. They," both reached for it at the same time.
+
+But then, a big dog came running towards them. It barked loudly and jumped on the table. It grabbed the cake with its teeth and",
+reasoning (Fig 10),8,baseline,"Ben went to visit Lily in her house, but she was not at home. Ben knocked on the door,"," but Lily did not answer. He was very sad. He thought Lily did not want to play with him.
+
+Lily heard Ben's voice and felt sorry for him. She opened the door",
+context-tracking (Fig 11),0,baseline,"""Hi Jane, have you seen Alice? I can't find her anywhere"", said Jack.","
+
+""Yes, I have a surprise for you,"" said Jane.
+
+Jack was so excited. He ran to the kitchen and came back with a big bowl of ice cream.
+
+",
+context-tracking (Fig 11),1,baseline,"Max had two dogs. One was white and the other was black. Max walked up the street and saw a kid with a dog. He told the kid, ""I see you have a Brown dog. I also have"," a dog. His name is Spot."" The kid said, ""Hi, Spot. I like your dog. Can I pet him?"" Max said, ""Sure, you can. His name is Spot",
+context-tracking (Fig 11),2,baseline,"Anne had a piece of candy in her left pocket and a piece of chocolate in her right pocket. Anne's mom asked her, ""Anne, what is that you have in your left pocket?""","
+
+Anne smiled and said, ""It's a piece of candy, mommy!""
+
+Her mom smiled and said, ""That's right, Anne. You can have it!""
+
+",
+context-tracking (Fig 11),3,baseline,Alice had both an apple and a carrot in her bag. She took the apple out of the bag and gave it to Jack. She reached into the bag again and took," out a big, juicy apple.
+
+Jack was so happy and said, ""Thank you, Alice! You are so kind.""
+
+Alice smiled and said, ""You're welcome. I",
+context-tracking (Fig 11),4,baseline,"Alice and Jack walked up the street and met a girl in a red dress. The girl said to them, ""Hi, I'm Jane. What are your names?""","
+
+Alice said, ""I'm Alice. I'm Alice.""
+
+Jack said, ""I'm Jack. I'm three years old.""
+
+Alice said, ""I'm Lucy.",
+context-tracking (Fig 11),5,baseline,"Diva was hungry, and wanted to bake a cake, but she didn't have any sugar at home, so she decided to go ask around. She started walking and met a squirrel. She asked the squirrel, ""Would you happen"," to make a cake?"" The squirrel said, ""Yes, I can!""
+
+Lily was happy and went home to bake a cake. She mixed the ingredients and put the cake in the oven",
+factual (Fig 9),0,looped,Alice was so tired when she got back home so she went, straight to bed. She had a wonderful dream about the magical garden and all the wonderful things she could do there.,
+factual (Fig 9),1,looped,"Jack and Lily saw a rainbow after a rainy day. They were amazed by the colors. Jack said, ""Look, Lily. A rainbow has"," come to life!"" Lily smiled and said, ""Yes, Jack. It's so pretty.""
+
+As they walked home, they saw a man who looked sad. Lily asked him, ""Why",
+factual (Fig 9),2,looped,"Jack and Lily liked to watch the moon at night. They noticed that the moon changed its shape every night. Sometimes the moon was big and round, and sometimes it was"," small and round.
+
+One night, they saw a big, round, round moon in the sky. It was very bright and shiny. They wondered what it was and how it got so high",
+factual (Fig 9),3,looped,"Jack wanted to read a book, so he went to", the library. He looked around and saw a big book with lots of words. He picked it up and opened it. It was full of pictures and words. He read the words and he was so,
+factual (Fig 9),4,looped,"""Can cows fly?"", Alice asked her mother.","
+
+""Yes, of course,"" her mother said. ""But be careful, the cows can be dangerous.""
+
+Alice nodded and watched the cows as they walked around the farm. She saw",
+factual (Fig 9),5,looped,"""What do birds like to eat?"", Tom asked his mother.","
+
+""They like to eat worms,"" his mother replied.
+
+Tom was very excited. He wanted to try something new. He asked his mother if he could have a worm.
+
+",
+factual (Fig 9),6,looped,"""What language do they speak in France?"", Tom asked his mother",".
+
+""They speak different languages,"" she replied.
+
+Tom was amazed. He wanted to learn more languages.
+
+""Can I learn more languages?"" he asked.
+
+His",
+factual (Fig 9),7,looped,"If I throw a ball up in the air, eventually it will"," come down.""
+
+The little girl was excited and she ran to the tree. She threw the ball up in the air and it came down. She was so happy and she thanked the tree for",
+factual (Fig 9),8,looped,"It was winter and cold outside so his mother told him, ""You should"," stay inside and play with your toys.""
+
+But Jack was too excited and he didn't listen. He ran outside and started playing with his toys. Suddenly, he heard a loud noise and he",
+reasoning (Fig 10),0,looped,"Lily likes cats and dogs. She asked her mom for a dog and her mom said no, so instead she asked"," her dad for a dog. Her dad said yes and gave her a dog. Lily was happy and hugged her dog.
+
+But then, Lily saw a cat in the garden. The cat was",
+reasoning (Fig 10),1,looped,"Jack told Mary, ""If you give me your banana, I'll give you my apple"". Mary gave Jack her Banana so"," he could have his apple.
+
+Jack was so happy that he gave Mary a big hug. He said, ""Thank you for giving me your apple. You are so kind.""
+
+Mary",
+reasoning (Fig 10),2,looped,"On weekends Jack went to visit his grandmother whereas on weekdays he would go to school. Last weekend, when Jack was on his way to"," school, he noticed something strange. His grandmother had a big, red balloon in her hands.
+
+Jack asked his grandmother, ""What is that?""
+
+His grandmother smiled and said, """,
+reasoning (Fig 10),3,looped,Lily and Ben were having an argument. Ben said that cake is much better than ice cream and Lily said that, ice cream is better than ice cream and Ben said that ice cream is better than ice cream and Lily said that ice cream is better than ice cream and Ben said that ice cream is better than ice cream,
+reasoning (Fig 10),4,looped,"Lily and Ben are having an argument. They are trying to decide between the park and the swimming pool. Ben says, ""I want to go to the park"". Lily says",", ""No, I want to go to the pond."" They pull and tug on the ball. They are not happy.
+
+Mom hears them and comes to see what is wrong. She says",
+reasoning (Fig 10),5,looped,"Jack's mother was not home, and his father was at home. When Jack came home, he said hello to"," his father and his father. His father said, ""Jack, I have something for you. I want you to have it.""
+
+Jack was so excited. He asked, ""What is it",
+reasoning (Fig 10),6,looped,"Lily doesn't like swimming. When her father wants to take her to the swimming pool, she says",", ""No, I don't want to go. I want to stay here.""
+
+Her father says, ""Lily, you have to go. It's not safe to swim in the",
+reasoning (Fig 10),7,looped,Both Ben and Lily wanted cake. Father said that there was only one piece of cake left. They," both reached for the cake and pulled it hard. The cake fell on the floor and broke into pieces.
+
+""Oh no!"" Ben and Lily said. They looked at the cake and felt sad",
+reasoning (Fig 10),8,looped,"Ben went to visit Lily in her house, but she was not at home. Ben knocked on the door,"," but Lily did not answer. He went to the kitchen, but Lily was not there. He went to the garden, but Lily was not there. He went to the garden, but Lily was not",
+context-tracking (Fig 11),0,looped,"""Hi Jane, have you seen Alice? I can't find her anywhere"", said Jack.","
+
+""I'm sorry, Jack. I can't find her anywhere,"" said Jane.
+
+Jack thought for a moment and then said, ""I know! Let's look together.""
+",
+context-tracking (Fig 11),1,looped,"Max had two dogs. One was white and the other was black. Max walked up the street and saw a kid with a dog. He told the kid, ""I see you have a Brown dog. I also have"," a dog.""
+
+The kid smiled and said, ""Thank you, Max. You are very kind."" Max wagged his tail and barked happily. He was happy to have a new friend",
+context-tracking (Fig 11),2,looped,"Anne had a piece of candy in her left pocket and a piece of chocolate in her right pocket. Anne's mom asked her, ""Anne, what is that you have in your left pocket?""","
+
+Anne smiled and said, ""It's candy!""
+
+Anne's mom smiled and said, ""That's right! You can eat it if you want.""
+
+Anne was so happy",
+context-tracking (Fig 11),3,looped,Alice had both an apple and a carrot in her bag. She took the apple out of the bag and gave it to Jack. She reached into the bag again and took," out the apple. She gave it to Jack and said, ""Here, you can have this apple.""
+
+Jack was so happy and thanked Alice. He took the apple and ate it. It",
+context-tracking (Fig 11),4,looped,"Alice and Jack walked up the street and met a girl in a red dress. The girl said to them, ""Hi, I'm Jane. What are your names?""","
+
+Alice and Jack said, ""We're Alice and Jack. We're playing together.""
+
+Jane said, ""That's nice. I'm Jane. I like playing with friends.""
+",
+context-tracking (Fig 11),5,looped,"Diva was hungry, and wanted to bake a cake, but she didn't have any sugar at home, so she decided to go ask around. She started walking and met a squirrel. She asked the squirrel, ""Would you happen"," to bake a cake with me?"" The squirrel said, ""Yes, I do!""
+
+So, Dolly and the squirrel baked a cake together. They mixed the ingredients and put the cake in",
+factual (Fig 9),0,mdlm,Alice was so tired when she got back home so she went," to bed. She was so tired that she had been so tired. 
+
+Alice was so tired that she had to get up. She was so tired that she had to go to bed.",
+factual (Fig 9),1,mdlm,"Jack and Lily saw a rainbow after a rainy day. They were amazed by the colors. Jack said, ""Look, Lily. A rainbow has"," a rainbow!""
+
+Lily said, ""Yes, it is. It's a rainbow. It's very pretty.""
+
+Jack said, ""Yes, it is. It's very pretty",
+factual (Fig 9),2,mdlm,"Jack and Lily liked to watch the moon at night. They noticed that the moon changed its shape every night. Sometimes the moon was big and round, and sometimes it was"," different.
+
+One night, Jack and Lily went to bed and looked at the moon. It was so big and bright, it was so pretty. Jack and Lily loved to look at the moon",
+factual (Fig 9),3,mdlm,"Jack wanted to read a book, so he went to"," the library and found a book. He read the book and read the book.
+
+When he got home, he read the book and read the book. He read the book and saw a picture",
+factual (Fig 9),4,mdlm,"""Can cows fly?"", Alice asked her mother.","
+
+""No, honey, we can't feed the chickens,"" her mother said.
+
+Alice was sad, but she knew her mother was right. She decided to feed the chickens and feed",
+factual (Fig 9),5,mdlm,"""What do birds like to eat?"", Tom asked his mother.","
+
+""They are good for you,"" his mother said.
+
+""Yes, they are good. They are good for you,"" his mother said.
+
+""Yes, they are good",
+factual (Fig 9),6,mdlm,"""What language do they speak in France?"", Tom asked his mother",".
+
+""They are a different language,"" his mother said.
+
+""They are a different language,"" Tom said.
+
+""They are a different language,"" his mother said.
+",
+factual (Fig 9),7,mdlm,"If I throw a ball up in the air, eventually it will"," fly away.""
+
+The boy was so excited and he started to throw the ball in the air. He threw it in the air and threw it in the air. The ball flew high in the",
+factual (Fig 9),8,mdlm,"It was winter and cold outside so his mother told him, ""You should"," go outside and play in the snow.""
+
+The boy was sad and said, ""But I want to stay outside and play in the snow!"" But his mother said, ""No, you can",
+reasoning (Fig 10),0,mdlm,"Lily likes cats and dogs. She asked her mom for a dog and her mom said no, so instead she asked"," her mom if she could have one. Her mom said yes, but only if she promised to be good and not eat it.
+
+Lily was sad, but she knew her mom was right",
+reasoning (Fig 10),1,mdlm,"Jack told Mary, ""If you give me your banana, I'll give you my apple"". Mary gave Jack her Banana so"," she gave him the banana.
+
+Jack was so happy and he thanked Mary for being so kind. From then on, Jack and Mary were the best of friends. They played together every day and",
+reasoning (Fig 10),2,mdlm,"On weekends Jack went to visit his grandmother whereas on weekdays he would go to school. Last weekend, when Jack was on his way to"," the park, he would play on the swings and slide down the slide. He was so happy that he was able to visit the park.
+
+On one day, Jack's grandmother asked him if",
+reasoning (Fig 10),3,mdlm,Lily and Ben were having an argument. Ben said that cake is much better than ice cream and Lily said that, it was not good for them. She said that cake was good and that they should share it with each other. She said that they should share and be kind to each other. She said that they,
+reasoning (Fig 10),4,mdlm,"Lily and Ben are having an argument. They are trying to decide between the park and the swimming pool. Ben says, ""I want to go to the park"". Lily says",", ""No, Ben, it is my turn. You can't have to go to the park. You have to be kind and share. You have to be kind and share. You have to",
+reasoning (Fig 10),5,mdlm,"Jack's mother was not home, and his father was at home. When Jack came home, he said hello to"," the mother.
+
+The mother was so happy to see Jack and she thanked him for being so kind. She gave him a big hug and said, ""I'm so glad you're here.",
+reasoning (Fig 10),6,mdlm,"Lily doesn't like swimming. When her father wants to take her to the swimming pool, she says"," she has to stay in the pool.
+
+Lily feels sad and angry. She says she wants to swim in the pool, but her father says no. She says she has to stay in",
+reasoning (Fig 10),7,mdlm,Both Ben and Lily wanted cake. Father said that there was only one piece of cake left. They," said they could have one piece each. Ben and Lily were sad. They did not want to eat the cake. They thought it was too hard.
+
+Their mom and dad were angry. They",
+reasoning (Fig 10),8,mdlm,"Ben went to visit Lily in her house, but she was not at home. Ben knocked on the door,"," and Lily answered him.
+
+""Ben, what are you doing?"" Lily asked.
+
+""I'm sorry, Lily. I didn't mean to scare you. I just wanted to see",
+context-tracking (Fig 11),0,mdlm,"""Hi Jane, have you seen Alice? I can't find her anywhere"", said Jack.","
+
+Jane was very sad and she asked Jack why he was sad. Jack said he had lost his toy and he couldn't find it. Jane was very sad and asked Jack why he was sad",
+context-tracking (Fig 11),1,mdlm,"Max had two dogs. One was white and the other was black. Max walked up the street and saw a kid with a dog. He told the kid, ""I see you have a Brown dog. I also have"," a dog. He is brown and fluffy. He likes to play with you.""
+
+The kid smiled and said, ""Yes, Max. He is my dog. He is my dog. He",
+context-tracking (Fig 11),2,mdlm,"Anne had a piece of candy in her left pocket and a piece of chocolate in her right pocket. Anne's mom asked her, ""Anne, what is that you have in your left pocket?"""," Anne smiled and said, ""I'm sorry, mom. I didn't know it was yours.""
+
+Her mom smiled and said, ""It's okay, Anne. I'm glad you're",
+context-tracking (Fig 11),3,mdlm,Alice had both an apple and a carrot in her bag. She took the apple out of the bag and gave it to Jack. She reached into the bag again and took," a bite.
+
+Jack smiled and said, ""That was delicious! I'm so happy I could share it with you.""
+
+Alice smiled and said, ""You're welcome, Jack.",
+context-tracking (Fig 11),4,mdlm,"Alice and Jack walked up the street and met a girl in a red dress. The girl said to them, ""Hi, I'm Jane. What are your names?""","
+
+The girl smiled and said, ""My name is Alice. What's your name?""
+
+The girl smiled and said, ""My name is Alice. What's your name?""
+
+",
+context-tracking (Fig 11),5,mdlm,"Diva was hungry, and wanted to bake a cake, but she didn't have any sugar at home, so she decided to go ask around. She started walking and met a squirrel. She asked the squirrel, ""Would you happen"," to me?"" The squirrel said, ""Yes, I can help you bake a cake. Do you want to help me bake a cake?"" The squirrel was very happy and said, ""Yes, please",
+factual (Fig 9),0,looped_mdlm,Alice was so tired when she got back home so she went," to sleep. 
+
+The next morning, Alice woke up and was safe again. She was so happy that she had been able to explore the world. She was so glad that she had been",
+factual (Fig 9),1,looped_mdlm,"Jack and Lily saw a rainbow after a rainy day. They were amazed by the colors. Jack said, ""Look, Lily. A rainbow has"," a rainbow on it. Let's do it!"" 
+
+Lily said, ""Yes, let's do it!"" They put the rainbow on the wall and hung it on the wall. They",
+factual (Fig 9),2,looped_mdlm,"Jack and Lily liked to watch the moon at night. They noticed that the moon changed its shape every night. Sometimes the moon was big and round, and sometimes it was"," very bright.
+
+One night, Jack and Lily decided to have a game. They decided to play a game of tag. They had to race each other around the garden. They would run and",
+factual (Fig 9),3,looped_mdlm,"Jack wanted to read a book, so he went to"," the library.
+
+At the library, Jack found a book. He wanted to read it, but he was too scared. He started to cry.
+
+Suddenly, he heard a voice.",
+factual (Fig 9),4,looped_mdlm,"""Can cows fly?"", Alice asked her mother.","
+
+""No, we can't. They are too busy,"" her mother said.
+
+Alice was sad. She wanted to see the cows fly. She wanted to see them fly.
+",
+factual (Fig 9),5,looped_mdlm,"""What do birds like to eat?"", Tom asked his mother.","
+
+""They are eating from the tree,"" his mother replied.
+
+Tom was curious. He wanted to see the birds, so he asked his mother if he could touch them.
+
+",
+factual (Fig 9),6,looped_mdlm,"""What language do they speak in France?"", Tom asked his mother",".
+
+""The language is called language,"" his mother explained.
+
+Tom was curious. He wanted to learn the language, so he asked his mother if he could learn it.
+
+",
+factual (Fig 9),7,looped_mdlm,"If I throw a ball up in the air, eventually it will"," fly away."" 
+
+The bird was so happy and thanked the boy for his help. From that day on, the bird was no longer lonely and never lonely again.",
+factual (Fig 9),8,looped_mdlm,"It was winter and cold outside so his mother told him, ""You should"," be careful, Jack. You should always be careful when you play outside.""
+
+Jack nodded and said, ""I will be careful. I will be careful.""
+
+His mother smiled and said",
+reasoning (Fig 10),0,looped_mdlm,"Lily likes cats and dogs. She asked her mom for a dog and her mom said no, so instead she asked"," her mom if she could have a dog like that.
+
+Lily was sad and angry. She did not want to have a dog like that. She wanted to have a dog like her mom",
+reasoning (Fig 10),1,looped_mdlm,"Jack told Mary, ""If you give me your banana, I'll give you my apple"". Mary gave Jack her Banana so"," he could have his banana. 
+
+Jack was so happy that he thanked Mary for being so kind. He thanked Mary for her help and they both went home. 
+
+The end.",
+reasoning (Fig 10),2,looped_mdlm,"On weekends Jack went to visit his grandmother whereas on weekdays he would go to school. Last weekend, when Jack was on his way to"," school, he was excited to see his grandmother.
+
+One day, Jack decided to go to school. He was so excited to learn something new. He asked his grandmother if he could go to",
+reasoning (Fig 10),3,looped_mdlm,Lily and Ben were having an argument. Ben said that cake is much better than ice cream and Lily said that," it is better than cake. Ben said that cake was better and that he could have it.
+
+Lily and Ben were sad and angry. They wanted to eat the cake, but it was",
+reasoning (Fig 10),4,looped_mdlm,"Lily and Ben are having an argument. They are trying to decide between the park and the swimming pool. Ben says, ""I want to go to the park"". Lily says",", ""No, I want to go. I want to see the park and the ducks and the fish. I want to go to the park and see the ducks and the fish."" Ben says,",
+reasoning (Fig 10),5,looped_mdlm,"Jack's mother was not home, and his father was at home. When Jack came home, he said hello to"," his mother and said hello.
+
+His mother smiled and said, ""It's okay, Jack. I'm glad you're here.""
+
+Jack smiled and said, ""I'm glad you",
+reasoning (Fig 10),6,looped_mdlm,"Lily doesn't like swimming. When her father wants to take her to the swimming pool, she says",", ""Lily, you have to listen to me. You have to listen to me. You have to listen to me. You have to listen to me. You have to listen to me.",
+reasoning (Fig 10),7,looped_mdlm,Both Ben and Lily wanted cake. Father said that there was only one piece of cake left. They," said it was not a cake, but it was a cake.
+
+Ben and Lily were sad. They wanted to eat the cake. They wanted to eat the cake. They wanted to eat the",
+reasoning (Fig 10),8,looped_mdlm,"Ben went to visit Lily in her house, but she was not at home. Ben knocked on the door,"," and Lily opened the door.
+
+""Lily, what are you doing?"" Ben asked.
+
+""I'm sorry, Ben. I didn't mean to scare you,"" Lily said.",
+context-tracking (Fig 11),0,looped_mdlm,"""Hi Jane, have you seen Alice? I can't find her anywhere"", said Jack.","
+
+Jane was very sad and said, ""I don't know where to go. I don't know where to go.""
+
+Jack was very kind and said, ""Don't worry,",
+context-tracking (Fig 11),1,looped_mdlm,"Max had two dogs. One was white and the other was black. Max walked up the street and saw a kid with a dog. He told the kid, ""I see you have a Brown dog. I also have", a dog. I have a dog. I have a dog. I have a dog. I have a dog. I have a dog. I have a dog. I have a dog. I have,
+context-tracking (Fig 11),2,looped_mdlm,"Anne had a piece of candy in her left pocket and a piece of chocolate in her right pocket. Anne's mom asked her, ""Anne, what is that you have in your left pocket?""","
+
+Anne smiled and said, ""I don't know, mommy. I just want to have some candy.""
+
+Anne's mom smiled and said, ""That's right, Anne.",
+context-tracking (Fig 11),3,looped_mdlm,Alice had both an apple and a carrot in her bag. She took the apple out of the bag and gave it to Jack. She reached into the bag again and took," the apple.
+
+Jack was so happy that he had found the apple. He thanked Alice for her help and they both went back to the park.",
+context-tracking (Fig 11),4,looped_mdlm,"Alice and Jack walked up the street and met a girl in a red dress. The girl said to them, ""Hi, I'm Jane. What are your names?""","
+
+Alice and Jack said, ""My name is Jack. What's your name?""
+
+The girl said, ""My name is Jane. What's your name?""
+
+Alice and Jack",
+context-tracking (Fig 11),5,looped_mdlm,"Diva was hungry, and wanted to bake a cake, but she didn't have any sugar at home, so she decided to go ask around. She started walking and met a squirrel. She asked the squirrel, ""Would you happen"," to bake me a cake?"" The squirrel smiled and said, ""Yes, please!"" 
+
+Diko and the squirrel baked the cake together. They were so happy and thanked D Sylvia for being",

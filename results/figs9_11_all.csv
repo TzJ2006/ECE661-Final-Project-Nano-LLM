@@ -1,732 +1,732 @@
-figure,prompt_id,model,prompt,completion,label
+figure,prompt_id,model,prompt,completion,label,label_gemini,reason_gemini
 factual (Fig 9),0,1M,Alice was so tired when she got back home so she went," to bed. She was so happy and she was so happy to have her new friend.
-",
+",,success,"The continuation correctly provides the commonsense action of going ""to bed"" when someone is tired at home."
 factual (Fig 9),1,1M,"Jack and Lily saw a rainbow after a rainy day. They were amazed by the colors. Jack said, ""Look, Lily. A rainbow has"," a rainbow!"" Lily said, ""Yes, it is so pretty!"" They both laughed and played together all day.
-",
+",,failure,"The continuation nonsensically completes the sentence by saying ""a rainbow has a rainbow!"" instead of naming colors or the number of colors."
 factual (Fig 9),2,1M,"Jack and Lily liked to watch the moon at night. They noticed that the moon changed its shape every night. Sometimes the moon was big and round, and sometimes it was"," too big and it was just a star.
 
-One day, the moon was very big and the moon was very big and strong. Lily and Lily were so happy and excited to see the moon",
+One day, the moon was very big and the moon was very big and strong. Lily and Lily were so happy and excited to see the moon",,failure,"The continuation fails to provide a contrasting moon shape (like small, thin, or a crescent) and instead makes the nonsensical claim that it was ""too big and it was just a star."""
 factual (Fig 9),3,1M,"Jack wanted to read a book, so he went to"," the library. He saw a book about a princess and a princess. He was so happy and he wanted to read it.
 
-But then, a big dog came and tried to pull the book",
+But then, a big dog came and tried to pull the book",,success,The continuation correctly identifies the library as a commonsense place to go to read a book.
 factual (Fig 9),4,1M,"""Can cows fly?"", Alice asked her mother.","
 
 ""Sure, but be careful,"" her mother said. ""But don't be too big.""
 
-Alice was happy to have her friend. She ran to the farm and saw a big",
+Alice was happy to have her friend. She ran to the farm and saw a big",,failure,"The continuation incorrectly states that cows can fly (""Sure""), violating basic commonsense."
 factual (Fig 9),5,1M,"""What do birds like to eat?"", Tom asked his mother.","
 
 ""I don't know, but it's too dangerous,"" his mother said.
 
-Tom was so excited. He ran to the park and saw a big tree. He wanted to climb",
+Tom was so excited. He ran to the park and saw a big tree. He wanted to climb",,failure,"The continuation fails to answer the question about what birds eat and instead offers a nonsensical statement that it is ""too dangerous."""
 factual (Fig 9),6,1M,"""What language do they speak in France?"", Tom asked his mother",".
 
-""They are very loud and loud,"" his mother said. ""It's a very loud noise. They can't hear us. They are not happy. They are not scared anymore.""",
+""They are very loud and loud,"" his mother said. ""It's a very loud noise. They can't hear us. They are not happy. They are not scared anymore.""",,failure,"The mother gives a nonsensical answer (""very loud"") instead of naming the language spoken in France (French)."
 factual (Fig 9),7,1M,"If I throw a ball up in the air, eventually it will"," be fun.
 
 The little girl was so happy. She ran to the park and started to play. She was so happy that she had a new friend.
 
-The little girl was so",
+The little girl was so",,failure,"The continuation states it will ""be fun,"" which fails to provide the expected commonsense fact that the ball will come back down."
 factual (Fig 9),8,1M,"It was winter and cold outside so his mother told him, ""You should"," not go outside and get wet.""
 
-Timmy was sad and he didn't want to go outside. He asked his mother if he could go outside and play. His mother said, ""No",
+Timmy was sad and he didn't want to go outside. He asked his mother if he could go outside and play. His mother said, ""No",,partial,"Telling a child not to go outside and get wet in the cold is plausible advice, though it misses the expected commonsense answer of wearing warm clothes."
 reasoning (Fig 10),0,1M,"Lily likes cats and dogs. She asked her mom for a dog and her mom said no, so instead she asked"," her to play with her. Lily was sad and didn't want to play with her mom.
 
-Her mom said, ""Lily, you need to be careful and not play with your toys",
+Her mom said, ""Lily, you need to be careful and not play with your toys",,partial,"Asking her mom to play is a plausible real-world action, though the prompt sets up the clear expectation that she would ask for a cat instead."
 reasoning (Fig 10),1,1M,"Jack told Mary, ""If you give me your banana, I'll give you my apple"". Mary gave Jack her Banana so"," he said, ""Thank you, Jack. I'm glad you're happy.""
 
 Jack smiled and said, ""I'm glad you're so kind. I'm glad you're happy.""
-",
+",,failure,The continuation fails to fulfill the promised exchange (giving Mary the apple) and nonsensically has Jack thank himself.
 reasoning (Fig 10),2,1M,"On weekends Jack went to visit his grandmother whereas on weekdays he would go to school. Last weekend, when Jack was on his way to"," school, he was very excited. He wanted to go to school and play with his grandpa.
 
-When Jack got to the school, he saw a big, shiny toy car. He was",
+When Jack got to the school, he saw a big, shiny toy car. He was",,failure,"The continuation states Jack was on his way to school last weekend, which directly contradicts the prompt stating he visits his grandmother on weekends and goes to school on weekdays."
 reasoning (Fig 10),3,1M,Lily and Ben were having an argument. Ben said that cake is much better than ice cream and Lily said that," they were going to have a picnic. They both wanted to have a picnic, but they were too busy to wait.
 
-The next day, they went to the park to play. They saw",
-reasoning (Fig 10),4,1M,"Lily and Ben are having an argument. They are trying to decide between the park and the swimming pool. Ben says, ""I want to go to the park"". Lily says",", ""No, Ben, you can't. You have to be careful. You have to be careful. You have to be careful and not to play. You have to be careful and respectful.""",
+The next day, they went to the park to play. They saw",,failure,The continuation ignores the setup of the argument about cake versus ice cream and introduces an unrelated statement about having a picnic.
+reasoning (Fig 10),4,1M,"Lily and Ben are having an argument. They are trying to decide between the park and the swimming pool. Ben says, ""I want to go to the park"". Lily says",", ""No, Ben, you can't. You have to be careful. You have to be careful. You have to be careful and not to play. You have to be careful and respectful.""",,partial,"Lily disagrees with Ben as expected in an argument, but fails to express the logical counter-preference of wanting to go to the swimming pool."
 reasoning (Fig 10),5,1M,"Jack's mother was not home, and his father was at home. When Jack came home, he said hello to"," Jack and his mom. Jack was so happy and thanked his mother.
 
-Jack's mom said, ""Jack, you are such a good friend. You are very kind and kind."" Jack smiled",
+Jack's mom said, ""Jack, you are such a good friend. You are very kind and kind."" Jack smiled",,failure,"The continuation is illogical because Jack says hello to himself and his mother, who the prompt explicitly stated was not home, rather than his father."
 reasoning (Fig 10),6,1M,"Lily doesn't like swimming. When her father wants to take her to the swimming pool, she says",", ""Lily, you can swim in the pool. It is fun!""
 
-Lily and Ben are scared. They want to swim in the pool. They run to the pool and splash",
+Lily and Ben are scared. They want to swim in the pool. They run to the pool and splash",,failure,"The continuation has Lily speaking to herself in the third person and saying swimming is fun, which contradicts the prompt stating that she dislikes swimming and is the one speaking."
 reasoning (Fig 10),7,1M,Both Ben and Lily wanted cake. Father said that there was only one piece of cake left. They," said that they had to wait for the cake to bake.
 
-Lily and Ben did not want to wait. They wanted to make the cake look nice. They wanted to make the cake look",
+Lily and Ben did not want to wait. They wanted to make the cake look nice. They wanted to make the cake look",,failure,Having to wait for the cake to bake does not logically follow from there being one piece of cake left.
 reasoning (Fig 10),8,1M,"Ben went to visit Lily in her house, but she was not at home. Ben knocked on the door,"," but it was too late. Lily was sad and angry. She wanted to play with her toys, but she was too small. She had a big smile on her face and a smile.
 
-",
+",,partial,"Saying ""it was too late"" is somewhat plausible because Lily had already left the house, though the expected logical result is simply that no one answered the door."
 context-tracking (Fig 11),0,1M,"""Hi Jane, have you seen Alice? I can't find her anywhere"", said Jack.","
 
-Jane was so excited. She opened her eyes and saw a big, shiny object. It was a shiny object. Jane was so excited. She ran to her mom and said, ""Mom",
+Jane was so excited. She opened her eyes and saw a big, shiny object. It was a shiny object. Jane was so excited. She ran to her mom and said, ""Mom",,failure,The continuation completely ignores Jack's direct question and fails to stay consistent with the conversational scene set up by the prompt.
 context-tracking (Fig 11),1,1M,"Max had two dogs. One was white and the other was black. Max walked up the street and saw a kid with a dog. He told the kid, ""I see you have a Brown dog. I also have"," a pet dog.""
 
 Max was scared. He wanted to pet the dog, but he was scared. He said, ""Don't be scared, Max. I will be your friend.""
-",
+",,partial,"The continuation correctly recalls that Max has a pet dog, but fails to specify that he has two dogs (one white and one black) as set up in the prompt."
 context-tracking (Fig 11),2,1M,"Anne had a piece of candy in her left pocket and a piece of chocolate in her right pocket. Anne's mom asked her, ""Anne, what is that you have in your left pocket?""","
 
 Anne was so excited and said, ""I want to buy some candy!""
 
-Her mom smiled and said, ""Yes, Anne. I'm so happy to buy the candy and I",
+Her mom smiled and said, ""Yes, Anne. I'm so happy to buy the candy and I",,failure,Anne states she wants to buy candy instead of answering her mom's question about the candy already in her left pocket.
 context-tracking (Fig 11),3,1M,Alice had both an apple and a carrot in her bag. She took the apple out of the bag and gave it to Jack. She reached into the bag again and took," the apple. She was so happy!
 
-Jack was so happy that he had found the apple. He thanked the apple and went back home. He was so happy that he had found the apple",
+Jack was so happy that he had found the apple. He thanked the apple and went back home. He was so happy that he had found the apple",,failure,"Alice cannot take the apple out of the bag again because she already took it out and gave it to Jack, leaving only the carrot."
 context-tracking (Fig 11),4,1M,"Alice and Jack walked up the street and met a girl in a red dress. The girl said to them, ""Hi, I'm Jane. What are your names?""","
 
 The girl said, ""I'm Ben. I'm playing with you. I'm going to play with you.""
 
-Tom and Lucy were very happy. They played together and had lots",
+Tom and Lucy were very happy. They played together and had lots",,failure,"Instead of Alice and Jack giving their names, the continuation has a girl introduce herself as ""Ben,"" which contradicts the characters set up in the prompt."
 context-tracking (Fig 11),5,1M,"Diva was hungry, and wanted to bake a cake, but she didn't have any sugar at home, so she decided to go ask around. She started walking and met a squirrel. She asked the squirrel, ""Would you happen"," now?"" The squirrel said, ""Yes, please!""
 
-The squirrel was so happy to have found the cake. He thanked the squirrel and said, ""Thank you, I'm glad you're",
+The squirrel was so happy to have found the cake. He thanked the squirrel and said, ""Thank you, I'm glad you're",,failure,"The continuation ""now?"" makes the question nonsensical and completely drops the established goal of asking the squirrel for sugar."
 factual (Fig 9),0,3M,Alice was so tired when she got back home so she went," to bed. She was so tired that she fell asleep.
 
-When she woke up, she was so tired that she had to go to bed. She was so tired from all the running she",
+When she woke up, she was so tired that she had to go to bed. She was so tired from all the running she",,success,Going to bed is the correct commonsense action when someone gets home and is very tired.
 factual (Fig 9),1,3M,"Jack and Lily saw a rainbow after a rainy day. They were amazed by the colors. Jack said, ""Look, Lily. A rainbow has"," so many colors. Let's go see it.""
 
-Lily and Jack went to the rainbow and saw a rainbow. They were so happy and said, ""Wow, that's so pretty!""",
+Lily and Jack went to the rainbow and saw a rainbow. They were so happy and said, ""Wow, that's so pretty!""",,partial,"The continuation makes sense in context (""so many colors""), though it avoids stating the specific factual answer typically tested by this prompt (""seven colors"")."
 factual (Fig 9),2,3M,"Jack and Lily liked to watch the moon at night. They noticed that the moon changed its shape every night. Sometimes the moon was big and round, and sometimes it was"," a little bit smaller.
 
-One night, Jack and Lily were playing in the moon when they heard a loud noise. It was a big, scary monster! Jack and Lily were scared and ran",
-factual (Fig 9),3,3M,"Jack wanted to read a book, so he went to"," the library. He saw a big book with lots of words and he wanted to read it. He asked the library keeper if he could read it. The library keeper said yes, and Jack was very",
+One night, Jack and Lily were playing in the moon when they heard a loud noise. It was a big, scary monster! Jack and Lily were scared and ran",,partial,"The continuation correctly states that the moon appears smaller at times, though it misses the opportunity to describe the contrasting shape (like a crescent or sliver) set up by the prompt."
+factual (Fig 9),3,3M,"Jack wanted to read a book, so he went to"," the library. He saw a big book with lots of words and he wanted to read it. He asked the library keeper if he could read it. The library keeper said yes, and Jack was very",,success,The continuation correctly identifies the library as the commonsense place Jack would go to read a book.
 factual (Fig 9),4,3M,"""Can cows fly?"", Alice asked her mother.","
 
 ""Yes, of course,"" her mother said. ""Let's go to the park and see if we can find some chickens.""
 
-Alice and her mother went to the park. They",
+Alice and her mother went to the park. They",,failure,"The continuation incorrectly states that cows can fly, which violates basic commonsense."
 factual (Fig 9),5,3M,"""What do birds like to eat?"", Tom asked his mother.","
 
 ""I don't know,"" said his mother. ""Let's go and find some more.""
 
-So they went to the park and saw a big tree. Tom was so excited.",
+So they went to the park and saw a big tree. Tom was so excited.",,failure,"The continuation fails to answer the factual question about what birds eat, instead having the character reply ""I don't know."""
 factual (Fig 9),6,3M,"""What language do they speak in France?"", Tom asked his mother",".
 
 ""That's a very special language,"" his mother replied. ""It's a very special language, and it's very special.""
 
-Tom was so excited. He couldn't wait",
+Tom was so excited. He couldn't wait",,failure,"The continuation fails to identify French as the language spoken in France, instead offering a repetitive and uninformative response."
 factual (Fig 9),7,3M,"If I throw a ball up in the air, eventually it will"," be fun!""
 
 The little girl was so excited. She ran to the park and started throwing a ball. She threw the ball up and down, and it flew up into the sky.
-",
+",,failure,"The continuation states the ball will ""be fun"" instead of providing the commonsense fact that it will come back down or fall to the ground."
 factual (Fig 9),8,3M,"It was winter and cold outside so his mother told him, ""You should"," stay inside and have fun inside.""
 
-But Tim didn't listen. He wanted to stay inside and play. He wanted to stay inside and play. So, he decided to stay inside and play",
-reasoning (Fig 10),0,3M,"Lily likes cats and dogs. She asked her mom for a dog and her mom said no, so instead she asked"," her mom. Her mom said no, because she was too young. Lily was sad and angry. She wanted to play with the dog, but her mom said no. She said Lily had to go",
+But Tim didn't listen. He wanted to stay inside and play. He wanted to stay inside and play. So, he decided to stay inside and play",,success,Staying inside is a commonsense recommendation when it is winter and cold outside.
+reasoning (Fig 10),0,3M,"Lily likes cats and dogs. She asked her mom for a dog and her mom said no, so instead she asked"," her mom. Her mom said no, because she was too young. Lily was sad and angry. She wanted to play with the dog, but her mom said no. She said Lily had to go",,failure,"The continuation repeats that she asked ""her mom"" without specifying what she asked for instead (such as a cat) or who else she might have asked (such as her dad)."
 reasoning (Fig 10),1,3M,"Jack told Mary, ""If you give me your banana, I'll give you my apple"". Mary gave Jack her Banana so"," she could eat it. Jack was so happy and thanked Mary for her kindness.
 
 The moral of the story is that it is important to be kind and generous to others.
-",
+",,failure,"The continuation is illogical because Mary gave her banana away, meaning she could no longer eat it, and it completely misses the expected trade for the apple."
 reasoning (Fig 10),2,3M,"On weekends Jack went to visit his grandmother whereas on weekdays he would go to school. Last weekend, when Jack was on his way to"," school, he noticed a big, scary dog. Jack was scared and he started to cry.
 
-His grandmother said, ""Don't worry Jack, I will help you. I will take you",
+His grandmother said, ""Don't worry Jack, I will help you. I will take you",,failure,"The continuation states Jack was going to school on the weekend, contradicting the prompt's premise that he visits his grandmother on weekends and goes to school on weekdays."
 reasoning (Fig 10),3,3M,Lily and Ben were having an argument. Ben said that cake is much better than ice cream and Lily said that," they should share it. Lily and Ben felt sad and angry. They decided to share the cake and make a new cake. They said sorry to each other and hugged.
 
-But then, they",
+But then, they",,failure,"Saying ""they should share it"" does not logically complete an argument where two people are debating whether cake or ice cream is better in general."
 reasoning (Fig 10),4,3M,"Lily and Ben are having an argument. They are trying to decide between the park and the swimming pool. Ben says, ""I want to go to the park"". Lily says",", ""No, I want to go to the pool. It is fun and fun."" Ben says, ""No, it is my turn. You can go with me.""
 
-Lily and",
+Lily and",,success,"Since they are arguing between the park and the pool and Ben chose the park, it follows logically that Lily chooses the pool."
 reasoning (Fig 10),5,3M,"Jack's mother was not home, and his father was at home. When Jack came home, he said hello to"," his father, and he said he was sorry. His father smiled and said he was glad that Jack was feeling better.
 
-Jack was so happy that he had been able to help his father.",
+Jack was so happy that he had been able to help his father.",,success,"The continuation correctly identifies that Jack greets his father, who is the only parent at home."
 reasoning (Fig 10),6,3M,"Lily doesn't like swimming. When her father wants to take her to the swimming pool, she says"," yes. She says she will be careful and not get too close. She says she will be careful and not get too close.
 
-Her father smiles and says he is proud of her. He",
+Her father smiles and says he is proud of her. He",,failure,"The model says ""yes,"" which contradicts the prompt's premise that Lily does not like swimming."
 reasoning (Fig 10),7,3M,Both Ben and Lily wanted cake. Father said that there was only one piece of cake left. They," said that they should not eat the cake. They said that they should not eat the cake. They said that they should not eat the cake. They said they should eat the cake.
 
-Ben",
-reasoning (Fig 10),8,3M,"Ben went to visit Lily in her house, but she was not at home. Ben knocked on the door,"," and Lily's mom came in. She was angry and sad. She said, ""Ben, you are a bad boy. You have to pay for my work. You have to pay for the work",
+Ben",,partial,"Deciding that neither of them should eat the single piece of cake is a plausible resolution to the dilemma, though less expected than sharing it or arguing over it."
+reasoning (Fig 10),8,3M,"Ben went to visit Lily in her house, but she was not at home. Ben knocked on the door,"," and Lily's mom came in. She was angry and sad. She said, ""Ben, you are a bad boy. You have to pay for my work. You have to pay for the work",,partial,"Having Lily's mom answer the door when Lily is not home makes logical sense, though phrasing it as ""came in"" rather than ""came out"" or ""opened the door"" is slightly flawed."
 context-tracking (Fig 11),0,3M,"""Hi Jane, have you seen Alice? I can't find her anywhere"", said Jack."," Jane was very sad and started to cry.
 
 Suddenly, a voice called out, ""Jane, why are you crying? Don't you know where you are going?""
 
-Jane looked up",
-context-tracking (Fig 11),1,3M,"Max had two dogs. One was white and the other was black. Max walked up the street and saw a kid with a dog. He told the kid, ""I see you have a Brown dog. I also have"," a leash."" The dog barked and Max barked. Max barked and barked. The dog barked and barked. Max barked and barked. Max barked and barked",
+Jane looked up",,partial,"The continuation correctly identifies Jane as the person being spoken to, though her sudden crying is a somewhat abrupt reaction rather than a direct answer to Jack's question."
+context-tracking (Fig 11),1,3M,"Max had two dogs. One was white and the other was black. Max walked up the street and saw a kid with a dog. He told the kid, ""I see you have a Brown dog. I also have"," a leash."" The dog barked and Max barked. Max barked and barked. The dog barked and barked. Max barked and barked. Max barked and barked",,failure,"The model fails to recall that Max has two dogs (one white and one black) and instead completes the sentence with an unrelated object (""a leash"")."
 context-tracking (Fig 11),2,3M,"Anne had a piece of candy in her left pocket and a piece of chocolate in her right pocket. Anne's mom asked her, ""Anne, what is that you have in your left pocket?"""," Anne said, ""I'm sorry, Mommy. I didn't know it was yours.""
 
-Anne's mom smiled and said, ""It's okay, Anne. I'm sure you'll",
+Anne's mom smiled and said, ""It's okay, Anne. I'm sure you'll",,partial,"The continuation provides a plausible narrative response, though it dodges directly answering the factual test question (""a piece of candy"")."
 context-tracking (Fig 11),3,3M,Alice had both an apple and a carrot in her bag. She took the apple out of the bag and gave it to Jack. She reached into the bag again and took," out a big apple. She was so happy and ate it all up.
 
-Jack was so happy that he gave Alice a big hug. He said, ""Thank you, Alice. You are",
+Jack was so happy that he gave Alice a big hug. He said, ""Thank you, Alice. You are",,failure,"The model says Alice took out another apple, even though she only had one apple and a carrot in her bag and had already given the apple to Jack."
 context-tracking (Fig 11),4,3M,"Alice and Jack walked up the street and met a girl in a red dress. The girl said to them, ""Hi, I'm Jane. What are your names?""","
 
 Alice said, ""My name is Jane. I'm a girl who lives in the park. Would you like to play with me?""
 
-Alice said, ""Yes, I would love",
+Alice said, ""Yes, I would love",,failure,"The model fails to track character identities, having Alice introduce herself as Jane instead of stating her own name and Jack's."
 context-tracking (Fig 11),5,3M,"Diva was hungry, and wanted to bake a cake, but she didn't have any sugar at home, so she decided to go ask around. She started walking and met a squirrel. She asked the squirrel, ""Would you happen"," to my cake?"" The squirrel said yes and the two of them went to the store.
 
-When they got there, the squirrel said, ""I have a very special cake for you. It",
+When they got there, the squirrel said, ""I have a very special cake for you. It",,failure,"The continuation asks the nonsensical question ""Would you happen to my cake?"" instead of asking the squirrel for sugar as set up by the prompt."
 factual (Fig 9),0,8M,Alice was so tired when she got back home so she went," to bed. She had a dream about the moon and the stars. She dreamed about the moon and the stars.
 
-When she woke up, she was so happy. She had a dream about",
+When she woke up, she was so happy. She had a dream about",,success,"The continuation correctly provides the commonsense action (""to bed"") for someone who is very tired upon returning home."
 factual (Fig 9),1,8M,"Jack and Lily saw a rainbow after a rainy day. They were amazed by the colors. Jack said, ""Look, Lily. A rainbow has"," a lot of colors!"" Lily smiled and said, ""Yes, it's so pretty!""
 
-After a while, Jack and Lily got thirsty. Jack said, ""Let's go get some water",
+After a while, Jack and Lily got thirsty. Jack said, ""Let's go get some water",,partial,"Saying a rainbow has ""a lot of colors"" is plausible and makes sense, though it misses the specific factual answer expected (such as ""seven colors"" or listing the colors)."
 factual (Fig 9),2,8M,"Jack and Lily liked to watch the moon at night. They noticed that the moon changed its shape every night. Sometimes the moon was big and round, and sometimes it was"," small.
 
 One night, they saw a bright light in the sky. It was a comet! It was a big ball of ice and dust. It was very pretty.
 
-""Wow",
+""Wow",,partial,"The continuation says ""small,"" which is a plausible contrast to ""big,"" though it misses specifying the changed shape (like thin or a crescent)."
 factual (Fig 9),3,8M,"Jack wanted to read a book, so he went to"," the library. He saw a book about a big, red dog. He was so excited! He picked it up and started to read.
 
-Jack read and read until he was very tired.",
+Jack read and read until he was very tired.",,success,The continuation correctly identifies the library as a commonsense place to go to read a book.
 factual (Fig 9),4,8M,"""Can cows fly?"", Alice asked her mother.","
 
 ""Yes, sweetheart,"" her mother said. ""But be careful, don't go too close to the road.""
 
-Alice nodded and ran to the road. She was so excited",
+Alice nodded and ran to the road. She was so excited",,failure,"The continuation incorrectly states ""Yes"" in response to whether cows can fly."
 factual (Fig 9),5,8M,"""What do birds like to eat?"", Tom asked his mother.","
 
 ""I don't know,"" his mother replied. ""But I think they are hungry.""
 
-Tom was curious. He asked his mother if he could have a snack. She said yes",
+Tom was curious. He asked his mother if he could have a snack. She said yes",,failure,"The model fails to provide a factual answer about what birds eat (such as seeds or worms), instead having the character reply ""I don't know."""
 factual (Fig 9),6,8M,"""What language do they speak in France?"", Tom asked his mother",".
 
 ""They speak in French,"" his mother replied.
 
-Tom was amazed. He had never heard of a language like this before. He asked his mother if he could learn it.",
+Tom was amazed. He had never heard of a language like this before. He asked his mother if he could learn it.",,success,The continuation correctly states that the language spoken in France is French.
 factual (Fig 9),7,8M,"If I throw a ball up in the air, eventually it will"," be gone.""
 
 The little girl was so excited. She ran to the ball and threw it as hard as she could. The ball flew up into the sky and disappeared.
 
-The little",
+The little",,failure,"The continuation states the ball will ""be gone"" instead of the commonsense physical fact that it will fall back down."
 factual (Fig 9),8,8M,"It was winter and cold outside so his mother told him, ""You should"," be careful and stay inside until the snow melts.""
 
-The little boy was sad, but he listened to his mother and stayed inside. He was still excited to go outside and play in the snow",
+The little boy was sad, but he listened to his mother and stayed inside. He was still excited to go outside and play in the snow",,partial,"Telling the child to stay inside when it is cold is plausible, though the expected commonsense answer is usually to wear warm clothes like a coat."
 reasoning (Fig 10),0,8M,"Lily likes cats and dogs. She asked her mom for a dog and her mom said no, so instead she asked"," her dad. Her dad said no, because cats are not pets. He said they are pets and they need to live.
 
-Lily was sad and angry. She did not want to play",
+Lily was sad and angry. She did not want to play",,partial,"Asking her dad instead of her mom is a plausible next action, though the prompt sets up the expectation that she would ask for a cat instead of a dog."
 reasoning (Fig 10),1,8M,"Jack told Mary, ""If you give me your banana, I'll give you my apple"". Mary gave Jack her Banana so"," he could have it.
 
 Jack was so happy and thanked Mary. He said, ""Thank you so much! I'm so glad I found my banana.""
 
-Mary smiled and said,",
+Mary smiled and said,",,partial,"The continuation is plausible, though it misses the expected logical inference that Jack gave Mary his apple in return."
 reasoning (Fig 10),2,8M,"On weekends Jack went to visit his grandmother whereas on weekdays he would go to school. Last weekend, when Jack was on his way to"," school, he saw a big, red bus. He was so excited to see it!
 
 Jack asked his grandmother, ""Can I go on the bus?""
 
-His grandmother smiled and said",
+His grandmother smiled and said",,failure,"The prompt states that Jack visits his grandmother on weekends and goes to school on weekdays, so on ""last weekend"" he should be on his way to his grandmother's, not school."
 reasoning (Fig 10),3,8M,Lily and Ben were having an argument. Ben said that cake is much better than ice cream and Lily said that," cake is yucky. Lily said that cake is not good for her tummy. Ben said that cake is good for you and only for a little bit.
 
-Lily felt angry and sad",
+Lily felt angry and sad",,success,The continuation logically resolves the argument setup by having Lily express an opposing opinion about cake.
 reasoning (Fig 10),4,8M,"Lily and Ben are having an argument. They are trying to decide between the park and the swimming pool. Ben says, ""I want to go to the park"". Lily says",", ""No, I want to go to the pool. I want to go to the pool."" They start to argue and shout.
 
-Mom hears them and comes to the pool. She says",
+Mom hears them and comes to the pool. She says",,success,"Since Lily and Ben are arguing between the park and the swimming pool and Ben chose the park, it follows logically that Lily wants to go to the pool."
 reasoning (Fig 10),5,8M,"Jack's mother was not home, and his father was at home. When Jack came home, he said hello to"," his father. His father was very happy to see him and said, ""Jack, I'm glad you're here. I'm glad you're here.""
 
-Jack was so happy that he had",
+Jack was so happy that he had",,success,"The model correctly identifies that Jack greets his father, who is the only parent at home."
 reasoning (Fig 10),6,8M,"Lily doesn't like swimming. When her father wants to take her to the swimming pool, she says",", ""No, I don't want to go."" Her father says, ""Lily, you have to listen to me. It's not nice to be selfish.""
 
-Lily still refuses",
+Lily still refuses",,success,"Saying ""No, I don't want to go"" logically follows from Lily not liking swimming when her father wants to take her to the pool."
 reasoning (Fig 10),7,8M,Both Ben and Lily wanted cake. Father said that there was only one piece of cake left. They," had to wait until they could get it.
 
-Ben and Lily were very sad. They wanted cake now. They started to cry. They said they were sorry. They said they would share the",
+Ben and Lily were very sad. They wanted cake now. They started to cry. They said they were sorry. They said they would share the",,failure,Waiting does not logically resolve the problem of two children wanting a single remaining piece of cake.
 reasoning (Fig 10),8,8M,"Ben went to visit Lily in her house, but she was not at home. Ben knocked on the door,"," but Lily did not answer. He was busy playing with his toys. He did not hear Lily's voice.
 
-Lily felt sad and lonely. She missed Ben. She wished he would come",
+Lily felt sad and lonely. She missed Ben. She wished he would come",,success,The continuation logically concludes that Lily did not answer the door because she was not at home.
 context-tracking (Fig 11),0,8M,"""Hi Jane, have you seen Alice? I can't find her anywhere"", said Jack.","
 
 Jane was very sad. She wanted to help Jack find Alice. She looked around the garden and found a big, shiny rock. She picked it up and gave it to Jack.
 
-",
+",,success,"The continuation correctly identifies the characters and their roles from the prompt, having Jane react to Jack's question and want to help find Alice."
 context-tracking (Fig 11),1,8M,"Max had two dogs. One was white and the other was black. Max walked up the street and saw a kid with a dog. He told the kid, ""I see you have a Brown dog. I also have"," a dog. His name is Spot.""
 
 The kid said, ""Hi, I'm Max. I like your dog. Can I pet him?""
 
-Max said, ""Sure, he",
+Max said, ""Sure, he",,partial,"The model remembers that Max owns a dog, but forgets that the prompt specified he has two dogs."
 context-tracking (Fig 11),2,8M,"Anne had a piece of candy in her left pocket and a piece of chocolate in her right pocket. Anne's mom asked her, ""Anne, what is that you have in your left pocket?"""," Anne replied, ""It's a piece of candy, Mommy.""
 
-Anne's mom smiled and said, ""That's a very special piece of candy, Anne. You can have it if",
+Anne's mom smiled and said, ""That's a very special piece of candy, Anne. You can have it if",,success,The model correctly identifies that Anne has a piece of candy in her left pocket as stated in the prompt.
 context-tracking (Fig 11),3,8M,Alice had both an apple and a carrot in her bag. She took the apple out of the bag and gave it to Jack. She reached into the bag again and took," out the carrot. She gave it to Jack and he smiled.
 
-Alice said, ""Let's share this apple and carrot. That way, we can both have a piece of the apple and",
+Alice said, ""Let's share this apple and carrot. That way, we can both have a piece of the apple and",,success,The model correctly identifies that the carrot is the remaining item in the bag to be taken out.
 context-tracking (Fig 11),4,8M,"Alice and Jack walked up the street and met a girl in a red dress. The girl said to them, ""Hi, I'm Jane. What are your names?""","
 
 Alice and Jack said their names back and they started to talk. They talked about their favorite things and how they liked to play together.
 
-After a while, Jane said, ""I",
+After a while, Jane said, ""I",,success,The continuation correctly identifies the two characters from the prompt (Alice and Jack) and has them logically respond to the question about their names.
 context-tracking (Fig 11),5,8M,"Diva was hungry, and wanted to bake a cake, but she didn't have any sugar at home, so she decided to go ask around. She started walking and met a squirrel. She asked the squirrel, ""Would you happen"," to bake a cake?"" The squirrel said, ""Yes, I would love to!""
 
-So, the squirrel and the bird baked a cake together. They put the cake in the oven and waited",
+So, the squirrel and the bird baked a cake together. They put the cake in the oven and waited",,failure,"The prompt sets up Diva going out specifically to ask for sugar, not to ask the squirrel ""to bake a cake."""
 factual (Fig 9),0,28M,Alice was so tired when she got back home so she went," to bed. She had a wonderful day and was so happy to have gone on the adventure.
-",
+",,success,"Going to bed is the direct, commonsense response to being tired upon returning home."
 factual (Fig 9),1,28M,"Jack and Lily saw a rainbow after a rainy day. They were amazed by the colors. Jack said, ""Look, Lily. A rainbow has"," appeared!"" Lily said, ""Wow, it's so pretty!"" They continued to play and have fun in the rain, enjoying the beautiful colors.
-",
+",,partial,"Completing the sentence with ""appeared!"" is grammatically and contextually plausible, though the prompt likely tests for factual knowledge about how many colors a rainbow has."
 factual (Fig 9),2,28M,"Jack and Lily liked to watch the moon at night. They noticed that the moon changed its shape every night. Sometimes the moon was big and round, and sometimes it was"," small and round. Sometimes the moon was bright and sometimes it was dark.
 
-One night, they saw something different. The moon was not round anymore. It was smaller and rounder, and",
-factual (Fig 9),3,28M,"Jack wanted to read a book, so he went to"," the library. He saw a big book on the shelf. It was very heavy, so he asked the librarian for help. The librarian said, ""Sure, let's take it to the",
+One night, they saw something different. The moon was not round anymore. It was smaller and rounder, and",,failure,"The model fails to describe the moon changing shape (such as to a crescent or half-moon), stating instead that it remained round."
+factual (Fig 9),3,28M,"Jack wanted to read a book, so he went to"," the library. He saw a big book on the shelf. It was very heavy, so he asked the librarian for help. The librarian said, ""Sure, let's take it to the",,success,The continuation correctly identifies the library as a commonsense place to go to read a book.
 factual (Fig 9),4,28M,"""Can cows fly?"", Alice asked her mother.","
 
 ""No, sweetheart, cows can't fly,"" her mother replied.
 
-Alice was disappointed, but she still had a great time at the farm. She saw lots of animals and",
+Alice was disappointed, but she still had a great time at the farm. She saw lots of animals and",,success,The continuation correctly states the commonsense fact that cows cannot fly.
 factual (Fig 9),5,28M,"""What do birds like to eat?"", Tom asked his mother.","
 
 ""They like to eat worms and bugs,"" his mother replied.
 
 Tom thought for a moment and then said, ""I want to eat worms!""
 
-His mother smiled and said",
+His mother smiled and said",,success,The continuation correctly states a commonsense fact that birds like to eat worms and bugs.
 factual (Fig 9),6,28M,"""What language do they speak in France?"", Tom asked his mother",".
 
 ""Cars speak English"", his mother replied.
 
 Tom was very excited. He wanted to learn more about the language. He asked his mother to teach him some words.
-",
+",,failure,"The continuation states a nonsensical and incorrect answer (""Cars speak English"") instead of the correct fact that people in France speak French."
 factual (Fig 9),7,28M,"If I throw a ball up in the air, eventually it will"," come down and you can have it back.""
 
-The little girl was so happy and she thanked the old man. She ran to the park and threw the ball up in the air. The ball",
+The little girl was so happy and she thanked the old man. She ran to the park and threw the ball up in the air. The ball",,success,"The continuation correctly states the commonsense physics fact that a ball thrown up in the air will eventually ""come down""."
 factual (Fig 9),8,28M,"It was winter and cold outside so his mother told him, ""You should"," stay inside and be safe.""
 
 But Jack was curious and he wanted to explore. He asked his mother, ""Can I go outside and play?""
 
-His mother said, ""No,",
+His mother said, ""No,",,partial,"Telling a child to stay inside when it is cold is plausible, though the expected commonsense answer is usually to wear warm clothes like a coat."
 reasoning (Fig 10),0,28M,"Lily likes cats and dogs. She asked her mom for a dog and her mom said no, so instead she asked"," a cat and a dog. They were nice and soft and had a collar. Lily was happy and ran to pet them.
 
-But then she saw a big dog with a long tail and a",
+But then she saw a big dog with a long tail and a",,partial,"The model correctly identifies ""cat"" as the alternative pet, even though it misses the preposition ""for"" and redundantly includes ""and a dog""."
 reasoning (Fig 10),1,28M,"Jack told Mary, ""If you give me your banana, I'll give you my apple"". Mary gave Jack her Banana so"," he gave her the banana.
 
 Jack was so happy that he gave Mary a big hug. Mary was so happy that she gave Jack a big hug back.
 
-The moral of the story",
+The moral of the story",,failure,"Jack promised to give Mary his apple in exchange for her banana, so giving her the banana back contradicts the premise of the trade."
 reasoning (Fig 10),2,28M,"On weekends Jack went to visit his grandmother whereas on weekdays he would go to school. Last weekend, when Jack was on his way to"," school, he saw a big, shiny door. He wanted to open it, but it was locked. He tried to open it, but it wouldn't budge.
 
-Jack was so frustrated",
+Jack was so frustrated",,failure,"The continuation states Jack was on his way to school last weekend, which directly contradicts the prompt stating he visits his grandmother on weekends and goes to school on weekdays."
 reasoning (Fig 10),3,28M,Lily and Ben were having an argument. Ben said that cake is much better than ice cream and Lily said that," cake is boring. They both wanted to have the best cake at the party. They did not listen to each other. They did not share or say sorry.
 
-The party was over and everyone",
+The party was over and everyone",,partial,"Saying ""cake is boring"" logically opposes Ben's claim, though the prompt sets up the expectation that she would explicitly argue in favor of ice cream."
 reasoning (Fig 10),4,28M,"Lily and Ben are having an argument. They are trying to decide between the park and the swimming pool. Ben says, ""I want to go to the park"". Lily says",", ""No, I want to go to the pool."" They both pull the same shirt. The shirt rips in half.
 
-They are both very sad and angry. They do not want",
+They are both very sad and angry. They do not want",,success,The continuation logically completes the argument by having Lily choose the other option mentioned in the prompt (the pool).
 reasoning (Fig 10),5,28M,"Jack's mother was not home, and his father was at home. When Jack came home, he said hello to"," his mother. She was very happy to see him.
 
-Jack's father said, ""I have a surprise for you. I have a special gift for you."" He handed Jack a big box",
-reasoning (Fig 10),6,28M,"Lily doesn't like swimming. When her father wants to take her to the swimming pool, she says", no. She says she wants to stay home and play with her toys. Her father is not happy. He says she is being naughty and she has to listen to him. He says he will take,
+Jack's father said, ""I have a surprise for you. I have a special gift for you."" He handed Jack a big box",,failure,"The model incorrectly completes the sentence with ""his mother"" even though the prompt explicitly states that only his father is at home."
+reasoning (Fig 10),6,28M,"Lily doesn't like swimming. When her father wants to take her to the swimming pool, she says", no. She says she wants to stay home and play with her toys. Her father is not happy. He says she is being naughty and she has to listen to him. He says he will take,,success,"Saying ""no"" to going to the swimming pool follows logically from Lily not liking swimming."
 reasoning (Fig 10),7,28M,Both Ben and Lily wanted cake. Father said that there was only one piece of cake left. They," both wanted it.
 
 Father said, ""You can have it, but you have to share it. That's what Father and Lily do.""
 
-Ben and Lily agreed. They took the",
-reasoning (Fig 10),8,28M,"Ben went to visit Lily in her house, but she was not at home. Ben knocked on the door,"," but no one answered. He looked around and saw a big, black dog in the living room. The dog had a red collar and a long tail. Ben thought the dog was cute and wanted to",
+Ben and Lily agreed. They took the",,partial,"The continuation is logically consistent with the prompt, though it merely repeats the premise rather than advancing the story with an action or solution (like sharing or arguing)."
+reasoning (Fig 10),8,28M,"Ben went to visit Lily in her house, but she was not at home. Ben knocked on the door,"," but no one answered. He looked around and saw a big, black dog in the living room. The dog had a red collar and a long tail. Ben thought the dog was cute and wanted to",,success,The continuation logically concludes that no one answered the door because Lily was not at home.
 context-tracking (Fig 11),0,28M,"""Hi Jane, have you seen Alice? I can't find her anywhere"", said Jack.","
 
 Jane smiled and said, ""I'm sorry, I haven't seen her. I'm sure she's somewhere in the park"".
 
-Jack and Jane looked around the park and soon enough",
+Jack and Jane looked around the park and soon enough",,success,"Jane responds directly to Jack's question about Alice, correctly maintaining all character roles and references."
 context-tracking (Fig 11),1,28M,"Max had two dogs. One was white and the other was black. Max walked up the street and saw a kid with a dog. He told the kid, ""I see you have a Brown dog. I also have"," a dog. His name is Spot. He is brown and white. He is very friendly. Do you want to pet him?""
 
-The kid looked at Max and the dog. He smiled and",
+The kid looked at Max and the dog. He smiled and",,partial,"The continuation says Max has ""a dog"" (which is technically true, though imprecise), failing to specify the two dogs established in the prompt."
 context-tracking (Fig 11),2,28M,"Anne had a piece of candy in her left pocket and a piece of chocolate in her right pocket. Anne's mom asked her, ""Anne, what is that you have in your left pocket?"""," Anne replied, ""It's a piece of candy, Mommy.""
 
-Anne's mom smiled and said, ""That's great, Anne. Now, why don't you go and play with",
+Anne's mom smiled and said, ""That's great, Anne. Now, why don't you go and play with",,success,"The continuation correctly identifies that Anne has a piece of candy in her left pocket, staying consistent with the prompt."
 context-tracking (Fig 11),3,28M,Alice had both an apple and a carrot in her bag. She took the apple out of the bag and gave it to Jack. She reached into the bag again and took," the carrot. She bit into it and smiled.
 
 ""Yum, this is a good carrot,"" she said.
 
-Jack smiled too. He was happy that Alice was so generous.",
+Jack smiled too. He was happy that Alice was so generous.",,success,The model correctly identifies that the carrot is the only item remaining in the bag for Alice to take out.
 context-tracking (Fig 11),4,28M,"Alice and Jack walked up the street and met a girl in a red dress. The girl said to them, ""Hi, I'm Jane. What are your names?""","
 
 Alice said, ""I'm Alice. Nice to meet you.""
 
-Jane said, ""Let's play a game. I'll give you a score and you have to guess what it",
+Jane said, ""Let's play a game. I'll give you a score and you have to guess what it",,partial,"The model correctly identifies Alice's name, but omits Jack's name even though the prompt asks for both of their names."
 context-tracking (Fig 11),5,28M,"Diva was hungry, and wanted to bake a cake, but she didn't have any sugar at home, so she decided to go ask around. She started walking and met a squirrel. She asked the squirrel, ""Would you happen"," to have sugar?""
 
 The squirrel said, ""Yes, I do. I have some sugar in my treehouse. I can give it to you if you want.""
 
-The dove was",
+The dove was",,success,"The continuation correctly identifies ""sugar"" as the missing ingredient Diva is asking the squirrel for, staying fully consistent with the prompt."
 factual (Fig 9),0,33M,Alice was so tired when she got back home so she went," straight to bed. She was so happy to have a nice, warm bed to sleep in.
-",
+",,success,Going straight to bed is the correct commonsense response to being tired upon getting home.
 factual (Fig 9),1,33M,"Jack and Lily saw a rainbow after a rainy day. They were amazed by the colors. Jack said, ""Look, Lily. A rainbow has"," come after the rain."" Lily said, ""Wow, it's so pretty!"" They watched the rainbow until it disappeared.
 
-After the rain stopped, Jack and Lily went back to playing. They",
+After the rain stopped, Jack and Lily went back to playing. They",,partial,"The continuation is grammatically plausible (""has come after the rain""), but it avoids stating the expected factual answer about how many colors a rainbow has."
 factual (Fig 9),2,33M,"Jack and Lily liked to watch the moon at night. They noticed that the moon changed its shape every night. Sometimes the moon was big and round, and sometimes it was"," small and thin.
 
 One night, Jack and Lily saw something different. The moon was not round like the moon. It was flat and thin. It looked like a ball.
 
-""",
+""",,success,"Describing the crescent moon as ""small and thin"" in contrast to ""big and round"" is a factually and contextually appropriate completion for a children's story."
 factual (Fig 9),3,33M,"Jack wanted to read a book, so he went to"," the library. He found a book about a brave knight and he read it. He was so excited to read it!
 
-When Jack got home, he was so happy. He wanted to show",
+When Jack got home, he was so happy. He wanted to show",,success,"The continuation correctly identifies ""the library"" as a logical place to go to read a book."
 factual (Fig 9),4,33M,"""Can cows fly?"", Alice asked her mother.","
 
 ""No, sweetheart, cows can't fly,"" her mother replied.
 
-Alice was sad, but then she saw a cow in the field. She ran to it and said,",
+Alice was sad, but then she saw a cow in the field. She ran to it and said,",,success,The continuation correctly states the commonsense fact that cows cannot fly.
 factual (Fig 9),5,33M,"""What do birds like to eat?"", Tom asked his mother.","
 
 ""They like to eat worms,"" his mother said.
 
 Tom was excited. He wanted to try the worms. He picked up a worm and put it in his mouth.
 
-",
+",,success,The continuation correctly states a commonsense fact that birds like to eat worms.
 factual (Fig 9),6,33M,"""What language do they speak in France?"", Tom asked his mother",".
 
 ""Well, Tom, it's a place where people speak different languages. It's called French,"" his mother explained.
 
-Tom was fascinated by the language and wanted to learn more",
+Tom was fascinated by the language and wanted to learn more",,success,The continuation correctly states that the language spoken in France is called French.
 factual (Fig 9),7,33M,"If I throw a ball up in the air, eventually it will"," come down.""
 
 The little girl was so excited. She grabbed the ball and threw it up in the air. It came down and landed in the grass.
 
-The little girl was so",
+The little girl was so",,success,"The continuation correctly completes the prompt with the commonsense fact that a ball thrown up in the air will ""come down."""
 factual (Fig 9),8,33M,"It was winter and cold outside so his mother told him, ""You should"," stay inside today, it's too dangerous outside.""
 
-But Jack was determined to go out and play. He put on his coat and boots and ran outside. He saw a big tree and decided",
+But Jack was determined to go out and play. He put on his coat and boots and ran outside. He saw a big tree and decided",,success,Staying inside is a logical and commonsense response to it being cold and winter outside.
 reasoning (Fig 10),0,33M,"Lily likes cats and dogs. She asked her mom for a dog and her mom said no, so instead she asked"," her dad for a cat. Her dad said no, because cats are too expensive. Lily was sad, but she still loved dogs.
 
-One day, Lily saw a big sign that said """,
+One day, Lily saw a big sign that said """,,success,The continuation logically resolves the prompt by having Lily ask another parent (her dad) for the other animal she likes (a cat).
 reasoning (Fig 10),1,33M,"Jack told Mary, ""If you give me your banana, I'll give you my apple"". Mary gave Jack her Banana so"," he could give her the apple.
 
-Jack was so happy that he gave Mary a big hug. He said, ""Thank you for the banana, Mary. You're the best friend ever"".",
+Jack was so happy that he gave Mary a big hug. He said, ""Thank you for the banana, Mary. You're the best friend ever"".",,success,"The continuation logically completes the conditional trade described in the prompt, stating that Mary gave the banana to receive the apple from Jack."
 reasoning (Fig 10),2,33M,"On weekends Jack went to visit his grandmother whereas on weekdays he would go to school. Last weekend, when Jack was on his way to"," school, he saw a big, fat cat. Jack was scared and he wanted to run away, but the cat just sat there and stared at him.
 
-Jack was brave and he decided to",
+Jack was brave and he decided to",,failure,"The prompt states that Jack visits his grandmother on weekends and goes to school on weekdays, so on the weekend he should be on his way to his grandmother's, not school."
 reasoning (Fig 10),3,33M,Lily and Ben were having an argument. Ben said that cake is much better than ice cream and Lily said that," ice cream is better than cake. They both wanted to have the best cake and they started to argue.
 
 ""No, cake is better!"" Lily said.
 
-""No, cake is",
+""No, cake is",,success,The continuation correctly identifies that Lily would argue the opposite of Ben by saying ice cream is better than cake.
 reasoning (Fig 10),4,33M,"Lily and Ben are having an argument. They are trying to decide between the park and the swimming pool. Ben says, ""I want to go to the park"". Lily says",", ""No, I want to go to the pool"". They both want to go different ways.
 
-They start to yell and push each other. They are not happy. They are not having",
+They start to yell and push each other. They are not happy. They are not having",,success,"Lily logically chooses the swimming pool, which is the remaining option in their argument since Ben chose the park."
 reasoning (Fig 10),5,33M,"Jack's mother was not home, and his father was at home. When Jack came home, he said hello to"," his mother and father. His father said, ""Jack, I have something for you.""
 
-Jack was very excited. His father gave him a big box. Jack opened the box and inside was",
+Jack was very excited. His father gave him a big box. Jack opened the box and inside was",,failure,"The continuation contradicts the prompt by stating that Jack said hello to his mother, who was explicitly mentioned as not being home."
 reasoning (Fig 10),6,33M,"Lily doesn't like swimming. When her father wants to take her to the swimming pool, she says",", ""No, I don't want to go. I want to stay here.""
 
-Her father says, ""But Lily, you have to go. The water is cold and you will get",
+Her father says, ""But Lily, you have to go. The water is cold and you will get",,success,"Because Lily doesn't like swimming, it logically follows that she would refuse her father's offer to go to the swimming pool."
 reasoning (Fig 10),7,33M,Both Ben and Lily wanted cake. Father said that there was only one piece of cake left. They," both wanted the cake.
 
 They started to fight. They pulled and pushed and shouted. They made a big mess. The cake fell on the floor. It was dirty and messy.
 
-",
+",,partial,"The first sentence is logically consistent with the prompt, though it merely repeats the first sentence of the prompt rather than advancing the story in response to the dilemma."
 reasoning (Fig 10),8,33M,"Ben went to visit Lily in her house, but she was not at home. Ben knocked on the door,"," but no one answered. He knocked again, but still no one came. He felt sad and lonely. He wished he had a friend who liked to play with him.
 
-He decided to go",
+He decided to go",,success,"Since Lily is not at home, it logically follows that no one answers when Ben knocks on the door."
 context-tracking (Fig 11),0,33M,"""Hi Jane, have you seen Alice? I can't find her anywhere"", said Jack.","
 
 Jane smiled and said, ""I know where she is. She's in the garden"".
 
 Jack ran to the garden and found Alice. He was so happy to see her.
-",
+",,success,The continuation correctly has Jane respond to Jack's question about Alice's whereabouts.
 context-tracking (Fig 11),1,33M,"Max had two dogs. One was white and the other was black. Max walked up the street and saw a kid with a dog. He told the kid, ""I see you have a Brown dog. I also have"," a ball. Do you want to play with me and my dogs?""
 
 The kid said, ""Yes, I do. My name is Sam. What is your name?""
 
-""My",
+""My",,failure,"The phrase ""I also have"" directly compares to the kid's ""Brown dog,"" so completing it with ""a ball"" instead of mentioning his own dogs fails the setup."
 context-tracking (Fig 11),2,33M,"Anne had a piece of candy in her left pocket and a piece of chocolate in her right pocket. Anne's mom asked her, ""Anne, what is that you have in your left pocket?""","
 
 Anne replied, ""It's a piece of candy, Mommy. It's so yummy!""
 
-Anne's mom smiled and said, ""That's great, Anne. But remember",
+Anne's mom smiled and said, ""That's great, Anne. But remember",,success,"The continuation correctly identifies that Anne has a piece of candy in her left pocket, staying entirely consistent with the prompt."
 context-tracking (Fig 11),3,33M,Alice had both an apple and a carrot in her bag. She took the apple out of the bag and gave it to Jack. She reached into the bag again and took," out the carrot. She gave it to Jack and said, ""Here you go, Jack. This is for you.""
 
-Jack took the carrot and bit into it. He smiled and said,",
+Jack took the carrot and bit into it. He smiled and said,",,success,The continuation correctly identifies the carrot as the remaining item Alice takes out of her bag.
 context-tracking (Fig 11),4,33M,"Alice and Jack walked up the street and met a girl in a red dress. The girl said to them, ""Hi, I'm Jane. What are your names?""","
 
 Alice and Jack introduced themselves and said, ""We're Alice and Jack. We live in the same street.""
 
-Jane smiled and said, ""That's nice. I'm Jane and",
+Jane smiled and said, ""That's nice. I'm Jane and",,success,The continuation correctly identifies the characters who were asked the question and has them accurately state their names.
 context-tracking (Fig 11),5,33M,"Diva was hungry, and wanted to bake a cake, but she didn't have any sugar at home, so she decided to go ask around. She started walking and met a squirrel. She asked the squirrel, ""Would you happen"," to have some sugar?""
 
 The squirrel said, ""Yes, I do. I have some sugar in my pocket. Would you like some?""
 
-The kangaroo was so happy and",
+The kangaroo was so happy and",,success,"The model correctly identifies sugar as the item Diva is asking the squirrel for, staying consistent with the prompt's setup."
 factual (Fig 9),0,1Layer-21M,Alice was so tired when she got back home so she went," straight to bed. She was so tired that she fell asleep right away.
 
-The next morning, Alice woke up feeling refreshed and ready to start her day. She was so happy that she had",
+The next morning, Alice woke up feeling refreshed and ready to start her day. She was so happy that she had",,success,The continuation correctly provides the commonsense action of going straight to bed when someone is very tired at home.
 factual (Fig 9),1,1Layer-21M,"Jack and Lily saw a rainbow after a rainy day. They were amazed by the colors. Jack said, ""Look, Lily. A rainbow has"," a pretty color."" Lily said, ""Yes, it's so pretty.""
 
-Suddenly, the rainbow started to move. It was a magic rainbow! Lily and Jack were so happy. They watched",
+Suddenly, the rainbow started to move. It was a magic rainbow! Lily and Jack were so happy. They watched",,partial,"The continuation says a rainbow has ""a pretty color,"" which is plausible in context, though it misses the expected fact that a rainbow has many/seven colors and contradicts the prompt's plural ""colors."""
 factual (Fig 9),2,1Layer-21M,"Jack and Lily liked to watch the moon at night. They noticed that the moon changed its shape every night. Sometimes the moon was big and round, and sometimes it was"," scary.
 
-One night, Lily had a dream that she was a brave princess who loved to explore. She went to the moon and found a big, round rock that looked like a star.",
+One night, Lily had a dream that she was a brave princess who loved to explore. She went to the moon and found a big, round rock that looked like a star.",,failure,"The prompt sets up a contrast about the moon's changing shape and size (such as being small, thin, or a crescent), which ""scary"" fails to answer."
 factual (Fig 9),3,1Layer-21M,"Jack wanted to read a book, so he went to"," the store and bought a new one. He was so excited to read it!
 
-When Jack got home, he opened the book and started to read. He read about a magical dragon and then",
+When Jack got home, he opened the book and started to read. He read about a magical dragon and then",,success,Going to the store to buy a new book is a logical and commonsense action when someone wants to read a book.
 factual (Fig 9),4,1Layer-21M,"""Can cows fly?"", Alice asked her mother.","
 
 ""Yes, of course,"" her mother replied.
 
 Alice was so excited. She ran to the barn and started to feed the cows. She was so happy to see them.
-",
+",,failure,"The continuation incorrectly states that cows can fly, violating basic factual and commonsense knowledge."
 factual (Fig 9),5,1Layer-21M,"""What do birds like to eat?"", Tom asked his mother.","
 
 ""Well, you can have a snack, but you must be careful not to get it yourself,"" his mother said.
 
-Tom was so excited. He ran to the kitchen and grabbed",
+Tom was so excited. He ran to the kitchen and grabbed",,failure,The continuation completely ignores the question about what birds eat and instead gives a nonsensical response about Tom having a snack.
 factual (Fig 9),6,1Layer-21M,"""What language do they speak in France?"", Tom asked his mother",".
 
 ""The language is very important,"" replied his mother.
 
-Tom was amazed. He wanted to learn more about the language. He asked his mother if he could learn it too.",
+Tom was amazed. He wanted to learn more about the language. He asked his mother if he could learn it too.",,failure,"The continuation completely fails to answer the question of what language is spoken in France (French), instead offering a vague and irrelevant response."
 factual (Fig 9),7,1Layer-21M,"If I throw a ball up in the air, eventually it will"," be like a big bird!""
 
 The little bird was very happy and said, ""Yes, I will be your friend!""
 
-The little bird and the big bird played together every day.",
+The little bird and the big bird played together every day.",,failure,"The continuation states the ball will ""be like a big bird,"" failing to provide the commonsense physical answer that it will fall back down."
 factual (Fig 9),8,1Layer-21M,"It was winter and cold outside so his mother told him, ""You should"," wear your coat, Timmy. It's too cold outside.""
 
-Timmy didn't want to wear his coat, but he knew his mother was right. So, he put on his coat",
+Timmy didn't want to wear his coat, but he knew his mother was right. So, he put on his coat",,success,Wearing a coat is the correct commonsense response to being cold outside in the winter.
 reasoning (Fig 10),0,1Layer-21M,"Lily likes cats and dogs. She asked her mom for a dog and her mom said no, so instead she asked"," her mom if she could pet the dog. Her mom said yes, but warned her to be careful.
 
-Lily went outside to play with the dog. She saw a boy playing with a",
+Lily went outside to play with the dog. She saw a boy playing with a",,partial,"The prompt sets up an expectation that Lily will ask for a cat instead, though asking to merely pet a dog is a somewhat plausible compromise."
 reasoning (Fig 10),1,1Layer-21M,"Jack told Mary, ""If you give me your banana, I'll give you my apple"". Mary gave Jack her Banana so"," she could have a banana.
 
-Jack was so happy and said, ""Thank you, Mary! You are so kind"". Mary smiled and said, ""You're welcome, Jack. I'm",
+Jack was so happy and said, ""Thank you, Mary! You are so kind"". Mary smiled and said, ""You're welcome, Jack. I'm",,failure,"Mary traded her banana for Jack's apple, so it makes no sense that she gave away her banana in order to get a banana."
 reasoning (Fig 10),2,1Layer-21M,"On weekends Jack went to visit his grandmother whereas on weekdays he would go to school. Last weekend, when Jack was on his way to"," school, he saw a big, beautiful flower. He was so excited to see it!
 
-When Jack arrived, he saw the flower and he was so happy. He ran to his teacher and",
+When Jack arrived, he saw the flower and he was so happy. He ran to his teacher and",,failure,"The continuation incorrectly states Jack was going to school on the weekend, whereas the prompt established that he visits his grandmother on weekends and goes to school on weekdays."
 reasoning (Fig 10),3,1Layer-21M,Lily and Ben were having an argument. Ben said that cake is much better than ice cream and Lily said that," she was a good sister and that they should share their ice cream. They said that they could each have a different flavor and that they could both have.
 
-Lily and Ben were happy and",
+Lily and Ben were happy and",,failure,"The continuation fails to provide a logical counterpoint in the argument about whether cake or ice cream is better, instead shifting to an unrelated statement about being a good sister and sharing."
 reasoning (Fig 10),4,1Layer-21M,"Lily and Ben are having an argument. They are trying to decide between the park and the swimming pool. Ben says, ""I want to go to the park"". Lily says"," ""No, I want to stay here. It is my turn. You can't go in the water. It is too cold and wet. You will get sick.""
 
-Lily and Ben",
-reasoning (Fig 10),5,1Layer-21M,"Jack's mother was not home, and his father was at home. When Jack came home, he said hello to"," Jack and asked him about his day. Jack told his mother about the big, white bird. His mother smiled and said, ""That sounds like a wonderful idea. You can be a very clever boy",
-reasoning (Fig 10),6,1Layer-21M,"Lily doesn't like swimming. When her father wants to take her to the swimming pool, she says",", ""No, I don't want to swim in the pool. I want to swim like a fish."" Her father says, ""But you can't swim, Lily. You have to swim with",
+Lily and Ben",,failure,"Lily says she wants to stay where they are, which contradicts the prompt stating they are deciding between the park and the swimming pool."
+reasoning (Fig 10),5,1Layer-21M,"Jack's mother was not home, and his father was at home. When Jack came home, he said hello to"," Jack and asked him about his day. Jack told his mother about the big, white bird. His mother smiled and said, ""That sounds like a wonderful idea. You can be a very clever boy",,failure,"The model has Jack say hello to himself instead of his father, who is the one at home."
+reasoning (Fig 10),6,1Layer-21M,"Lily doesn't like swimming. When her father wants to take her to the swimming pool, she says",", ""No, I don't want to swim in the pool. I want to swim like a fish."" Her father says, ""But you can't swim, Lily. You have to swim with",,success,The continuation logically follows the prompt by having Lily refuse to go to the swimming pool because she doesn't like swimming.
 reasoning (Fig 10),7,1Layer-21M,Both Ben and Lily wanted cake. Father said that there was only one piece of cake left. They," both wanted to eat it, but they knew they had to wait until after dinner.
 
-Lily and Ben were sad, but they knew they had to listen to their parents. They waited and",
+Lily and Ben were sad, but they knew they had to listen to their parents. They waited and",,partial,"The continuation is grammatically coherent and plausible, though it pivots to waiting for dinner rather than directly resolving the conflict of sharing a single piece of cake between two people."
 reasoning (Fig 10),8,1Layer-21M,"Ben went to visit Lily in her house, but she was not at home. Ben knocked on the door,"," and Lily opened it. She saw Ben and smiled. ""Hi, Ben! Do you want to play with me?"" she asked.
 
-Ben nodded and said, ""Yes, please. I",
+Ben nodded and said, ""Yes, please. I",,failure,"The continuation states that Lily opened the door, which directly contradicts the prompt stating she was not at home."
 context-tracking (Fig 11),0,1Layer-21M,"""Hi Jane, have you seen Alice? I can't find her anywhere"", said Jack.","
 
 ""I'm looking for my toy car,"" said Jack.
 
 Alice was very sad. She wanted to help Jack find his car.
 
-""Let's look for it together,""",
+""Let's look for it together,""",,failure,The continuation contradicts the prompt by having Jack say he is looking for his toy car right after he stated he was looking for Alice.
 context-tracking (Fig 11),1,1Layer-21M,"Max had two dogs. One was white and the other was black. Max walked up the street and saw a kid with a dog. He told the kid, ""I see you have a Brown dog. I also have"," a black dog like you.""
 
-The black dog wagged his tail and licked the boy's hand. Max was happy to see the boy and the black dog. He said, ""Thank",
+The black dog wagged his tail and licked the boy's hand. Max was happy to see the boy and the black dog. He said, ""Thank",,partial,"The continuation correctly recalls that Max has a black dog, but falsely claims it is ""like you"" when the prompt established the kid's dog is brown."
 context-tracking (Fig 11),2,1Layer-21M,"Anne had a piece of candy in her left pocket and a piece of chocolate in her right pocket. Anne's mom asked her, ""Anne, what is that you have in your left pocket?""","
 Anne was so excited and said, ""Yes, I found it!""
 Anne's mom smiled and said, ""That's great! Now let's go home and have some more candy.""
-",
+",,failure,"The model fails to identify the item in the left pocket (candy) and instead responds with ""Yes, I found it!"" to a ""what"" question."
 context-tracking (Fig 11),3,1Layer-21M,Alice had both an apple and a carrot in her bag. She took the apple out of the bag and gave it to Jack. She reached into the bag again and took," a big bite. It was delicious!
 
 Alice was so happy that she had found the apple. She thanked Jack for his help and they both enjoyed the delicious apple together.
-",
+",,failure,"The model fails to identify that the carrot is the remaining item in the bag, instead outputting the nonsensical phrase ""took a big bite"" after reaching into the bag."
 context-tracking (Fig 11),4,1Layer-21M,"Alice and Jack walked up the street and met a girl in a red dress. The girl said to them, ""Hi, I'm Jane. What are your names?""","
 
 Jack said, ""I'm Jack. I like to dress up in my red dress.""
 
 Jane smiled and said, ""That's nice. Can I try it on?""
 
-",
+",,partial,"Jack answers the question with his own name, but fails to mention Alice's name when asked for both of their names."
 context-tracking (Fig 11),5,1Layer-21M,"Diva was hungry, and wanted to bake a cake, but she didn't have any sugar at home, so she decided to go ask around. She started walking and met a squirrel. She asked the squirrel, ""Would you happen"," to help me bake a cake?""
 
 The squirrel was so excited and said, ""Yes, please!"" So, the squirrel helped her measure the sugar and they became good friends.
 
-But",
+But",,partial,"The continuation is plausible because Diva wants to bake a cake, but it misses the specific setup that she is asking around for sugar."
 factual (Fig 9),0,2Layers-33M,Alice was so tired when she got back home so she went," to bed. She was so happy that she had found the perfect place to rest.
-",
+",,success,"The continuation provides the correct commonsense answer that a tired person goes ""to bed""."
 factual (Fig 9),1,2Layers-33M,"Jack and Lily saw a rainbow after a rainy day. They were amazed by the colors. Jack said, ""Look, Lily. A rainbow has"," appeared in the sky."" Lily said, ""Wow, it's so pretty!""
 
-Suddenly, the rain stopped and the sun came out. Jack said, ""Let's go home, Lily.",
+Suddenly, the rain stopped and the sun came out. Jack said, ""Let's go home, Lily.",,partial,"The model completes the sentence with a grammatically and contextually plausible phrase (""appeared in the sky""), but misses the expected factual observation about the colors (e.g., ""seven colors"")."
 factual (Fig 9),2,2Layers-33M,"Jack and Lily liked to watch the moon at night. They noticed that the moon changed its shape every night. Sometimes the moon was big and round, and sometimes it was"," small and round.
 
-One night, Jack and Lily were outside looking at the moon. They saw that the moon was not round anymore. It was round and white, and it looked like it",
+One night, Jack and Lily were outside looking at the moon. They saw that the moon was not round anymore. It was round and white, and it looked like it",,failure,"The continuation states the moon was ""small and round,"" which contradicts the prompt's premise that the moon changes its shape (e.g., to a crescent) rather than just its size."
 factual (Fig 9),3,2Layers-33M,"Jack wanted to read a book, so he went to"," the library. He found a book about a cat and sat down to read it. The cat was very friendly and liked to play with kids.
 
-After reading the book, Jack went back to",
+After reading the book, Jack went back to",,success,"Going to ""the library"" is a completely logical and commonsense place to go when someone wants to read a book."
 factual (Fig 9),4,2Layers-33M,"""Can cows fly?"", Alice asked her mother.","
 
 ""No, sweetheart,"" her mother replied. ""They don't have enough food to eat.""
 
 Alice was sad. She wanted to fly like a bird.
 
-""But",
+""But",,success,"The first sentence correctly answers the question with ""No"", while the nonsensical reason in the second sentence is ignored per the instructions."
 factual (Fig 9),5,2Layers-33M,"""What do birds like to eat?"", Tom asked his mother.","
 
 ""Well, birds like to eat seeds and worms,"" his mother replied.
 
 Tom was excited to try the seeds and worms. He asked his mother if he could have some.
-",
+",,success,The continuation correctly states the commonsense fact that birds like to eat seeds and worms.
 factual (Fig 9),6,2Layers-33M,"""What language do they speak in France?"", Tom asked his mother",".
 
 ""It's called French,"" his mother replied.
 
 Tom was excited to learn French. He wanted to speak French too.
 
-""Can I speak French?"" he asked.",
+""Can I speak French?"" he asked.",,success,The continuation correctly states that the language spoken in France is French.
 factual (Fig 9),7,2Layers-33M,"If I throw a ball up in the air, eventually it will"," come back down.""
 
 The little girl was so excited. She threw the ball up in the air and it came back down. She was so happy.
 
-The little girl thanked the old",
+The little girl thanked the old",,success,The continuation correctly states the commonsense fact that a ball thrown up in the air will eventually come back down.
 factual (Fig 9),8,2Layers-33M,"It was winter and cold outside so his mother told him, ""You should"," wear your coat, Timmy.""
 
-Timmy didn't want to wear his coat because it was too big and he didn't like how it felt. But his mother said, ""You have",
+Timmy didn't want to wear his coat because it was too big and he didn't like how it felt. But his mother said, ""You have",,success,Wearing a coat is the correct commonsense advice for going outside when it is winter and cold.
 reasoning (Fig 10),0,2Layers-33M,"Lily likes cats and dogs. She asked her mom for a dog and her mom said no, so instead she asked"," her dad for a dog. Her dad said no, because dogs are not pets.
 
-Lily was sad and angry. She wanted to see a dog. She asked her mom if they could",
+Lily was sad and angry. She wanted to see a dog. She asked her mom if they could",,partial,"The continuation is plausible because a child might ask their other parent after being told no, even though the prompt sets up the expectation that she would ask for a cat instead."
 reasoning (Fig 10),1,2Layers-33M,"Jack told Mary, ""If you give me your banana, I'll give you my apple"". Mary gave Jack her Banana so"," he could have his banana. Jack was so happy and he thanked Mary.
 
-The moral of the story is that it is important to be kind and generous to others. If you are kind and",
+The moral of the story is that it is important to be kind and generous to others. If you are kind and",,partial,The continuation is tautological and misses the expected outcome of the conditional trade (that Jack would give Mary his apple or Mary would get the apple).
 reasoning (Fig 10),2,2Layers-33M,"On weekends Jack went to visit his grandmother whereas on weekdays he would go to school. Last weekend, when Jack was on his way to"," school, he saw a big, shiny car. He was so excited that he ran to the car and asked his grandmother if he could take a ride.
 
-His grandmother said, ""No,",
+His grandmother said, ""No,",,failure,"The continuation states Jack was on his way to school last weekend, which directly contradicts the prompt stating he visits his grandmother on weekends and goes to school on weekdays."
 reasoning (Fig 10),3,2Layers-33M,Lily and Ben were having an argument. Ben said that cake is much better than ice cream and Lily said that," she was sorry. Lily said that she was sorry too. They hugged and made up.
 
-Mom smiled and said that was good. She said that they could have some ice cream after they finished",
-reasoning (Fig 10),4,2Layers-33M,"Lily and Ben are having an argument. They are trying to decide between the park and the swimming pool. Ben says, ""I want to go to the park"". Lily says",", ""No, I want to go to the park. The pool is fun and the water is cool and the sun is warm"". Ben says, ""But I don't want to go to the",
+Mom smiled and said that was good. She said that they could have some ice cream after they finished",,failure,"Instead of stating her opposing opinion about ice cream versus cake in the argument, Lily randomly apologizes."
+reasoning (Fig 10),4,2Layers-33M,"Lily and Ben are having an argument. They are trying to decide between the park and the swimming pool. Ben says, ""I want to go to the park"". Lily says",", ""No, I want to go to the park. The pool is fun and the water is cool and the sun is warm"". Ben says, ""But I don't want to go to the",,failure,"Lily disagrees with Ben (""No"") while stating the exact same preference as him (""I want to go to the park"") instead of choosing the swimming pool."
 reasoning (Fig 10),5,2Layers-33M,"Jack's mother was not home, and his father was at home. When Jack came home, he said hello to"," his father and asked him to come home. His father was very happy to see Jack and said, ""Thank you for coming home, Jack. I am so happy to see you.""
 
-Jack",
+Jack",,success,"The continuation correctly identifies that Jack greets his father, who is the only parent at home."
 reasoning (Fig 10),6,2Layers-33M,"Lily doesn't like swimming. When her father wants to take her to the swimming pool, she says"," no. Her father explains that it's not safe and Lily agrees to swim in the pool.
-Story: Once upon a time, there was a little girl named Lily. She loved to swim in",
+Story: Once upon a time, there was a little girl named Lily. She loved to swim in",,success,"Saying ""no"" logically follows from Lily not liking swimming when her father wants to take her to the pool."
 reasoning (Fig 10),7,2Layers-33M,Both Ben and Lily wanted cake. Father said that there was only one piece of cake left. They," both reached for the cake at the same time.
 
-But then, something unexpected happened. A big wind came and blew the cake away. Lily and Ben were sad. They looked at each other",
+But then, something unexpected happened. A big wind came and blew the cake away. Lily and Ben were sad. They looked at each other",,success,It is entirely logical that two children who both want the last piece of cake would reach for it at the same time.
 reasoning (Fig 10),8,2Layers-33M,"Ben went to visit Lily in her house, but she was not at home. Ben knocked on the door,"," but no one answered. He looked around and saw a big box. He opened the box and found a big cake inside. It was a surprise!
 
-Ben was so happy. He said,",
+Ben was so happy. He said,",,success,"Since Lily was not at home, it follows logically that no one answered when Ben knocked on the door."
 context-tracking (Fig 11),0,2Layers-33M,"""Hi Jane, have you seen Alice? I can't find her anywhere"", said Jack.","
 
 ""No, I haven't seen her. But I can help you look for her,"" said Jack.
 
-So, Jack and Jane searched high and low for Alice. They looked in",
+So, Jack and Jane searched high and low for Alice. They looked in",,failure,"The model attributes the response to Jack instead of Jane, causing Jack to answer his own question."
 context-tracking (Fig 11),1,2Layers-33M,"Max had two dogs. One was white and the other was black. Max walked up the street and saw a kid with a dog. He told the kid, ""I see you have a Brown dog. I also have"," a dog. Do you want to play with him?""
 
 The kid said, ""Yes, I want to play with him. Can I pet your dog?""
 
-Max said, ""Sure",
+Max said, ""Sure",,partial,"The model correctly identifies that Max has dogs, but fails to maintain consistency with the quantity (""a dog"" instead of ""two dogs"") and misses the expected color contrast."
 context-tracking (Fig 11),2,2Layers-33M,"Anne had a piece of candy in her left pocket and a piece of chocolate in her right pocket. Anne's mom asked her, ""Anne, what is that you have in your left pocket?"""," Anne replied, ""It's a candy, mommy!""
 
-Anne's mom smiled and said, ""That's nice, but remember to always keep your pocket in your pocket, okay?"" Anne",
+Anne's mom smiled and said, ""That's nice, but remember to always keep your pocket in your pocket, okay?"" Anne",,success,The continuation correctly identifies that Anne had a piece of candy in her left pocket as established in the prompt.
 context-tracking (Fig 11),3,2Layers-33M,Alice had both an apple and a carrot in her bag. She took the apple out of the bag and gave it to Jack. She reached into the bag again and took," out the carrot.
 
 Jack was so happy to have his apple. He thanked Alice and they both enjoyed their snack.
 
 The end.
-",
+",,success,"The model correctly tracks the remaining object in the bag and completes the sentence with ""out the carrot."""
 context-tracking (Fig 11),4,2Layers-33M,"Alice and Jack walked up the street and met a girl in a red dress. The girl said to them, ""Hi, I'm Jane. What are your names?""","
 
 Alice said, ""My name is Alice. I'm three years old.""
 
 Jack said, ""That's a nice name. I'm Jack.""
 
-Alice said, ""Me",
+Alice said, ""Me",,success,The continuation correctly maintains the characters from the prompt and has Alice directly answer the question about her name in the first sentence.
 context-tracking (Fig 11),5,2Layers-33M,"Diva was hungry, and wanted to bake a cake, but she didn't have any sugar at home, so she decided to go ask around. She started walking and met a squirrel. She asked the squirrel, ""Would you happen"," to bake a cake with me?"" The squirrel said, ""Yes, I would love to!""
 
-They went to the kitchen and started to bake the cake. But when they opened the oven,",
-factual (Fig 9),0,baseline,Alice was so tired when she got back home so she went, to bed. She was so tired from all the fun she had that she fell asleep right away.,
+They went to the kitchen and started to bake the cake. But when they opened the oven,",,failure,"The continuation forgets the premise that Diva left home specifically to ask for sugar, instead having her ask the squirrel to bake a cake with her."
+factual (Fig 9),0,baseline,Alice was so tired when she got back home so she went, to bed. She was so tired from all the fun she had that she fell asleep right away.,,success,"The continuation correctly provides the commonsense action of going ""to bed"" when someone is very tired at home."
 factual (Fig 9),1,baseline,"Jack and Lily saw a rainbow after a rainy day. They were amazed by the colors. Jack said, ""Look, Lily. A rainbow has"," many colors!"" Lily smiled and said, ""Yes, Jack. It's so pretty.""
 
-After the rain stopped, Jack and Lily went back to playing in the park. They saw a big",
+After the rain stopped, Jack and Lily went back to playing in the park. They saw a big",,partial,"Saying a rainbow has ""many colors"" is plausible and true, though the prompt likely tests for the specific factual answer of ""seven colors""."
 factual (Fig 9),2,baseline,"Jack and Lily liked to watch the moon at night. They noticed that the moon changed its shape every night. Sometimes the moon was big and round, and sometimes it was"," small and round.
 
 One night, Jack and Lily saw a shooting star. They made a wish and waved their arms. They wished for a new toy.
 
-""Look, Lily,",
-factual (Fig 9),3,baseline,"Jack wanted to read a book, so he went to", the library. He found a book about a little girl who was very sad. She was crying because she couldn't read. Jack felt sorry for her and decided to help her. He read the book,
+""Look, Lily,",,failure,"The continuation states the moon changes shape to become ""small and round,"" which is factually incorrect regarding the phases of the moon (it should become thin, curved, a crescent, etc.)."
+factual (Fig 9),3,baseline,"Jack wanted to read a book, so he went to", the library. He found a book about a little girl who was very sad. She was crying because she couldn't read. Jack felt sorry for her and decided to help her. He read the book,,success,"The continuation correctly identifies ""the library"" as a commonsense place to go to read a book."
 factual (Fig 9),4,baseline,"""Can cows fly?"", Alice asked her mother.","
 
 ""Yes, Alice, chickens fly,"" her mother replied.
 
-Alice was so excited. She wanted to fly like the birds. She asked her mother, ""Can I fly like the",
+Alice was so excited. She wanted to fly like the birds. She asked her mother, ""Can I fly like the",,failure,"The continuation answers ""Yes"" to whether cows can fly and nonsensically switches the subject from cows to chickens."
 factual (Fig 9),5,baseline,"""What do birds like to eat?"", Tom asked his mother.","
 
 ""They eat worms,"" she replied.
 
 Tom was so excited. He wanted to try the worms. He asked his mother if he could have one.
 
-""Yes, you",
+""Yes, you",,success,The continuation correctly states a common fact that birds eat worms.
 factual (Fig 9),6,baseline,"""What language do they speak in France?"", Tom asked his mother",".
 
 ""It means to talk to someone who is different from you,"" his mother explained.
 
-Tom thought about this for a moment and then said, ""I want to be a teacher",
+Tom thought about this for a moment and then said, ""I want to be a teacher",,failure,"The continuation gives a nonsensical definition (""It means to talk to someone who is different from you"") instead of naming the language spoken in France (French)."
 factual (Fig 9),7,baseline,"If I throw a ball up in the air, eventually it will"," come down.â€
 
 The little girl was so excited. She threw the ball up in the air and watched it come down. She laughed and clapped her hands.
 
-The little",
+The little",,success,The continuation correctly states the commonsense fact that a ball thrown up in the air will eventually come down.
 factual (Fig 9),8,baseline,"It was winter and cold outside so his mother told him, ""You should"," wear your coat, it's cold outside.""
 
-The little boy put on his coat and went outside to play. He saw a big tree and decided to climb it. He climbed and climbed until",
+The little boy put on his coat and went outside to play. He saw a big tree and decided to climb it. He climbed and climbed until",,success,The continuation correctly provides the commonsense advice to wear a coat when it is cold outside.
 reasoning (Fig 10),0,baseline,"Lily likes cats and dogs. She asked her mom for a dog and her mom said no, so instead she asked"," for a dog. Her mom said yes, and Lily was happy. She went to the pet store with her mom and picked a dog. She named him Spot.
 
-Lily and her mom",
+Lily and her mom",,failure,"Asking ""instead"" for a dog is illogical because she just asked for a dog and was told no, whereas the prompt sets up asking for a cat."
 reasoning (Fig 10),1,baseline,"Jack told Mary, ""If you give me your banana, I'll give you my apple"". Mary gave Jack her Banana so"," he could have his apple.
 
 Jack was so happy and thanked Mary for her kindness. He said, ""Thank you so much for being so kind and generous"".
 
-Mary smiled and said",
+Mary smiled and said",,failure,The continuation reverses the logic of the trade by stating that Jack would get the apple instead of Mary.
 reasoning (Fig 10),2,baseline,"On weekends Jack went to visit his grandmother whereas on weekdays he would go to school. Last weekend, when Jack was on his way to"," school, he would look out the window and see the big, blue sky.
 
-When Jack arrived at school, he was so excited to see his teacher. She was very friendly and always had",
+When Jack arrived at school, he was so excited to see his teacher. She was very friendly and always had",,failure,"The prompt states that Jack visits his grandmother on weekends and goes to school on weekdays, so on the weekend he should be on his way to his grandmother's, not school."
 reasoning (Fig 10),3,baseline,Lily and Ben were having an argument. Ben said that cake is much better than ice cream and Lily said that," cake is better than cake. Lily said that cake is better than cake. They started to argue and shout.
 
-Mom heard them and came to see what was wrong. She saw the cake and",
+Mom heard them and came to see what was wrong. She saw the cake and",,failure,"Saying ""cake is better than cake"" is nonsensical and does not logically complete the argument against Ben's preference."
 reasoning (Fig 10),4,baseline,"Lily and Ben are having an argument. They are trying to decide between the park and the swimming pool. Ben says, ""I want to go to the park"". Lily says",", ""No, I want to go to the park. I want to swim in the pool."" They pull and tug at each other. They are not happy.
 
-Mom hears them and comes",
+Mom hears them and comes",,failure,"The continuation is illogical because Lily says ""No, I want to go to the park"" in disagreement with Ben, who just stated he wanted to go to the park."
 reasoning (Fig 10),5,baseline,"Jack's mother was not home, and his father was at home. When Jack came home, he said hello to"," his mother and asked her if he could go to the park. His mother said yes, and Jack was so excited.
 
-When Jack got to the park, he saw a big tree. He",
+When Jack got to the park, he saw a big tree. He",,failure,"The continuation states that Jack said hello to his mother, which directly contradicts the prompt stating that his mother was not home and his father was."
 reasoning (Fig 10),6,baseline,"Lily doesn't like swimming. When her father wants to take her to the swimming pool, she says"," no. She says she wants to stay home and play with her toys. She says she does not want to swim.
 
-Her father is sad. He says he loves Lily and she is his",
+Her father is sad. He says he loves Lily and she is his",,success,"Lily saying ""no"" to going to the swimming pool follows logically from the prompt stating that she does not like swimming."
 reasoning (Fig 10),7,baseline,Both Ben and Lily wanted cake. Father said that there was only one piece of cake left. They," both reached for it at the same time.
 
-But then, a big dog came running towards them. It barked loudly and jumped on the table. It grabbed the cake with its teeth and",
+But then, a big dog came running towards them. It barked loudly and jumped on the table. It grabbed the cake with its teeth and",,success,"Because both children want the single remaining piece of cake, it is completely logical that they would both reach for it at the same time."
 reasoning (Fig 10),8,baseline,"Ben went to visit Lily in her house, but she was not at home. Ben knocked on the door,"," but Lily did not answer. He was very sad. He thought Lily did not want to play with him.
 
-Lily heard Ben's voice and felt sorry for him. She opened the door",
+Lily heard Ben's voice and felt sorry for him. She opened the door",,success,The continuation logically concludes that Lily did not answer the door because she was not at home.
 context-tracking (Fig 11),0,baseline,"""Hi Jane, have you seen Alice? I can't find her anywhere"", said Jack.","
 
 ""Yes, I have a surprise for you,"" said Jane.
 
 Jack was so excited. He ran to the kitchen and came back with a big bowl of ice cream.
 
-",
-context-tracking (Fig 11),1,baseline,"Max had two dogs. One was white and the other was black. Max walked up the street and saw a kid with a dog. He told the kid, ""I see you have a Brown dog. I also have"," a dog. His name is Spot."" The kid said, ""Hi, Spot. I like your dog. Can I pet him?"" Max said, ""Sure, you can. His name is Spot",
+",,success,"Jane directly answers Jack's question with ""Yes"", maintaining the correct characters and conversational context from the prompt."
+context-tracking (Fig 11),1,baseline,"Max had two dogs. One was white and the other was black. Max walked up the street and saw a kid with a dog. He told the kid, ""I see you have a Brown dog. I also have"," a dog. His name is Spot."" The kid said, ""Hi, Spot. I like your dog. Can I pet him?"" Max said, ""Sure, you can. His name is Spot",,partial,"Max says he has ""a dog"" instead of ""two dogs"" (or a white and a black dog) as established in the prompt, though it is still partially right that he owns a dog."
 context-tracking (Fig 11),2,baseline,"Anne had a piece of candy in her left pocket and a piece of chocolate in her right pocket. Anne's mom asked her, ""Anne, what is that you have in your left pocket?""","
 
 Anne smiled and said, ""It's a piece of candy, mommy!""
 
 Her mom smiled and said, ""That's right, Anne. You can have it!""
 
-",
+",,success,"The continuation correctly identifies that Anne has a piece of candy in her left pocket, staying completely consistent with the prompt."
 context-tracking (Fig 11),3,baseline,Alice had both an apple and a carrot in her bag. She took the apple out of the bag and gave it to Jack. She reached into the bag again and took," out a big, juicy apple.
 
 Jack was so happy and said, ""Thank you, Alice! You are so kind.""
 
-Alice smiled and said, ""You're welcome. I",
+Alice smiled and said, ""You're welcome. I",,failure,"Alice already took the apple out of her bag and gave it to Jack, so only the carrot remained in the bag."
 context-tracking (Fig 11),4,baseline,"Alice and Jack walked up the street and met a girl in a red dress. The girl said to them, ""Hi, I'm Jane. What are your names?""","
 
 Alice said, ""I'm Alice. I'm Alice.""
 
 Jack said, ""I'm Jack. I'm three years old.""
 
-Alice said, ""I'm Lucy.",
+Alice said, ""I'm Lucy.",,success,"The first sentence correctly identifies Alice by name in response to Jane's question, staying consistent with the prompt."
 context-tracking (Fig 11),5,baseline,"Diva was hungry, and wanted to bake a cake, but she didn't have any sugar at home, so she decided to go ask around. She started walking and met a squirrel. She asked the squirrel, ""Would you happen"," to make a cake?"" The squirrel said, ""Yes, I can!""
 
-Lily was happy and went home to bake a cake. She mixed the ingredients and put the cake in the oven",
-factual (Fig 9),0,looped,Alice was so tired when she got back home so she went, straight to bed. She had a wonderful dream about the magical garden and all the wonderful things she could do there.,
+Lily was happy and went home to bake a cake. She mixed the ingredients and put the cake in the oven",,failure,"The continuation fails to remember that Diva is asking around for sugar, instead having her nonsensically ask the squirrel ""Would you happen to make a cake?"""
+factual (Fig 9),0,looped,Alice was so tired when she got back home so she went, straight to bed. She had a wonderful dream about the magical garden and all the wonderful things she could do there.,,success,"The continuation correctly applies commonsense by stating that Alice went ""straight to bed"" because she was tired."
 factual (Fig 9),1,looped,"Jack and Lily saw a rainbow after a rainy day. They were amazed by the colors. Jack said, ""Look, Lily. A rainbow has"," come to life!"" Lily smiled and said, ""Yes, Jack. It's so pretty.""
 
-As they walked home, they saw a man who looked sad. Lily asked him, ""Why",
+As they walked home, they saw a man who looked sad. Lily asked him, ""Why",,partial,"The model provides a grammatically plausible completion (""come to life!""), but fails to state the expected factual answer about the number of colors in a rainbow (e.g., seven colors)."
 factual (Fig 9),2,looped,"Jack and Lily liked to watch the moon at night. They noticed that the moon changed its shape every night. Sometimes the moon was big and round, and sometimes it was"," small and round.
 
-One night, they saw a big, round, round moon in the sky. It was very bright and shiny. They wondered what it was and how it got so high",
-factual (Fig 9),3,looped,"Jack wanted to read a book, so he went to", the library. He looked around and saw a big book with lots of words. He picked it up and opened it. It was full of pictures and words. He read the words and he was so,
+One night, they saw a big, round, round moon in the sky. It was very bright and shiny. They wondered what it was and how it got so high",,failure,"The moon changes into a crescent or half-circle shape rather than becoming ""small and round."""
+factual (Fig 9),3,looped,"Jack wanted to read a book, so he went to", the library. He looked around and saw a big book with lots of words. He picked it up and opened it. It was full of pictures and words. He read the words and he was so,,success,"Going to ""the library"" is a completely logical and expected commonsense destination for someone who wants to read a book."
 factual (Fig 9),4,looped,"""Can cows fly?"", Alice asked her mother.","
 
 ""Yes, of course,"" her mother said. ""But be careful, the cows can be dangerous.""
 
-Alice nodded and watched the cows as they walked around the farm. She saw",
+Alice nodded and watched the cows as they walked around the farm. She saw",,failure,"The model incorrectly answers ""Yes"" to the question of whether cows can fly, violating basic factual commonsense."
 factual (Fig 9),5,looped,"""What do birds like to eat?"", Tom asked his mother.","
 
 ""They like to eat worms,"" his mother replied.
 
 Tom was very excited. He wanted to try something new. He asked his mother if he could have a worm.
 
-",
+",,success,The continuation correctly states a commonsense fact that birds like to eat worms.
 factual (Fig 9),6,looped,"""What language do they speak in France?"", Tom asked his mother",".
 
 ""They speak different languages,"" she replied.
@@ -735,94 +735,94 @@ Tom was amazed. He wanted to learn more languages.
 
 ""Can I learn more languages?"" he asked.
 
-His",
+His",,failure,"The model fails to provide the correct factual answer (""French"") and instead gives a vague, incorrect answer (""different languages"")."
 factual (Fig 9),7,looped,"If I throw a ball up in the air, eventually it will"," come down.""
 
-The little girl was excited and she ran to the tree. She threw the ball up in the air and it came down. She was so happy and she thanked the tree for",
+The little girl was excited and she ran to the tree. She threw the ball up in the air and it came down. She was so happy and she thanked the tree for",,success,"The continuation correctly states the commonsense fact that a ball thrown up in the air will ""come down."""
 factual (Fig 9),8,looped,"It was winter and cold outside so his mother told him, ""You should"," stay inside and play with your toys.""
 
-But Jack was too excited and he didn't listen. He ran outside and started playing with his toys. Suddenly, he heard a loud noise and he",
+But Jack was too excited and he didn't listen. He ran outside and started playing with his toys. Suddenly, he heard a loud noise and he",,success,"The continuation provides a logical, commonsense recommendation (staying inside) given that it is winter and cold outside."
 reasoning (Fig 10),0,looped,"Lily likes cats and dogs. She asked her mom for a dog and her mom said no, so instead she asked"," her dad for a dog. Her dad said yes and gave her a dog. Lily was happy and hugged her dog.
 
-But then, Lily saw a cat in the garden. The cat was",
+But then, Lily saw a cat in the garden. The cat was",,partial,"Asking her dad instead of her mom is a plausible response to being told no, even though the setup about liking both cats and dogs strongly implies she was expected to ask for a cat instead."
 reasoning (Fig 10),1,looped,"Jack told Mary, ""If you give me your banana, I'll give you my apple"". Mary gave Jack her Banana so"," he could have his apple.
 
 Jack was so happy that he gave Mary a big hug. He said, ""Thank you for giving me your apple. You are so kind.""
 
-Mary",
+Mary",,failure,"The continuation incorrectly states that Jack (""he"") gets the apple instead of Mary (""she"") receiving Jack's apple in exchange for her banana."
 reasoning (Fig 10),2,looped,"On weekends Jack went to visit his grandmother whereas on weekdays he would go to school. Last weekend, when Jack was on his way to"," school, he noticed something strange. His grandmother had a big, red balloon in her hands.
 
 Jack asked his grandmother, ""What is that?""
 
-His grandmother smiled and said, """,
-reasoning (Fig 10),3,looped,Lily and Ben were having an argument. Ben said that cake is much better than ice cream and Lily said that, ice cream is better than ice cream and Ben said that ice cream is better than ice cream and Lily said that ice cream is better than ice cream and Ben said that ice cream is better than ice cream,
+His grandmother smiled and said, """,,failure,"The continuation states Jack was going to school on the weekend, which directly contradicts the prompt stating he visits his grandmother on weekends and goes to school on weekdays."
+reasoning (Fig 10),3,looped,Lily and Ben were having an argument. Ben said that cake is much better than ice cream and Lily said that, ice cream is better than ice cream and Ben said that ice cream is better than ice cream and Lily said that ice cream is better than ice cream and Ben said that ice cream is better than ice cream,,failure,"The continuation states that ""ice cream is better than ice cream"", which is a nonsensical comparison instead of logically contrasting ice cream with cake."
 reasoning (Fig 10),4,looped,"Lily and Ben are having an argument. They are trying to decide between the park and the swimming pool. Ben says, ""I want to go to the park"". Lily says",", ""No, I want to go to the pond."" They pull and tug on the ball. They are not happy.
 
-Mom hears them and comes to see what is wrong. She says",
+Mom hears them and comes to see what is wrong. She says",,partial,"Lily correctly disagrees with Ben about where to go, but she says ""pond"" instead of the ""swimming pool"" established in the prompt."
 reasoning (Fig 10),5,looped,"Jack's mother was not home, and his father was at home. When Jack came home, he said hello to"," his father and his father. His father said, ""Jack, I have something for you. I want you to have it.""
 
-Jack was so excited. He asked, ""What is it",
+Jack was so excited. He asked, ""What is it",,success,"The model correctly identifies that Jack greets his father, who is the only parent at home, despite a minor repetition slip."
 reasoning (Fig 10),6,looped,"Lily doesn't like swimming. When her father wants to take her to the swimming pool, she says",", ""No, I don't want to go. I want to stay here.""
 
-Her father says, ""Lily, you have to go. It's not safe to swim in the",
+Her father says, ""Lily, you have to go. It's not safe to swim in the",,success,"The continuation logically follows the prompt, as Lily refuses to go to the swimming pool because she dislikes swimming."
 reasoning (Fig 10),7,looped,Both Ben and Lily wanted cake. Father said that there was only one piece of cake left. They," both reached for the cake and pulled it hard. The cake fell on the floor and broke into pieces.
 
-""Oh no!"" Ben and Lily said. They looked at the cake and felt sad",
-reasoning (Fig 10),8,looped,"Ben went to visit Lily in her house, but she was not at home. Ben knocked on the door,"," but Lily did not answer. He went to the kitchen, but Lily was not there. He went to the garden, but Lily was not there. He went to the garden, but Lily was not",
+""Oh no!"" Ben and Lily said. They looked at the cake and felt sad",,success,Both children reaching for and pulling on the last piece of cake is a logical reaction to both of them wanting it.
+reasoning (Fig 10),8,looped,"Ben went to visit Lily in her house, but she was not at home. Ben knocked on the door,"," but Lily did not answer. He went to the kitchen, but Lily was not there. He went to the garden, but Lily was not there. He went to the garden, but Lily was not",,success,"Since Lily was not at home, it logically follows that she did not answer when Ben knocked on the door."
 context-tracking (Fig 11),0,looped,"""Hi Jane, have you seen Alice? I can't find her anywhere"", said Jack.","
 
 ""I'm sorry, Jack. I can't find her anywhere,"" said Jane.
 
 Jack thought for a moment and then said, ""I know! Let's look together.""
-",
+",,success,"Jane correctly responds to Jack about not being able to find Alice, staying fully consistent with the characters and situation in the prompt."
 context-tracking (Fig 11),1,looped,"Max had two dogs. One was white and the other was black. Max walked up the street and saw a kid with a dog. He told the kid, ""I see you have a Brown dog. I also have"," a dog.""
 
-The kid smiled and said, ""Thank you, Max. You are very kind."" Max wagged his tail and barked happily. He was happy to have a new friend",
+The kid smiled and said, ""Thank you, Max. You are very kind."" Max wagged his tail and barked happily. He was happy to have a new friend",,partial,"The continuation says Max has ""a dog"" (singular), which is technically true and plausible in conversation, though it misses the expected count of ""two dogs"" established in the prompt."
 context-tracking (Fig 11),2,looped,"Anne had a piece of candy in her left pocket and a piece of chocolate in her right pocket. Anne's mom asked her, ""Anne, what is that you have in your left pocket?""","
 
 Anne smiled and said, ""It's candy!""
 
 Anne's mom smiled and said, ""That's right! You can eat it if you want.""
 
-Anne was so happy",
+Anne was so happy",,success,"The continuation correctly identifies the item in Anne's left pocket as candy, which matches the prompt's setup."
 context-tracking (Fig 11),3,looped,Alice had both an apple and a carrot in her bag. She took the apple out of the bag and gave it to Jack. She reached into the bag again and took," out the apple. She gave it to Jack and said, ""Here, you can have this apple.""
 
-Jack was so happy and thanked Alice. He took the apple and ate it. It",
+Jack was so happy and thanked Alice. He took the apple and ate it. It",,failure,"Alice already took the apple out of her bag and gave it to Jack, so only the carrot was left in the bag for her to take out."
 context-tracking (Fig 11),4,looped,"Alice and Jack walked up the street and met a girl in a red dress. The girl said to them, ""Hi, I'm Jane. What are your names?""","
 
 Alice and Jack said, ""We're Alice and Jack. We're playing together.""
 
 Jane said, ""That's nice. I'm Jane. I like playing with friends.""
-",
+",,success,The continuation correctly identifies the two characters' names as Alice and Jack in direct response to Jane's question.
 context-tracking (Fig 11),5,looped,"Diva was hungry, and wanted to bake a cake, but she didn't have any sugar at home, so she decided to go ask around. She started walking and met a squirrel. She asked the squirrel, ""Would you happen"," to bake a cake with me?"" The squirrel said, ""Yes, I do!""
 
-So, Dolly and the squirrel baked a cake together. They mixed the ingredients and put the cake in",
+So, Dolly and the squirrel baked a cake together. They mixed the ingredients and put the cake in",,failure,"The prompt sets up Diva going out specifically to ask for sugar, so asking the squirrel to bake a cake with her instead is inconsistent with her established goal."
 factual (Fig 9),0,mdlm,Alice was so tired when she got back home so she went," to bed. She was so tired that she had been so tired. 
 
-Alice was so tired that she had to get up. She was so tired that she had to go to bed.",
+Alice was so tired that she had to get up. She was so tired that she had to go to bed.",,success,"The continuation correctly completes the sentence with the commonsense action of going ""to bed"" when tired."
 factual (Fig 9),1,mdlm,"Jack and Lily saw a rainbow after a rainy day. They were amazed by the colors. Jack said, ""Look, Lily. A rainbow has"," a rainbow!""
 
 Lily said, ""Yes, it is. It's a rainbow. It's very pretty.""
 
-Jack said, ""Yes, it is. It's very pretty",
+Jack said, ""Yes, it is. It's very pretty",,failure,"Stating ""A rainbow has a rainbow!"" is nonsensical and fails to mention its colors."
 factual (Fig 9),2,mdlm,"Jack and Lily liked to watch the moon at night. They noticed that the moon changed its shape every night. Sometimes the moon was big and round, and sometimes it was"," different.
 
-One night, Jack and Lily went to bed and looked at the moon. It was so big and bright, it was so pretty. Jack and Lily loved to look at the moon",
+One night, Jack and Lily went to bed and looked at the moon. It was so big and bright, it was so pretty. Jack and Lily loved to look at the moon",,partial,"Saying the moon was ""different"" is plausible and grammatically correct, but it avoids the specific contrasting shape or size description (like ""small"", ""thin"", or ""like a banana/crescent"") that the prompt is testing for."
 factual (Fig 9),3,mdlm,"Jack wanted to read a book, so he went to"," the library and found a book. He read the book and read the book.
 
-When he got home, he read the book and read the book. He read the book and saw a picture",
+When he got home, he read the book and read the book. He read the book and saw a picture",,success,Going to the library is the expected commonsense place to go when wanting to read a book.
 factual (Fig 9),4,mdlm,"""Can cows fly?"", Alice asked her mother.","
 
 ""No, honey, we can't feed the chickens,"" her mother said.
 
-Alice was sad, but she knew her mother was right. She decided to feed the chickens and feed",
+Alice was sad, but she knew her mother was right. She decided to feed the chickens and feed",,failure,"Although the mother begins with ""No,"" she immediately talks about feeding chickens instead of answering the question about whether cows can fly."
 factual (Fig 9),5,mdlm,"""What do birds like to eat?"", Tom asked his mother.","
 
 ""They are good for you,"" his mother said.
 
 ""Yes, they are good. They are good for you,"" his mother said.
 
-""Yes, they are good",
+""Yes, they are good",,failure,"The continuation completely fails to answer the question of what birds like to eat, instead offering a nonsensical response."
 factual (Fig 9),6,mdlm,"""What language do they speak in France?"", Tom asked his mother",".
 
 ""They are a different language,"" his mother said.
@@ -830,152 +830,152 @@ factual (Fig 9),6,mdlm,"""What language do they speak in France?"", Tom asked hi
 ""They are a different language,"" Tom said.
 
 ""They are a different language,"" his mother said.
-",
+",,failure,"The continuation gives a nonsensical response (""They are a different language"") instead of stating the correct fact that people in France speak French."
 factual (Fig 9),7,mdlm,"If I throw a ball up in the air, eventually it will"," fly away.""
 
-The boy was so excited and he started to throw the ball in the air. He threw it in the air and threw it in the air. The ball flew high in the",
+The boy was so excited and he started to throw the ball in the air. He threw it in the air and threw it in the air. The ball flew high in the",,failure,"The continuation states the ball will ""fly away"" instead of falling back down to the ground due to gravity."
 factual (Fig 9),8,mdlm,"It was winter and cold outside so his mother told him, ""You should"," go outside and play in the snow.""
 
-The boy was sad and said, ""But I want to stay outside and play in the snow!"" But his mother said, ""No, you can",
+The boy was sad and said, ""But I want to stay outside and play in the snow!"" But his mother said, ""No, you can",,failure,"The continuation fails the commonsense test by having the mother tell the boy to simply go outside because it is cold, rather than telling him to wear warm clothes or stay inside."
 reasoning (Fig 10),0,mdlm,"Lily likes cats and dogs. She asked her mom for a dog and her mom said no, so instead she asked"," her mom if she could have one. Her mom said yes, but only if she promised to be good and not eat it.
 
-Lily was sad, but she knew her mom was right",
+Lily was sad, but she knew her mom was right",,failure,"Instead of asking for a cat as implied by the prompt, the continuation says she asked for ""one,"" which refers back to the dog her mom just refused."
 reasoning (Fig 10),1,mdlm,"Jack told Mary, ""If you give me your banana, I'll give you my apple"". Mary gave Jack her Banana so"," she gave him the banana.
 
-Jack was so happy and he thanked Mary for being so kind. From then on, Jack and Mary were the best of friends. They played together every day and",
+Jack was so happy and he thanked Mary for being so kind. From then on, Jack and Mary were the best of friends. They played together every day and",,failure,The continuation illogically repeats the premise that Mary gave Jack the banana instead of stating the logical consequence that Jack gave her his apple.
 reasoning (Fig 10),2,mdlm,"On weekends Jack went to visit his grandmother whereas on weekdays he would go to school. Last weekend, when Jack was on his way to"," the park, he would play on the swings and slide down the slide. He was so happy that he was able to visit the park.
 
-On one day, Jack's grandmother asked him if",
-reasoning (Fig 10),3,mdlm,Lily and Ben were having an argument. Ben said that cake is much better than ice cream and Lily said that, it was not good for them. She said that cake was good and that they should share it with each other. She said that they should share and be kind to each other. She said that they,
-reasoning (Fig 10),4,mdlm,"Lily and Ben are having an argument. They are trying to decide between the park and the swimming pool. Ben says, ""I want to go to the park"". Lily says",", ""No, Ben, it is my turn. You can't have to go to the park. You have to be kind and share. You have to be kind and share. You have to",
+On one day, Jack's grandmother asked him if",,failure,"The continuation states Jack was on his way to the park, ignoring the prompt's premise that on weekends he goes to visit his grandmother."
+reasoning (Fig 10),3,mdlm,Lily and Ben were having an argument. Ben said that cake is much better than ice cream and Lily said that, it was not good for them. She said that cake was good and that they should share it with each other. She said that they should share and be kind to each other. She said that they,,partial,"The continuation is plausible as an argument against eating sweets, though it misses the expected completion of Lily arguing that ice cream is better than cake."
+reasoning (Fig 10),4,mdlm,"Lily and Ben are having an argument. They are trying to decide between the park and the swimming pool. Ben says, ""I want to go to the park"". Lily says",", ""No, Ben, it is my turn. You can't have to go to the park. You have to be kind and share. You have to be kind and share. You have to",,partial,"The continuation correctly captures that Lily disagrees with Ben, which is plausible in an argument, though it fails to specify the expected alternative (the swimming pool) that was set up in the prompt."
 reasoning (Fig 10),5,mdlm,"Jack's mother was not home, and his father was at home. When Jack came home, he said hello to"," the mother.
 
-The mother was so happy to see Jack and she thanked him for being so kind. She gave him a big hug and said, ""I'm so glad you're here.",
+The mother was so happy to see Jack and she thanked him for being so kind. She gave him a big hug and said, ""I'm so glad you're here.",,failure,"The continuation states that Jack said hello to his mother, which directly contradicts the prompt stating that his mother was not home and his father was."
 reasoning (Fig 10),6,mdlm,"Lily doesn't like swimming. When her father wants to take her to the swimming pool, she says"," she has to stay in the pool.
 
-Lily feels sad and angry. She says she wants to swim in the pool, but her father says no. She says she has to stay in",
+Lily feels sad and angry. She says she wants to swim in the pool, but her father says no. She says she has to stay in",,failure,"Since Lily dislikes swimming and is not at the pool yet, it makes no logical sense for her to respond by saying ""she has to stay in the pool."""
 reasoning (Fig 10),7,mdlm,Both Ben and Lily wanted cake. Father said that there was only one piece of cake left. They," said they could have one piece each. Ben and Lily were sad. They did not want to eat the cake. They thought it was too hard.
 
-Their mom and dad were angry. They",
+Their mom and dad were angry. They",,failure,Saying they could have one piece each directly contradicts the prompt's statement that there was only one piece of cake left for the two of them.
 reasoning (Fig 10),8,mdlm,"Ben went to visit Lily in her house, but she was not at home. Ben knocked on the door,"," and Lily answered him.
 
 ""Ben, what are you doing?"" Lily asked.
 
-""I'm sorry, Lily. I didn't mean to scare you. I just wanted to see",
+""I'm sorry, Lily. I didn't mean to scare you. I just wanted to see",,failure,"The continuation states that Lily answered the door at her house, directly contradicting the prompt which established that she was not at home."
 context-tracking (Fig 11),0,mdlm,"""Hi Jane, have you seen Alice? I can't find her anywhere"", said Jack.","
 
-Jane was very sad and she asked Jack why he was sad. Jack said he had lost his toy and he couldn't find it. Jane was very sad and asked Jack why he was sad",
+Jane was very sad and she asked Jack why he was sad. Jack said he had lost his toy and he couldn't find it. Jane was very sad and asked Jack why he was sad",,partial,"The continuation correctly identifies the characters Jane and Jack, but Jane ignores Jack's direct question about Alice and instead asks why he is sad."
 context-tracking (Fig 11),1,mdlm,"Max had two dogs. One was white and the other was black. Max walked up the street and saw a kid with a dog. He told the kid, ""I see you have a Brown dog. I also have"," a dog. He is brown and fluffy. He likes to play with you.""
 
-The kid smiled and said, ""Yes, Max. He is my dog. He is my dog. He",
+The kid smiled and said, ""Yes, Max. He is my dog. He is my dog. He",,partial,"The continuation says Max has ""a dog,"" which is plausible in conversation, though it misses the expected answer of ""two dogs"" (white and black) set up in the prompt."
 context-tracking (Fig 11),2,mdlm,"Anne had a piece of candy in her left pocket and a piece of chocolate in her right pocket. Anne's mom asked her, ""Anne, what is that you have in your left pocket?"""," Anne smiled and said, ""I'm sorry, mom. I didn't know it was yours.""
 
-Her mom smiled and said, ""It's okay, Anne. I'm glad you're",
+Her mom smiled and said, ""It's okay, Anne. I'm glad you're",,failure,Anne fails to identify the piece of candy in her left pocket and instead gives a nonsensical apology that does not answer her mom's question.
 context-tracking (Fig 11),3,mdlm,Alice had both an apple and a carrot in her bag. She took the apple out of the bag and gave it to Jack. She reached into the bag again and took," a bite.
 
 Jack smiled and said, ""That was delicious! I'm so happy I could share it with you.""
 
-Alice smiled and said, ""You're welcome, Jack.",
+Alice smiled and said, ""You're welcome, Jack.",,failure,"The model fails to track the remaining object (the carrot) and produces the nonsensical phrase ""She reached into the bag again and took a bite."""
 context-tracking (Fig 11),4,mdlm,"Alice and Jack walked up the street and met a girl in a red dress. The girl said to them, ""Hi, I'm Jane. What are your names?""","
 
 The girl smiled and said, ""My name is Alice. What's your name?""
 
 The girl smiled and said, ""My name is Alice. What's your name?""
 
-",
-context-tracking (Fig 11),5,mdlm,"Diva was hungry, and wanted to bake a cake, but she didn't have any sugar at home, so she decided to go ask around. She started walking and met a squirrel. She asked the squirrel, ""Would you happen"," to me?"" The squirrel said, ""Yes, I can help you bake a cake. Do you want to help me bake a cake?"" The squirrel was very happy and said, ""Yes, please",
+",,partial,"Alice correctly states her name, but she forgets about Jack and asks Jane for her name even though Jane just introduced herself."
+context-tracking (Fig 11),5,mdlm,"Diva was hungry, and wanted to bake a cake, but she didn't have any sugar at home, so she decided to go ask around. She started walking and met a squirrel. She asked the squirrel, ""Would you happen"," to me?"" The squirrel said, ""Yes, I can help you bake a cake. Do you want to help me bake a cake?"" The squirrel was very happy and said, ""Yes, please",,failure,"The first clause completes the question as ""Would you happen to me?"", which is nonsensical and forgets that she is asking around for sugar."
 factual (Fig 9),0,looped_mdlm,Alice was so tired when she got back home so she went," to sleep. 
 
-The next morning, Alice woke up and was safe again. She was so happy that she had been able to explore the world. She was so glad that she had been",
+The next morning, Alice woke up and was safe again. She was so happy that she had been able to explore the world. She was so glad that she had been",,success,"Going ""to sleep"" is the correct, commonsense completion for what someone does when they are very tired at home."
 factual (Fig 9),1,looped_mdlm,"Jack and Lily saw a rainbow after a rainy day. They were amazed by the colors. Jack said, ""Look, Lily. A rainbow has"," a rainbow on it. Let's do it!"" 
 
-Lily said, ""Yes, let's do it!"" They put the rainbow on the wall and hung it on the wall. They",
+Lily said, ""Yes, let's do it!"" They put the rainbow on the wall and hung it on the wall. They",,failure,"The continuation is tautological and nonsensical, stating that a rainbow has ""a rainbow on it"" instead of mentioning its colors or seven colors."
 factual (Fig 9),2,looped_mdlm,"Jack and Lily liked to watch the moon at night. They noticed that the moon changed its shape every night. Sometimes the moon was big and round, and sometimes it was"," very bright.
 
-One night, Jack and Lily decided to have a game. They decided to play a game of tag. They had to race each other around the garden. They would run and",
+One night, Jack and Lily decided to have a game. They decided to play a game of tag. They had to race each other around the garden. They would run and",,partial,"The continuation describes the moon as ""very bright,"" which is a plausible attribute of the moon, though it misses the expected contrast in shape (like ""small and thin"" or ""a crescent"") set up by the prompt."
 factual (Fig 9),3,looped_mdlm,"Jack wanted to read a book, so he went to"," the library.
 
 At the library, Jack found a book. He wanted to read it, but he was too scared. He started to cry.
 
-Suddenly, he heard a voice.",
+Suddenly, he heard a voice.",,success,"Going to ""the library"" is a completely logical and expected commonsense completion for someone who wants to read a book."
 factual (Fig 9),4,looped_mdlm,"""Can cows fly?"", Alice asked her mother.","
 
 ""No, we can't. They are too busy,"" her mother said.
 
 Alice was sad. She wanted to see the cows fly. She wanted to see them fly.
-",
+",,partial,"The model correctly answers ""No,"" to whether cows can fly, though it slightly muddles the pronoun (""we"") and gives a nonsensical reason afterwards."
 factual (Fig 9),5,looped_mdlm,"""What do birds like to eat?"", Tom asked his mother.","
 
 ""They are eating from the tree,"" his mother replied.
 
 Tom was curious. He wanted to see the birds, so he asked his mother if he could touch them.
 
-",
+",,failure,"The continuation states where the birds are eating (""from the tree"") instead of answering what they like to eat (e.g., worms, seeds, berries)."
 factual (Fig 9),6,looped_mdlm,"""What language do they speak in France?"", Tom asked his mother",".
 
 ""The language is called language,"" his mother explained.
 
 Tom was curious. He wanted to learn the language, so he asked his mother if he could learn it.
 
-",
+",,failure,"The model fails to provide the correct answer (""French"") and instead gives the nonsensical circular answer that the language is called ""language""."
 factual (Fig 9),7,looped_mdlm,"If I throw a ball up in the air, eventually it will"," fly away."" 
 
-The bird was so happy and thanked the boy for his help. From that day on, the bird was no longer lonely and never lonely again.",
+The bird was so happy and thanked the boy for his help. From that day on, the bird was no longer lonely and never lonely again.",,failure,"A ball thrown into the air will fall back down to the ground, not ""fly away."""
 factual (Fig 9),8,looped_mdlm,"It was winter and cold outside so his mother told him, ""You should"," be careful, Jack. You should always be careful when you play outside.""
 
 Jack nodded and said, ""I will be careful. I will be careful.""
 
-His mother smiled and said",
+His mother smiled and said",,partial,"Telling him to ""be careful"" is a plausible thing for a mother to say, though it misses the expected commonsense connection to wearing warm clothes because it is cold."
 reasoning (Fig 10),0,looped_mdlm,"Lily likes cats and dogs. She asked her mom for a dog and her mom said no, so instead she asked"," her mom if she could have a dog like that.
 
-Lily was sad and angry. She did not want to have a dog like that. She wanted to have a dog like her mom",
+Lily was sad and angry. She did not want to have a dog like that. She wanted to have a dog like her mom",,failure,"Instead of logically asking for a cat after her request for a dog was denied, Lily nonsensically asks for ""a dog like that."""
 reasoning (Fig 10),1,looped_mdlm,"Jack told Mary, ""If you give me your banana, I'll give you my apple"". Mary gave Jack her Banana so"," he could have his banana. 
 
 Jack was so happy that he thanked Mary for being so kind. He thanked Mary for her help and they both went home. 
 
-The end.",
+The end.",,failure,"The continuation repeats that Jack gets a banana instead of following the logical consequence of the trade, which is that Jack gives Mary his apple."
 reasoning (Fig 10),2,looped_mdlm,"On weekends Jack went to visit his grandmother whereas on weekdays he would go to school. Last weekend, when Jack was on his way to"," school, he was excited to see his grandmother.
 
-One day, Jack decided to go to school. He was so excited to learn something new. He asked his grandmother if he could go to",
+One day, Jack decided to go to school. He was so excited to learn something new. He asked his grandmother if he could go to",,failure,"The prompt states that Jack visits his grandmother on weekends and goes to school on weekdays, so on the weekend he should be on his way to his grandmother's house, not school."
 reasoning (Fig 10),3,looped_mdlm,Lily and Ben were having an argument. Ben said that cake is much better than ice cream and Lily said that," it is better than cake. Ben said that cake was better and that he could have it.
 
-Lily and Ben were sad and angry. They wanted to eat the cake, but it was",
-reasoning (Fig 10),4,looped_mdlm,"Lily and Ben are having an argument. They are trying to decide between the park and the swimming pool. Ben says, ""I want to go to the park"". Lily says",", ""No, I want to go. I want to see the park and the ducks and the fish. I want to go to the park and see the ducks and the fish."" Ben says,",
+Lily and Ben were sad and angry. They wanted to eat the cake, but it was",,success,"Lily logically takes the opposing side of the argument by claiming that ice cream (""it"") is better than cake."
+reasoning (Fig 10),4,looped_mdlm,"Lily and Ben are having an argument. They are trying to decide between the park and the swimming pool. Ben says, ""I want to go to the park"". Lily says",", ""No, I want to go. I want to see the park and the ducks and the fish. I want to go to the park and see the ducks and the fish."" Ben says,",,failure,"Since Lily and Ben are arguing between the park and the swimming pool and Ben chose the park, Lily should logically argue for the swimming pool rather than saying ""No"" and also wanting the park."
 reasoning (Fig 10),5,looped_mdlm,"Jack's mother was not home, and his father was at home. When Jack came home, he said hello to"," his mother and said hello.
 
 His mother smiled and said, ""It's okay, Jack. I'm glad you're here.""
 
-Jack smiled and said, ""I'm glad you",
-reasoning (Fig 10),6,looped_mdlm,"Lily doesn't like swimming. When her father wants to take her to the swimming pool, she says",", ""Lily, you have to listen to me. You have to listen to me. You have to listen to me. You have to listen to me. You have to listen to me.",
+Jack smiled and said, ""I'm glad you",,failure,"The continuation states that Jack said hello to his mother, which directly contradicts the prompt stating that his mother was not home."
+reasoning (Fig 10),6,looped_mdlm,"Lily doesn't like swimming. When her father wants to take her to the swimming pool, she says",", ""Lily, you have to listen to me. You have to listen to me. You have to listen to me. You have to listen to me. You have to listen to me.",,failure,Lily nonsensical addresses herself by name and demands to be listened to instead of expressing her dislike of swimming.
 reasoning (Fig 10),7,looped_mdlm,Both Ben and Lily wanted cake. Father said that there was only one piece of cake left. They," said it was not a cake, but it was a cake.
 
-Ben and Lily were sad. They wanted to eat the cake. They wanted to eat the cake. They wanted to eat the",
+Ben and Lily were sad. They wanted to eat the cake. They wanted to eat the cake. They wanted to eat the",,failure,"The continuation ""said it was not a cake, but it was a cake"" is nonsensical and does not logically follow the situation of two children wanting a single remaining piece of cake."
 reasoning (Fig 10),8,looped_mdlm,"Ben went to visit Lily in her house, but she was not at home. Ben knocked on the door,"," and Lily opened the door.
 
 ""Lily, what are you doing?"" Ben asked.
 
-""I'm sorry, Ben. I didn't mean to scare you,"" Lily said.",
+""I'm sorry, Ben. I didn't mean to scare you,"" Lily said.",,failure,"The continuation states that Lily opened the door, which directly contradicts the prompt's statement that she was not at home."
 context-tracking (Fig 11),0,looped_mdlm,"""Hi Jane, have you seen Alice? I can't find her anywhere"", said Jack.","
 
 Jane was very sad and said, ""I don't know where to go. I don't know where to go.""
 
-Jack was very kind and said, ""Don't worry,",
-context-tracking (Fig 11),1,looped_mdlm,"Max had two dogs. One was white and the other was black. Max walked up the street and saw a kid with a dog. He told the kid, ""I see you have a Brown dog. I also have", a dog. I have a dog. I have a dog. I have a dog. I have a dog. I have a dog. I have a dog. I have a dog. I have,
+Jack was very kind and said, ""Don't worry,",,partial,"The continuation correctly identifies Jane as the speaker responding to Jack, but her dialogue (""I don't know where to go"") does not logically answer the question about Alice's whereabouts."
+context-tracking (Fig 11),1,looped_mdlm,"Max had two dogs. One was white and the other was black. Max walked up the street and saw a kid with a dog. He told the kid, ""I see you have a Brown dog. I also have", a dog. I have a dog. I have a dog. I have a dog. I have a dog. I have a dog. I have a dog. I have a dog. I have,,partial,"The continuation states that Max has ""a dog,"" which is plausible in response to the kid, though it fails to specify that he actually has two dogs (one white and one black) as set up in the prompt."
 context-tracking (Fig 11),2,looped_mdlm,"Anne had a piece of candy in her left pocket and a piece of chocolate in her right pocket. Anne's mom asked her, ""Anne, what is that you have in your left pocket?""","
 
 Anne smiled and said, ""I don't know, mommy. I just want to have some candy.""
 
-Anne's mom smiled and said, ""That's right, Anne.",
+Anne's mom smiled and said, ""That's right, Anne.",,partial,"Anne says she does not know what is in her pocket, which avoids giving the expected answer, though she mentions candy in the next sentence."
 context-tracking (Fig 11),3,looped_mdlm,Alice had both an apple and a carrot in her bag. She took the apple out of the bag and gave it to Jack. She reached into the bag again and took," the apple.
 
-Jack was so happy that he had found the apple. He thanked Alice for her help and they both went back to the park.",
+Jack was so happy that he had found the apple. He thanked Alice for her help and they both went back to the park.",,failure,"Alice had already taken the apple out of the bag and given it to Jack, so only the carrot remained in the bag."
 context-tracking (Fig 11),4,looped_mdlm,"Alice and Jack walked up the street and met a girl in a red dress. The girl said to them, ""Hi, I'm Jane. What are your names?""","
 
 Alice and Jack said, ""My name is Jack. What's your name?""
 
 The girl said, ""My name is Jane. What's your name?""
 
-Alice and Jack",
+Alice and Jack",,partial,"The continuation only gives one of the two names (Jack, omitting Alice) in a joint statement, and redundantly asks for Jane's name after she just introduced herself."
 context-tracking (Fig 11),5,looped_mdlm,"Diva was hungry, and wanted to bake a cake, but she didn't have any sugar at home, so she decided to go ask around. She started walking and met a squirrel. She asked the squirrel, ""Would you happen"," to bake me a cake?"" The squirrel smiled and said, ""Yes, please!"" 
 
-Diko and the squirrel baked the cake together. They were so happy and thanked D Sylvia for being",
+Diko and the squirrel baked the cake together. They were so happy and thanked D Sylvia for being",,failure,"The prompt sets up that Diva went out specifically to ask for sugar so she could bake a cake, not to ask someone else to bake a cake for her."

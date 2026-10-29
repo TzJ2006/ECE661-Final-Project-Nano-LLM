@@ -112,8 +112,43 @@ def overlap():
         fig.savefig(f"{FIG}/{name}.png", dpi=200); plt.close(fig)
 
 
+def figs9_11():
+    """Paper-style grid: prompt x model, cell = label (letter + status color), plus a success count row."""
+    import csv
+    f = f"{R}/figs9_11_all.csv"
+    if not os.path.exists(f):
+        return
+    rows = list(csv.DictReader(open(f, encoding="utf-8")))
+    if not any(r.get("label_gemini") for r in rows):
+        return
+    col = {"success": "#0ca30c", "partial": "#fab219", "failure": "#d03b3b"}  # status palette, never alone
+    models = [m for m in TS + OURS if any(r["model"] == m for r in rows)]
+    prompts = list(dict.fromkeys((r["figure"], r["prompt_id"]) for r in rows))
+    lab = {(r["figure"], r["prompt_id"], r["model"]): r["label_gemini"] for r in rows}
+    fig, ax = plt.subplots(figsize=(1 + 0.75 * len(models), 0.3 * (len(prompts) + 2)))
+    for y, p in enumerate(prompts):
+        for x, m in enumerate(models):
+            l = lab.get((*p, m), "")
+            ax.add_patch(plt.Rectangle((x, y), 0.94, 0.9, color=col.get(l, GRID)))
+            ax.text(x + 0.47, y + 0.45, l[:1].upper(), ha="center", va="center", fontsize=7,
+                    color=INK if l == "partial" else "white")
+    y = len(prompts) + 0.3
+    for x, m in enumerate(models):
+        ax.text(x + 0.47, y + 0.45, sum(lab.get((*p, m)) == "success" for p in prompts),
+                ha="center", va="center", fontsize=8, fontweight="bold")
+    ax.set_xlim(0, len(models)); ax.set_ylim(len(prompts) + 1.4, 0); ax.grid(False)
+    ax.set_xticks([x + 0.47 for x in range(len(models))], [LABEL[m] for m in models], rotation=40, ha="right", fontsize=8)
+    ax.set_yticks([y + 0.45 for y in range(len(prompts))] + [len(prompts) + 0.75],
+                  [f"{fig_.split(' ')[0][:4]}. {int(i) + 1}" for fig_, i in prompts] + ["# success"], fontsize=7)
+    for s in ax.spines.values():
+        s.set_visible(False)
+    ax.set_title("Figs 9-11: S = success, P = partial, F = failure (labels by Gemini 4 Argon, blind to model)",
+                 fontsize=9, loc="left")
+    fig.tight_layout(); fig.savefig(f"{FIG}/figs9_11.png", dpi=200); plt.close(fig)
+
+
 if __name__ == "__main__":
     os.makedirs(FIG, exist_ok=True)
     h, g = harness(), gemini()
-    headline(h, g); table(h, g); loss_curves(); overlap()
+    headline(h, g); table(h, g); loss_curves(); overlap(); figs9_11()
     print(open(f"{R}/summary.md").read())

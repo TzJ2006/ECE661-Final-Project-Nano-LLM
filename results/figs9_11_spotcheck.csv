@@ -1,0 +1,104 @@
+figure,prompt_id,model,prompt,completion,label
+factual (Fig 9),5,looped,"""What do birds like to eat?"", Tom asked his mother.","
+
+""They like to eat worms,"" his mother replied.
+
+Tom was very excited. He wanted to try something new. He asked his mother if he could have a worm.
+
+",
+context-tracking (Fig 11),5,looped,"Diva was hungry, and wanted to bake a cake, but she didn't have any sugar at home, so she decided to go ask around. She started walking and met a squirrel. She asked the squirrel, ""Would you happen"," to bake a cake with me?"" The squirrel said, ""Yes, I do!""
+
+So, Dolly and the squirrel baked a cake together. They mixed the ingredients and put the cake in",
+context-tracking (Fig 11),2,1M,"Anne had a piece of candy in her left pocket and a piece of chocolate in her right pocket. Anne's mom asked her, ""Anne, what is that you have in your left pocket?""","
+
+Anne was so excited and said, ""I want to buy some candy!""
+
+Her mom smiled and said, ""Yes, Anne. I'm so happy to buy the candy and I",
+reasoning (Fig 10),3,1Layer-21M,Lily and Ben were having an argument. Ben said that cake is much better than ice cream and Lily said that," she was a good sister and that they should share their ice cream. They said that they could each have a different flavor and that they could both have.
+
+Lily and Ben were happy and",
+factual (Fig 9),8,looped_mdlm,"It was winter and cold outside so his mother told him, ""You should"," be careful, Jack. You should always be careful when you play outside.""
+
+Jack nodded and said, ""I will be careful. I will be careful.""
+
+His mother smiled and said",
+reasoning (Fig 10),6,looped,"Lily doesn't like swimming. When her father wants to take her to the swimming pool, she says",", ""No, I don't want to go. I want to stay here.""
+
+Her father says, ""Lily, you have to go. It's not safe to swim in the",
+reasoning (Fig 10),2,2Layers-33M,"On weekends Jack went to visit his grandmother whereas on weekdays he would go to school. Last weekend, when Jack was on his way to"," school, he saw a big, shiny car. He was so excited that he ran to the car and asked his grandmother if he could take a ride.
+
+His grandmother said, ""No,",
+factual (Fig 9),4,looped_mdlm,"""Can cows fly?"", Alice asked her mother.","
+
+""No, we can't. They are too busy,"" her mother said.
+
+Alice was sad. She wanted to see the cows fly. She wanted to see them fly.
+",
+reasoning (Fig 10),6,baseline,"Lily doesn't like swimming. When her father wants to take her to the swimming pool, she says"," no. She says she wants to stay home and play with her toys. She says she does not want to swim.
+
+Her father is sad. He says he loves Lily and she is his",
+factual (Fig 9),5,2Layers-33M,"""What do birds like to eat?"", Tom asked his mother.","
+
+""Well, birds like to eat seeds and worms,"" his mother replied.
+
+Tom was excited to try the seeds and worms. He asked his mother if he could have some.
+",
+reasoning (Fig 10),3,mdlm,Lily and Ben were having an argument. Ben said that cake is much better than ice cream and Lily said that, it was not good for them. She said that cake was good and that they should share it with each other. She said that they should share and be kind to each other. She said that they,
+reasoning (Fig 10),7,mdlm,Both Ben and Lily wanted cake. Father said that there was only one piece of cake left. They," said they could have one piece each. Ben and Lily were sad. They did not want to eat the cake. They thought it was too hard.
+
+Their mom and dad were angry. They",
+factual (Fig 9),7,8M,"If I throw a ball up in the air, eventually it will"," be gone.""
+
+The little girl was so excited. She ran to the ball and threw it as hard as she could. The ball flew up into the sky and disappeared.
+
+The little",
+reasoning (Fig 10),0,1Layer-21M,"Lily likes cats and dogs. She asked her mom for a dog and her mom said no, so instead she asked"," her mom if she could pet the dog. Her mom said yes, but warned her to be careful.
+
+Lily went outside to play with the dog. She saw a boy playing with a",
+reasoning (Fig 10),2,3M,"On weekends Jack went to visit his grandmother whereas on weekdays he would go to school. Last weekend, when Jack was on his way to"," school, he noticed a big, scary dog. Jack was scared and he started to cry.
+
+His grandmother said, ""Don't worry Jack, I will help you. I will take you",
+factual (Fig 9),0,28M,Alice was so tired when she got back home so she went," to bed. She had a wonderful day and was so happy to have gone on the adventure.
+",
+reasoning (Fig 10),0,looped_mdlm,"Lily likes cats and dogs. She asked her mom for a dog and her mom said no, so instead she asked"," her mom if she could have a dog like that.
+
+Lily was sad and angry. She did not want to have a dog like that. She wanted to have a dog like her mom",
+factual (Fig 9),1,looped,"Jack and Lily saw a rainbow after a rainy day. They were amazed by the colors. Jack said, ""Look, Lily. A rainbow has"," come to life!"" Lily smiled and said, ""Yes, Jack. It's so pretty.""
+
+As they walked home, they saw a man who looked sad. Lily asked him, ""Why",
+factual (Fig 9),0,3M,Alice was so tired when she got back home so she went," to bed. She was so tired that she fell asleep.
+
+When she woke up, she was so tired that she had to go to bed. She was so tired from all the running she",
+reasoning (Fig 10),5,2Layers-33M,"Jack's mother was not home, and his father was at home. When Jack came home, he said hello to"," his father and asked him to come home. His father was very happy to see Jack and said, ""Thank you for coming home, Jack. I am so happy to see you.""
+
+Jack",
+reasoning (Fig 10),3,looped,Lily and Ben were having an argument. Ben said that cake is much better than ice cream and Lily said that, ice cream is better than ice cream and Ben said that ice cream is better than ice cream and Lily said that ice cream is better than ice cream and Ben said that ice cream is better than ice cream,
+reasoning (Fig 10),7,8M,Both Ben and Lily wanted cake. Father said that there was only one piece of cake left. They," had to wait until they could get it.
+
+Ben and Lily were very sad. They wanted cake now. They started to cry. They said they were sorry. They said they would share the",
+reasoning (Fig 10),3,looped_mdlm,Lily and Ben were having an argument. Ben said that cake is much better than ice cream and Lily said that," it is better than cake. Ben said that cake was better and that he could have it.
+
+Lily and Ben were sad and angry. They wanted to eat the cake, but it was",
+reasoning (Fig 10),7,1Layer-21M,Both Ben and Lily wanted cake. Father said that there was only one piece of cake left. They," both wanted to eat it, but they knew they had to wait until after dinner.
+
+Lily and Ben were sad, but they knew they had to listen to their parents. They waited and",
+reasoning (Fig 10),3,baseline,Lily and Ben were having an argument. Ben said that cake is much better than ice cream and Lily said that," cake is better than cake. Lily said that cake is better than cake. They started to argue and shout.
+
+Mom heard them and came to see what was wrong. She saw the cake and",
+context-tracking (Fig 11),0,looped_mdlm,"""Hi Jane, have you seen Alice? I can't find her anywhere"", said Jack.","
+
+Jane was very sad and said, ""I don't know where to go. I don't know where to go.""
+
+Jack was very kind and said, ""Don't worry,",
+reasoning (Fig 10),1,2Layers-33M,"Jack told Mary, ""If you give me your banana, I'll give you my apple"". Mary gave Jack her Banana so"," he could have his banana. Jack was so happy and he thanked Mary.
+
+The moral of the story is that it is important to be kind and generous to others. If you are kind and",
+reasoning (Fig 10),5,mdlm,"Jack's mother was not home, and his father was at home. When Jack came home, he said hello to"," the mother.
+
+The mother was so happy to see Jack and she thanked him for being so kind. She gave him a big hug and said, ""I'm so glad you're here.",
+reasoning (Fig 10),4,3M,"Lily and Ben are having an argument. They are trying to decide between the park and the swimming pool. Ben says, ""I want to go to the park"". Lily says",", ""No, I want to go to the pool. It is fun and fun."" Ben says, ""No, it is my turn. You can go with me.""
+
+Lily and",
+factual (Fig 9),7,28M,"If I throw a ball up in the air, eventually it will"," come down and you can have it back.""
+
+The little girl was so happy and she thanked the old man. She ran to the park and threw the ball up in the air. The ball",

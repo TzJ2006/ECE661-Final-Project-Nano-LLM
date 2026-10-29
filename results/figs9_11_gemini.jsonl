@@ -1,0 +1,264 @@
+{"key": "9f99dd58bdd850e8", "label": "success", "reason": "The continuation correctly provides the commonsense action of going \"to bed\" when someone is tired at home."}
+{"key": "31ecf9bbe26348cd", "label": "failure", "reason": "The continuation nonsensically completes the sentence by saying \"a rainbow has a rainbow!\" instead of naming colors or the number of colors."}
+{"key": "c750cb1b173ad24f", "label": "failure", "reason": "The continuation fails to provide a contrasting moon shape (like small, thin, or a crescent) and instead makes the nonsensical claim that it was \"too big and it was just a star.\""}
+{"key": "947c0a51f46a8271", "label": "success", "reason": "The continuation correctly identifies the library as a commonsense place to go to read a book."}
+{"key": "35397b5e59bc474f", "label": "failure", "reason": "The continuation incorrectly states that cows can fly (\"Sure\"), violating basic commonsense."}
+{"key": "e7230081efb441e8", "label": "failure", "reason": "The continuation fails to answer the question about what birds eat and instead offers a nonsensical statement that it is \"too dangerous.\""}
+{"key": "56a44866216c1460", "label": "failure", "reason": "The mother gives a nonsensical answer (\"very loud\") instead of naming the language spoken in France (French)."}
+{"key": "db4b4c362ec495dd", "label": "failure", "reason": "The continuation states it will \"be fun,\" which fails to provide the expected commonsense fact that the ball will come back down."}
+{"key": "8e271a9c7645c798", "label": "partial", "reason": "Telling a child not to go outside and get wet in the cold is plausible advice, though it misses the expected commonsense answer of wearing warm clothes."}
+{"key": "4aabc8b1afeac962", "label": "partial", "reason": "Asking her mom to play is a plausible real-world action, though the prompt sets up the clear expectation that she would ask for a cat instead."}
+{"key": "e12078b72a4645ec", "label": "failure", "reason": "The continuation fails to fulfill the promised exchange (giving Mary the apple) and nonsensically has Jack thank himself."}
+{"key": "d2d0270fca011d5b", "label": "failure", "reason": "The continuation states Jack was on his way to school last weekend, which directly contradicts the prompt stating he visits his grandmother on weekends and goes to school on weekdays."}
+{"key": "18f23aeb3e6f0934", "label": "failure", "reason": "The continuation ignores the setup of the argument about cake versus ice cream and introduces an unrelated statement about having a picnic."}
+{"key": "2fd8c5d7315826f0", "label": "partial", "reason": "Lily disagrees with Ben as expected in an argument, but fails to express the logical counter-preference of wanting to go to the swimming pool."}
+{"key": "91a46208e1bf96b1", "label": "failure", "reason": "The continuation is illogical because Jack says hello to himself and his mother, who the prompt explicitly stated was not home, rather than his father."}
+{"key": "4b45ce8a17772ea9", "label": "failure", "reason": "The continuation has Lily speaking to herself in the third person and saying swimming is fun, which contradicts the prompt stating that she dislikes swimming and is the one speaking."}
+{"key": "165d4741be3c7ca8", "label": "failure", "reason": "Having to wait for the cake to bake does not logically follow from there being one piece of cake left."}
+{"key": "c48caca540191799", "label": "partial", "reason": "Saying \"it was too late\" is somewhat plausible because Lily had already left the house, though the expected logical result is simply that no one answered the door."}
+{"key": "174c0a8f5b5804cb", "label": "failure", "reason": "The continuation completely ignores Jack's direct question and fails to stay consistent with the conversational scene set up by the prompt."}
+{"key": "81f44ee2a7bd4f08", "label": "partial", "reason": "The continuation correctly recalls that Max has a pet dog, but fails to specify that he has two dogs (one white and one black) as set up in the prompt."}
+{"key": "6b219de975943276", "label": "failure", "reason": "Anne states she wants to buy candy instead of answering her mom's question about the candy already in her left pocket."}
+{"key": "5f0e80bc48d833e9", "label": "failure", "reason": "Alice cannot take the apple out of the bag again because she already took it out and gave it to Jack, leaving only the carrot."}
+{"key": "7e5e55606bcd8808", "label": "failure", "reason": "Instead of Alice and Jack giving their names, the continuation has a girl introduce herself as \"Ben,\" which contradicts the characters set up in the prompt."}
+{"key": "1d288a32cb1f040e", "label": "failure", "reason": "The continuation \"now?\" makes the question nonsensical and completely drops the established goal of asking the squirrel for sugar."}
+{"key": "2d2c8a298036b175", "label": "success", "reason": "Going to bed is the correct commonsense action when someone gets home and is very tired."}
+{"key": "7b8ca7f61f66d092", "label": "partial", "reason": "The continuation makes sense in context (\"so many colors\"), though it avoids stating the specific factual answer typically tested by this prompt (\"seven colors\")."}
+{"key": "7aeaef5f40e10f34", "label": "partial", "reason": "The continuation correctly states that the moon appears smaller at times, though it misses the opportunity to describe the contrasting shape (like a crescent or sliver) set up by the prompt."}
+{"key": "33b9d2399d4aa450", "label": "success", "reason": "The continuation correctly identifies the library as the commonsense place Jack would go to read a book."}
+{"key": "d3a83a7b0868ac73", "label": "failure", "reason": "The continuation incorrectly states that cows can fly, which violates basic commonsense."}
+{"key": "3eb65dc69892b175", "label": "failure", "reason": "The continuation fails to answer the factual question about what birds eat, instead having the character reply \"I don't know.\""}
+{"key": "980e6f0092a8a0e9", "label": "failure", "reason": "The continuation fails to identify French as the language spoken in France, instead offering a repetitive and uninformative response."}
+{"key": "5065a7b7363b8187", "label": "failure", "reason": "The continuation states the ball will \"be fun\" instead of providing the commonsense fact that it will come back down or fall to the ground."}
+{"key": "8eb9e23e23714edf", "label": "success", "reason": "Staying inside is a commonsense recommendation when it is winter and cold outside."}
+{"key": "a0f2312d6fcf6b7a", "label": "failure", "reason": "The continuation repeats that she asked \"her mom\" without specifying what she asked for instead (such as a cat) or who else she might have asked (such as her dad)."}
+{"key": "cde0e9a452f81225", "label": "failure", "reason": "The continuation is illogical because Mary gave her banana away, meaning she could no longer eat it, and it completely misses the expected trade for the apple."}
+{"key": "ce5822350c5149bb", "label": "failure", "reason": "The continuation states Jack was going to school on the weekend, contradicting the prompt's premise that he visits his grandmother on weekends and goes to school on weekdays."}
+{"key": "3f291ebea9ffb09d", "label": "failure", "reason": "Saying \"they should share it\" does not logically complete an argument where two people are debating whether cake or ice cream is better in general."}
+{"key": "77e4d4d6fef1bb4b", "label": "success", "reason": "Since they are arguing between the park and the pool and Ben chose the park, it follows logically that Lily chooses the pool."}
+{"key": "7110a73e0d87a04e", "label": "success", "reason": "The continuation correctly identifies that Jack greets his father, who is the only parent at home."}
+{"key": "4bf178f93773c596", "label": "failure", "reason": "The model says \"yes,\" which contradicts the prompt's premise that Lily does not like swimming."}
+{"key": "64eb3aef5c7f009c", "label": "partial", "reason": "Deciding that neither of them should eat the single piece of cake is a plausible resolution to the dilemma, though less expected than sharing it or arguing over it."}
+{"key": "680bb53f7b88dbae", "label": "partial", "reason": "Having Lily's mom answer the door when Lily is not home makes logical sense, though phrasing it as \"came in\" rather than \"came out\" or \"opened the door\" is slightly flawed."}
+{"key": "c8e98d9356007404", "label": "partial", "reason": "The continuation correctly identifies Jane as the person being spoken to, though her sudden crying is a somewhat abrupt reaction rather than a direct answer to Jack's question."}
+{"key": "47681e00da692544", "label": "failure", "reason": "The model fails to recall that Max has two dogs (one white and one black) and instead completes the sentence with an unrelated object (\"a leash\")."}
+{"key": "26f5129ba7121ac6", "label": "partial", "reason": "The continuation provides a plausible narrative response, though it dodges directly answering the factual test question (\"a piece of candy\")."}
+{"key": "25247fd5cb4495f0", "label": "failure", "reason": "The model says Alice took out another apple, even though she only had one apple and a carrot in her bag and had already given the apple to Jack."}
+{"key": "3bfcfa6498d117ab", "label": "failure", "reason": "The model fails to track character identities, having Alice introduce herself as Jane instead of stating her own name and Jack's."}
+{"key": "8116cf8819b94654", "label": "failure", "reason": "The continuation asks the nonsensical question \"Would you happen to my cake?\" instead of asking the squirrel for sugar as set up by the prompt."}
+{"key": "f31a0042b28895ef", "label": "success", "reason": "The continuation correctly provides the commonsense action (\"to bed\") for someone who is very tired upon returning home."}
+{"key": "b0105e6090b899bc", "label": "partial", "reason": "Saying a rainbow has \"a lot of colors\" is plausible and makes sense, though it misses the specific factual answer expected (such as \"seven colors\" or listing the colors)."}
+{"key": "26e8df7697e902a8", "label": "partial", "reason": "The continuation says \"small,\" which is a plausible contrast to \"big,\" though it misses specifying the changed shape (like thin or a crescent)."}
+{"key": "af83aab9bf770f8c", "label": "success", "reason": "The continuation correctly identifies the library as a commonsense place to go to read a book."}
+{"key": "f614881e9c8a2a70", "label": "failure", "reason": "The continuation incorrectly states \"Yes\" in response to whether cows can fly."}
+{"key": "5ae1983236a8f6c0", "label": "failure", "reason": "The model fails to provide a factual answer about what birds eat (such as seeds or worms), instead having the character reply \"I don't know.\""}
+{"key": "b7d54a0d0b712403", "label": "success", "reason": "The continuation correctly states that the language spoken in France is French."}
+{"key": "97a1cacfd51f53d0", "label": "failure", "reason": "The continuation states the ball will \"be gone\" instead of the commonsense physical fact that it will fall back down."}
+{"key": "77bec8b9a2ef89e7", "label": "partial", "reason": "Telling the child to stay inside when it is cold is plausible, though the expected commonsense answer is usually to wear warm clothes like a coat."}
+{"key": "55a0f99d9d19af43", "label": "partial", "reason": "Asking her dad instead of her mom is a plausible next action, though the prompt sets up the expectation that she would ask for a cat instead of a dog."}
+{"key": "a1fc1164c9f2bb84", "label": "partial", "reason": "The continuation is plausible, though it misses the expected logical inference that Jack gave Mary his apple in return."}
+{"key": "748d47a0014b22a2", "label": "failure", "reason": "The prompt states that Jack visits his grandmother on weekends and goes to school on weekdays, so on \"last weekend\" he should be on his way to his grandmother's, not school."}
+{"key": "3e3de8dfa49bd390", "label": "success", "reason": "The continuation logically resolves the argument setup by having Lily express an opposing opinion about cake."}
+{"key": "a9b13116e8bea063", "label": "success", "reason": "Since Lily and Ben are arguing between the park and the swimming pool and Ben chose the park, it follows logically that Lily wants to go to the pool."}
+{"key": "f5cb29693b35f67b", "label": "success", "reason": "The model correctly identifies that Jack greets his father, who is the only parent at home."}
+{"key": "cb1519befccc8ae5", "label": "success", "reason": "Saying \"No, I don't want to go\" logically follows from Lily not liking swimming when her father wants to take her to the pool."}
+{"key": "cf5184579426e035", "label": "failure", "reason": "Waiting does not logically resolve the problem of two children wanting a single remaining piece of cake."}
+{"key": "0c410ded90a06cd5", "label": "success", "reason": "The continuation logically concludes that Lily did not answer the door because she was not at home."}
+{"key": "d115281f98a2570c", "label": "success", "reason": "The continuation correctly identifies the characters and their roles from the prompt, having Jane react to Jack's question and want to help find Alice."}
+{"key": "b82247dbb4448033", "label": "partial", "reason": "The model remembers that Max owns a dog, but forgets that the prompt specified he has two dogs."}
+{"key": "04e7404435187677", "label": "success", "reason": "The model correctly identifies that Anne has a piece of candy in her left pocket as stated in the prompt."}
+{"key": "695700b62fc97e19", "label": "success", "reason": "The model correctly identifies that the carrot is the remaining item in the bag to be taken out."}
+{"key": "c9869131fc93eab6", "label": "success", "reason": "The continuation correctly identifies the two characters from the prompt (Alice and Jack) and has them logically respond to the question about their names."}
+{"key": "a8bcdb2cf38efdbc", "label": "failure", "reason": "The prompt sets up Diva going out specifically to ask for sugar, not to ask the squirrel \"to bake a cake.\""}
+{"key": "b3ec3e854a39a7b1", "label": "success", "reason": "Going to bed is the direct, commonsense response to being tired upon returning home."}
+{"key": "c4d24e3f18f5ce5d", "label": "partial", "reason": "Completing the sentence with \"appeared!\" is grammatically and contextually plausible, though the prompt likely tests for factual knowledge about how many colors a rainbow has."}
+{"key": "79a5d1c7cb8e2a61", "label": "failure", "reason": "The model fails to describe the moon changing shape (such as to a crescent or half-moon), stating instead that it remained round."}
+{"key": "0b6b278cd931962b", "label": "success", "reason": "The continuation correctly identifies the library as a commonsense place to go to read a book."}
+{"key": "a86971acfc2a4aa7", "label": "success", "reason": "The continuation correctly states the commonsense fact that cows cannot fly."}
+{"key": "ddb27e50a1469dd4", "label": "success", "reason": "The continuation correctly states a commonsense fact that birds like to eat worms and bugs."}
+{"key": "9587406098b51f34", "label": "failure", "reason": "The continuation states a nonsensical and incorrect answer (\"Cars speak English\") instead of the correct fact that people in France speak French."}
+{"key": "3310ff0b57abbf83", "label": "success", "reason": "The continuation correctly states the commonsense physics fact that a ball thrown up in the air will eventually \"come down\"."}
+{"key": "a3b3169b377bbf36", "label": "partial", "reason": "Telling a child to stay inside when it is cold is plausible, though the expected commonsense answer is usually to wear warm clothes like a coat."}
+{"key": "b69249a3b483fd3e", "label": "partial", "reason": "The model correctly identifies \"cat\" as the alternative pet, even though it misses the preposition \"for\" and redundantly includes \"and a dog\"."}
+{"key": "227c2c9ca7ae8f80", "label": "failure", "reason": "Jack promised to give Mary his apple in exchange for her banana, so giving her the banana back contradicts the premise of the trade."}
+{"key": "326b53e66f838613", "label": "failure", "reason": "The continuation states Jack was on his way to school last weekend, which directly contradicts the prompt stating he visits his grandmother on weekends and goes to school on weekdays."}
+{"key": "627b00fa264d76b1", "label": "partial", "reason": "Saying \"cake is boring\" logically opposes Ben's claim, though the prompt sets up the expectation that she would explicitly argue in favor of ice cream."}
+{"key": "714432058b7de672", "label": "success", "reason": "The continuation logically completes the argument by having Lily choose the other option mentioned in the prompt (the pool)."}
+{"key": "7cf8e5c172e53f4e", "label": "failure", "reason": "The model incorrectly completes the sentence with \"his mother\" even though the prompt explicitly states that only his father is at home."}
+{"key": "9ff56eb482d30303", "label": "success", "reason": "Saying \"no\" to going to the swimming pool follows logically from Lily not liking swimming."}
+{"key": "dbc083787195ee86", "label": "partial", "reason": "The continuation is logically consistent with the prompt, though it merely repeats the premise rather than advancing the story with an action or solution (like sharing or arguing)."}
+{"key": "489db333fcf2e2fb", "label": "success", "reason": "The continuation logically concludes that no one answered the door because Lily was not at home."}
+{"key": "61cc4cc3c3e6427b", "label": "success", "reason": "Jane responds directly to Jack's question about Alice, correctly maintaining all character roles and references."}
+{"key": "9beaf503eceb9260", "label": "partial", "reason": "The continuation says Max has \"a dog\" (which is technically true, though imprecise), failing to specify the two dogs established in the prompt."}
+{"key": "cc10632f168dbc4a", "label": "success", "reason": "The continuation correctly identifies that Anne has a piece of candy in her left pocket, staying consistent with the prompt."}
+{"key": "86fd9ce55ed982f7", "label": "success", "reason": "The model correctly identifies that the carrot is the only item remaining in the bag for Alice to take out."}
+{"key": "3e5be79533477618", "label": "partial", "reason": "The model correctly identifies Alice's name, but omits Jack's name even though the prompt asks for both of their names."}
+{"key": "3bfa2f414c538d1a", "label": "success", "reason": "The continuation correctly identifies \"sugar\" as the missing ingredient Diva is asking the squirrel for, staying fully consistent with the prompt."}
+{"key": "75e5b35df6ea1d18", "label": "success", "reason": "Going straight to bed is the correct commonsense response to being tired upon getting home."}
+{"key": "0a0f46cc84ca8c23", "label": "partial", "reason": "The continuation is grammatically plausible (\"has come after the rain\"), but it avoids stating the expected factual answer about how many colors a rainbow has."}
+{"key": "56494cbb79e49c69", "label": "success", "reason": "Describing the crescent moon as \"small and thin\" in contrast to \"big and round\" is a factually and contextually appropriate completion for a children's story."}
+{"key": "6fa88500a1f68c11", "label": "success", "reason": "The continuation correctly identifies \"the library\" as a logical place to go to read a book."}
+{"key": "525cd3f963267b91", "label": "success", "reason": "The continuation correctly states the commonsense fact that cows cannot fly."}
+{"key": "fe537c0d0199e204", "label": "success", "reason": "The continuation correctly states a commonsense fact that birds like to eat worms."}
+{"key": "52293916ef507c2d", "label": "success", "reason": "The continuation correctly states that the language spoken in France is called French."}
+{"key": "9bc293109b8bf225", "label": "success", "reason": "The continuation correctly completes the prompt with the commonsense fact that a ball thrown up in the air will \"come down.\""}
+{"key": "125e4ba8e7f9bbe0", "label": "success", "reason": "Staying inside is a logical and commonsense response to it being cold and winter outside."}
+{"key": "43db3b5a6eb54caa", "label": "success", "reason": "The continuation logically resolves the prompt by having Lily ask another parent (her dad) for the other animal she likes (a cat)."}
+{"key": "145861be2aaddaaf", "label": "success", "reason": "The continuation logically completes the conditional trade described in the prompt, stating that Mary gave the banana to receive the apple from Jack."}
+{"key": "c2dec6062edcf55c", "label": "failure", "reason": "The prompt states that Jack visits his grandmother on weekends and goes to school on weekdays, so on the weekend he should be on his way to his grandmother's, not school."}
+{"key": "11b372b1ec0e3f67", "label": "success", "reason": "The continuation correctly identifies that Lily would argue the opposite of Ben by saying ice cream is better than cake."}
+{"key": "7cee891ef93b2167", "label": "success", "reason": "Lily logically chooses the swimming pool, which is the remaining option in their argument since Ben chose the park."}
+{"key": "c2c2d4d20eafb7ab", "label": "failure", "reason": "The continuation contradicts the prompt by stating that Jack said hello to his mother, who was explicitly mentioned as not being home."}
+{"key": "4e3444e640c48c97", "label": "success", "reason": "Because Lily doesn't like swimming, it logically follows that she would refuse her father's offer to go to the swimming pool."}
+{"key": "89be1fb9b2a0129b", "label": "partial", "reason": "The first sentence is logically consistent with the prompt, though it merely repeats the first sentence of the prompt rather than advancing the story in response to the dilemma."}
+{"key": "3ce6e1b8f3f80aca", "label": "success", "reason": "Since Lily is not at home, it logically follows that no one answers when Ben knocks on the door."}
+{"key": "c38812dfe8eb8860", "label": "success", "reason": "The continuation correctly has Jane respond to Jack's question about Alice's whereabouts."}
+{"key": "763f1e90937ee996", "label": "failure", "reason": "The phrase \"I also have\" directly compares to the kid's \"Brown dog,\" so completing it with \"a ball\" instead of mentioning his own dogs fails the setup."}
+{"key": "36a2b317d45c69b0", "label": "success", "reason": "The continuation correctly identifies that Anne has a piece of candy in her left pocket, staying entirely consistent with the prompt."}
+{"key": "bff06bc31267ffff", "label": "success", "reason": "The continuation correctly identifies the carrot as the remaining item Alice takes out of her bag."}
+{"key": "cb418691012ebe10", "label": "success", "reason": "The continuation correctly identifies the characters who were asked the question and has them accurately state their names."}
+{"key": "16bcc95b9d786ebc", "label": "success", "reason": "The model correctly identifies sugar as the item Diva is asking the squirrel for, staying consistent with the prompt's setup."}
+{"key": "a1f6e7a1736123f4", "label": "success", "reason": "The continuation correctly provides the commonsense action of going straight to bed when someone is very tired at home."}
+{"key": "aa6d1d0d50cd9f49", "label": "partial", "reason": "The continuation says a rainbow has \"a pretty color,\" which is plausible in context, though it misses the expected fact that a rainbow has many/seven colors and contradicts the prompt's plural \"colors.\""}
+{"key": "36339fd22b39db57", "label": "failure", "reason": "The prompt sets up a contrast about the moon's changing shape and size (such as being small, thin, or a crescent), which \"scary\" fails to answer."}
+{"key": "024a47e45787f86d", "label": "success", "reason": "Going to the store to buy a new book is a logical and commonsense action when someone wants to read a book."}
+{"key": "84208ae07c1ce56c", "label": "failure", "reason": "The continuation incorrectly states that cows can fly, violating basic factual and commonsense knowledge."}
+{"key": "6d0cec3db2d775b2", "label": "failure", "reason": "The continuation completely ignores the question about what birds eat and instead gives a nonsensical response about Tom having a snack."}
+{"key": "29ad9e4fb1b14171", "label": "failure", "reason": "The continuation completely fails to answer the question of what language is spoken in France (French), instead offering a vague and irrelevant response."}
+{"key": "8a06c8f5f99276d2", "label": "failure", "reason": "The continuation states the ball will \"be like a big bird,\" failing to provide the commonsense physical answer that it will fall back down."}
+{"key": "df9a3e3db3b769a4", "label": "success", "reason": "Wearing a coat is the correct commonsense response to being cold outside in the winter."}
+{"key": "068dcfc019ffda6f", "label": "partial", "reason": "The prompt sets up an expectation that Lily will ask for a cat instead, though asking to merely pet a dog is a somewhat plausible compromise."}
+{"key": "1a25c7cdf5d8ac31", "label": "failure", "reason": "Mary traded her banana for Jack's apple, so it makes no sense that she gave away her banana in order to get a banana."}
+{"key": "9ca47482c8c4db98", "label": "failure", "reason": "The continuation incorrectly states Jack was going to school on the weekend, whereas the prompt established that he visits his grandmother on weekends and goes to school on weekdays."}
+{"key": "c1218cbfe88ecb20", "label": "failure", "reason": "The continuation fails to provide a logical counterpoint in the argument about whether cake or ice cream is better, instead shifting to an unrelated statement about being a good sister and sharing."}
+{"key": "6cea7d1672be5aab", "label": "failure", "reason": "Lily says she wants to stay where they are, which contradicts the prompt stating they are deciding between the park and the swimming pool."}
+{"key": "08b9842a418361fc", "label": "failure", "reason": "The model has Jack say hello to himself instead of his father, who is the one at home."}
+{"key": "e1843d7a0b16e95d", "label": "success", "reason": "The continuation logically follows the prompt by having Lily refuse to go to the swimming pool because she doesn't like swimming."}
+{"key": "a8e62ef9448320c8", "label": "partial", "reason": "The continuation is grammatically coherent and plausible, though it pivots to waiting for dinner rather than directly resolving the conflict of sharing a single piece of cake between two people."}
+{"key": "b6bdbcda9f39ea26", "label": "failure", "reason": "The continuation states that Lily opened the door, which directly contradicts the prompt stating she was not at home."}
+{"key": "05f0ad5473d6ac0b", "label": "failure", "reason": "The continuation contradicts the prompt by having Jack say he is looking for his toy car right after he stated he was looking for Alice."}
+{"key": "a48b1c983161951f", "label": "partial", "reason": "The continuation correctly recalls that Max has a black dog, but falsely claims it is \"like you\" when the prompt established the kid's dog is brown."}
+{"key": "32dbc517adf7d824", "label": "failure", "reason": "The model fails to identify the item in the left pocket (candy) and instead responds with \"Yes, I found it!\" to a \"what\" question."}
+{"key": "d1d1887f594b74c1", "label": "failure", "reason": "The model fails to identify that the carrot is the remaining item in the bag, instead outputting the nonsensical phrase \"took a big bite\" after reaching into the bag."}
+{"key": "537338b714c169d4", "label": "partial", "reason": "Jack answers the question with his own name, but fails to mention Alice's name when asked for both of their names."}
+{"key": "ae38ce343501f4ca", "label": "partial", "reason": "The continuation is plausible because Diva wants to bake a cake, but it misses the specific setup that she is asking around for sugar."}
+{"key": "4876c78b0ba30a21", "label": "success", "reason": "The continuation provides the correct commonsense answer that a tired person goes \"to bed\"."}
+{"key": "9b9d55d32403f386", "label": "partial", "reason": "The model completes the sentence with a grammatically and contextually plausible phrase (\"appeared in the sky\"), but misses the expected factual observation about the colors (e.g., \"seven colors\")."}
+{"key": "9928aa38377d9114", "label": "failure", "reason": "The continuation states the moon was \"small and round,\" which contradicts the prompt's premise that the moon changes its shape (e.g., to a crescent) rather than just its size."}
+{"key": "bba9720ee5b5ea67", "label": "success", "reason": "Going to \"the library\" is a completely logical and commonsense place to go when someone wants to read a book."}
+{"key": "134fbad6017e53db", "label": "success", "reason": "The first sentence correctly answers the question with \"No\", while the nonsensical reason in the second sentence is ignored per the instructions."}
+{"key": "b2fcd9f841d506c1", "label": "success", "reason": "The continuation correctly states the commonsense fact that birds like to eat seeds and worms."}
+{"key": "7f0a098dc252ad62", "label": "success", "reason": "The continuation correctly states that the language spoken in France is French."}
+{"key": "cab89ee2e62fca05", "label": "success", "reason": "The continuation correctly states the commonsense fact that a ball thrown up in the air will eventually come back down."}
+{"key": "6ff36188f78551c3", "label": "success", "reason": "Wearing a coat is the correct commonsense advice for going outside when it is winter and cold."}
+{"key": "c284f8a5fd92c31a", "label": "partial", "reason": "The continuation is plausible because a child might ask their other parent after being told no, even though the prompt sets up the expectation that she would ask for a cat instead."}
+{"key": "7fa854d818343a46", "label": "partial", "reason": "The continuation is tautological and misses the expected outcome of the conditional trade (that Jack would give Mary his apple or Mary would get the apple)."}
+{"key": "ae6244e02298017f", "label": "failure", "reason": "The continuation states Jack was on his way to school last weekend, which directly contradicts the prompt stating he visits his grandmother on weekends and goes to school on weekdays."}
+{"key": "8e488dc529f5fd53", "label": "failure", "reason": "Instead of stating her opposing opinion about ice cream versus cake in the argument, Lily randomly apologizes."}
+{"key": "e9f6304e87396138", "label": "failure", "reason": "Lily disagrees with Ben (\"No\") while stating the exact same preference as him (\"I want to go to the park\") instead of choosing the swimming pool."}
+{"key": "4c47ca4941f8f851", "label": "success", "reason": "The continuation correctly identifies that Jack greets his father, who is the only parent at home."}
+{"key": "7aaf7456d9665426", "label": "success", "reason": "Saying \"no\" logically follows from Lily not liking swimming when her father wants to take her to the pool."}
+{"key": "8e21a92a343e06c5", "label": "success", "reason": "It is entirely logical that two children who both want the last piece of cake would reach for it at the same time."}
+{"key": "8422326e1c3437a8", "label": "success", "reason": "Since Lily was not at home, it follows logically that no one answered when Ben knocked on the door."}
+{"key": "b0ddb933e2746e69", "label": "failure", "reason": "The model attributes the response to Jack instead of Jane, causing Jack to answer his own question."}
+{"key": "0adea94b7d83557b", "label": "partial", "reason": "The model correctly identifies that Max has dogs, but fails to maintain consistency with the quantity (\"a dog\" instead of \"two dogs\") and misses the expected color contrast."}
+{"key": "401b220c91bbaab9", "label": "success", "reason": "The continuation correctly identifies that Anne had a piece of candy in her left pocket as established in the prompt."}
+{"key": "a6b9eff5e3dc9c3c", "label": "success", "reason": "The model correctly tracks the remaining object in the bag and completes the sentence with \"out the carrot.\""}
+{"key": "2c14256a0bed357d", "label": "success", "reason": "The continuation correctly maintains the characters from the prompt and has Alice directly answer the question about her name in the first sentence."}
+{"key": "bb56f26958727657", "label": "failure", "reason": "The continuation forgets the premise that Diva left home specifically to ask for sugar, instead having her ask the squirrel to bake a cake with her."}
+{"key": "6925b5114f375630", "label": "success", "reason": "The continuation correctly provides the commonsense action of going \"to bed\" when someone is very tired at home."}
+{"key": "f346d730987ddbbb", "label": "partial", "reason": "Saying a rainbow has \"many colors\" is plausible and true, though the prompt likely tests for the specific factual answer of \"seven colors\"."}
+{"key": "7d9f36a772617b2a", "label": "failure", "reason": "The continuation states the moon changes shape to become \"small and round,\" which is factually incorrect regarding the phases of the moon (it should become thin, curved, a crescent, etc.)."}
+{"key": "f3b66bb5c4640c82", "label": "success", "reason": "The continuation correctly identifies \"the library\" as a commonsense place to go to read a book."}
+{"key": "26ed3f7300b75b3d", "label": "failure", "reason": "The continuation answers \"Yes\" to whether cows can fly and nonsensically switches the subject from cows to chickens."}
+{"key": "6bd2a3c4e3aa33df", "label": "success", "reason": "The continuation correctly states a common fact that birds eat worms."}
+{"key": "a90a29021237b5fa", "label": "failure", "reason": "The continuation gives a nonsensical definition (\"It means to talk to someone who is different from you\") instead of naming the language spoken in France (French)."}
+{"key": "d7657c1deaa882e8", "label": "success", "reason": "The continuation correctly states the commonsense fact that a ball thrown up in the air will eventually come down."}
+{"key": "0a4be359891752fd", "label": "success", "reason": "The continuation correctly provides the commonsense advice to wear a coat when it is cold outside."}
+{"key": "514418efc7ba0d48", "label": "failure", "reason": "Asking \"instead\" for a dog is illogical because she just asked for a dog and was told no, whereas the prompt sets up asking for a cat."}
+{"key": "3d90086315a222e2", "label": "failure", "reason": "The continuation reverses the logic of the trade by stating that Jack would get the apple instead of Mary."}
+{"key": "bd257deb692ab700", "label": "failure", "reason": "The prompt states that Jack visits his grandmother on weekends and goes to school on weekdays, so on the weekend he should be on his way to his grandmother's, not school."}
+{"key": "1c0b5f93e5588b12", "label": "failure", "reason": "Saying \"cake is better than cake\" is nonsensical and does not logically complete the argument against Ben's preference."}
+{"key": "a58770ccde25b2c3", "label": "failure", "reason": "The continuation is illogical because Lily says \"No, I want to go to the park\" in disagreement with Ben, who just stated he wanted to go to the park."}
+{"key": "f2453097aea0921e", "label": "failure", "reason": "The continuation states that Jack said hello to his mother, which directly contradicts the prompt stating that his mother was not home and his father was."}
+{"key": "1cd9b4809090aa87", "label": "success", "reason": "Lily saying \"no\" to going to the swimming pool follows logically from the prompt stating that she does not like swimming."}
+{"key": "87497d3c0db0b3e4", "label": "success", "reason": "Because both children want the single remaining piece of cake, it is completely logical that they would both reach for it at the same time."}
+{"key": "3096cea796c862a5", "label": "success", "reason": "The continuation logically concludes that Lily did not answer the door because she was not at home."}
+{"key": "dd7e00ed7c9e3834", "label": "success", "reason": "Jane directly answers Jack's question with \"Yes\", maintaining the correct characters and conversational context from the prompt."}
+{"key": "b96ca123e26b3af8", "label": "partial", "reason": "Max says he has \"a dog\" instead of \"two dogs\" (or a white and a black dog) as established in the prompt, though it is still partially right that he owns a dog."}
+{"key": "1407a3fdf679e0f8", "label": "success", "reason": "The continuation correctly identifies that Anne has a piece of candy in her left pocket, staying completely consistent with the prompt."}
+{"key": "5314fcfb05410d1f", "label": "failure", "reason": "Alice already took the apple out of her bag and gave it to Jack, so only the carrot remained in the bag."}
+{"key": "1fbfc5cf2a81bff9", "label": "success", "reason": "The first sentence correctly identifies Alice by name in response to Jane's question, staying consistent with the prompt."}
+{"key": "54dd69b5561e7592", "label": "failure", "reason": "The continuation fails to remember that Diva is asking around for sugar, instead having her nonsensically ask the squirrel \"Would you happen to make a cake?\""}
+{"key": "cf6bf267a8bcab4c", "label": "success", "reason": "The continuation correctly applies commonsense by stating that Alice went \"straight to bed\" because she was tired."}
+{"key": "1f8daa770089eb87", "label": "partial", "reason": "The model provides a grammatically plausible completion (\"come to life!\"), but fails to state the expected factual answer about the number of colors in a rainbow (e.g., seven colors)."}
+{"key": "7ef9d2069858dc25", "label": "failure", "reason": "The moon changes into a crescent or half-circle shape rather than becoming \"small and round.\""}
+{"key": "a4e4d3dc48b12a95", "label": "success", "reason": "Going to \"the library\" is a completely logical and expected commonsense destination for someone who wants to read a book."}
+{"key": "fb86e431f5b778ce", "label": "failure", "reason": "The model incorrectly answers \"Yes\" to the question of whether cows can fly, violating basic factual commonsense."}
+{"key": "71d119cff3933502", "label": "success", "reason": "The continuation correctly states a commonsense fact that birds like to eat worms."}
+{"key": "545e3759f634baf9", "label": "failure", "reason": "The model fails to provide the correct factual answer (\"French\") and instead gives a vague, incorrect answer (\"different languages\")."}
+{"key": "57e069df47004d68", "label": "success", "reason": "The continuation correctly states the commonsense fact that a ball thrown up in the air will \"come down.\""}
+{"key": "db70b294125988fa", "label": "success", "reason": "The continuation provides a logical, commonsense recommendation (staying inside) given that it is winter and cold outside."}
+{"key": "677c522e10b1de18", "label": "partial", "reason": "Asking her dad instead of her mom is a plausible response to being told no, even though the setup about liking both cats and dogs strongly implies she was expected to ask for a cat instead."}
+{"key": "c1f8794f46bec947", "label": "failure", "reason": "The continuation incorrectly states that Jack (\"he\") gets the apple instead of Mary (\"she\") receiving Jack's apple in exchange for her banana."}
+{"key": "1b33fd6e6e33b66a", "label": "failure", "reason": "The continuation states Jack was going to school on the weekend, which directly contradicts the prompt stating he visits his grandmother on weekends and goes to school on weekdays."}
+{"key": "c9e380c7e76b4f5c", "label": "failure", "reason": "The continuation states that \"ice cream is better than ice cream\", which is a nonsensical comparison instead of logically contrasting ice cream with cake."}
+{"key": "535b5cc7e42e7e25", "label": "partial", "reason": "Lily correctly disagrees with Ben about where to go, but she says \"pond\" instead of the \"swimming pool\" established in the prompt."}
+{"key": "bc5ca60e05bf519c", "label": "success", "reason": "The model correctly identifies that Jack greets his father, who is the only parent at home, despite a minor repetition slip."}
+{"key": "587ef1397503e1ce", "label": "success", "reason": "The continuation logically follows the prompt, as Lily refuses to go to the swimming pool because she dislikes swimming."}
+{"key": "6f302ec5dacfb976", "label": "success", "reason": "Both children reaching for and pulling on the last piece of cake is a logical reaction to both of them wanting it."}
+{"key": "6c3753db94e42577", "label": "success", "reason": "Since Lily was not at home, it logically follows that she did not answer when Ben knocked on the door."}
+{"key": "2c6dacd4eb16d091", "label": "success", "reason": "Jane correctly responds to Jack about not being able to find Alice, staying fully consistent with the characters and situation in the prompt."}
+{"key": "cce1d5f35e67addd", "label": "partial", "reason": "The continuation says Max has \"a dog\" (singular), which is technically true and plausible in conversation, though it misses the expected count of \"two dogs\" established in the prompt."}
+{"key": "8291442b84d8464e", "label": "success", "reason": "The continuation correctly identifies the item in Anne's left pocket as candy, which matches the prompt's setup."}
+{"key": "12000d4d84f7a017", "label": "failure", "reason": "Alice already took the apple out of her bag and gave it to Jack, so only the carrot was left in the bag for her to take out."}
+{"key": "b9210ca7c6125b26", "label": "success", "reason": "The continuation correctly identifies the two characters' names as Alice and Jack in direct response to Jane's question."}
+{"key": "79dec65e5aac658d", "label": "failure", "reason": "The prompt sets up Diva going out specifically to ask for sugar, so asking the squirrel to bake a cake with her instead is inconsistent with her established goal."}
+{"key": "a7d1b83703165d6b", "label": "success", "reason": "The continuation correctly completes the sentence with the commonsense action of going \"to bed\" when tired."}
+{"key": "a93dbce1afa50edf", "label": "failure", "reason": "Stating \"A rainbow has a rainbow!\" is nonsensical and fails to mention its colors."}
+{"key": "3b570e53f8a42dd0", "label": "partial", "reason": "Saying the moon was \"different\" is plausible and grammatically correct, but it avoids the specific contrasting shape or size description (like \"small\", \"thin\", or \"like a banana/crescent\") that the prompt is testing for."}
+{"key": "d9e9acb57e6d79f2", "label": "success", "reason": "Going to the library is the expected commonsense place to go when wanting to read a book."}
+{"key": "70fe6fa2cc293569", "label": "failure", "reason": "Although the mother begins with \"No,\" she immediately talks about feeding chickens instead of answering the question about whether cows can fly."}
+{"key": "a93fcd68896aab3d", "label": "failure", "reason": "The continuation completely fails to answer the question of what birds like to eat, instead offering a nonsensical response."}
+{"key": "b38e12564c0e8599", "label": "failure", "reason": "The continuation gives a nonsensical response (\"They are a different language\") instead of stating the correct fact that people in France speak French."}
+{"key": "96c73900305aa1ca", "label": "failure", "reason": "The continuation states the ball will \"fly away\" instead of falling back down to the ground due to gravity."}
+{"key": "f5bb38bc9ed32b0c", "label": "failure", "reason": "The continuation fails the commonsense test by having the mother tell the boy to simply go outside because it is cold, rather than telling him to wear warm clothes or stay inside."}
+{"key": "8799678b86a31b99", "label": "failure", "reason": "Instead of asking for a cat as implied by the prompt, the continuation says she asked for \"one,\" which refers back to the dog her mom just refused."}
+{"key": "264e02c08b2e72c7", "label": "failure", "reason": "The continuation illogically repeats the premise that Mary gave Jack the banana instead of stating the logical consequence that Jack gave her his apple."}
+{"key": "59683aced47647e4", "label": "failure", "reason": "The continuation states Jack was on his way to the park, ignoring the prompt's premise that on weekends he goes to visit his grandmother."}
+{"key": "f696d01312973ab5", "label": "partial", "reason": "The continuation is plausible as an argument against eating sweets, though it misses the expected completion of Lily arguing that ice cream is better than cake."}
+{"key": "74c7e539327febfd", "label": "partial", "reason": "The continuation correctly captures that Lily disagrees with Ben, which is plausible in an argument, though it fails to specify the expected alternative (the swimming pool) that was set up in the prompt."}
+{"key": "4493b4337c8c86fb", "label": "failure", "reason": "The continuation states that Jack said hello to his mother, which directly contradicts the prompt stating that his mother was not home and his father was."}
+{"key": "c28f1424da20177a", "label": "failure", "reason": "Since Lily dislikes swimming and is not at the pool yet, it makes no logical sense for her to respond by saying \"she has to stay in the pool.\""}
+{"key": "ca1dc8835bdaf27e", "label": "failure", "reason": "Saying they could have one piece each directly contradicts the prompt's statement that there was only one piece of cake left for the two of them."}
+{"key": "a66f7898d7129f53", "label": "failure", "reason": "The continuation states that Lily answered the door at her house, directly contradicting the prompt which established that she was not at home."}
+{"key": "77a5a0ca03776c54", "label": "partial", "reason": "The continuation correctly identifies the characters Jane and Jack, but Jane ignores Jack's direct question about Alice and instead asks why he is sad."}
+{"key": "6d6fccdb0281808a", "label": "partial", "reason": "The continuation says Max has \"a dog,\" which is plausible in conversation, though it misses the expected answer of \"two dogs\" (white and black) set up in the prompt."}
+{"key": "d5c35ba78ed9ede3", "label": "failure", "reason": "Anne fails to identify the piece of candy in her left pocket and instead gives a nonsensical apology that does not answer her mom's question."}
+{"key": "f3a11f4c70183882", "label": "failure", "reason": "The model fails to track the remaining object (the carrot) and produces the nonsensical phrase \"She reached into the bag again and took a bite.\""}
+{"key": "9a15af6e389be54c", "label": "partial", "reason": "Alice correctly states her name, but she forgets about Jack and asks Jane for her name even though Jane just introduced herself."}
+{"key": "9b0b85a407febab3", "label": "failure", "reason": "The first clause completes the question as \"Would you happen to me?\", which is nonsensical and forgets that she is asking around for sugar."}
+{"key": "952775d0b42e7460", "label": "success", "reason": "Going \"to sleep\" is the correct, commonsense completion for what someone does when they are very tired at home."}
+{"key": "370a986207df7898", "label": "failure", "reason": "The continuation is tautological and nonsensical, stating that a rainbow has \"a rainbow on it\" instead of mentioning its colors or seven colors."}
+{"key": "bfc17d8669f556bc", "label": "partial", "reason": "The continuation describes the moon as \"very bright,\" which is a plausible attribute of the moon, though it misses the expected contrast in shape (like \"small and thin\" or \"a crescent\") set up by the prompt."}
+{"key": "8519d8cb877d5e2b", "label": "success", "reason": "Going to \"the library\" is a completely logical and expected commonsense completion for someone who wants to read a book."}
+{"key": "e64c60e1529b0ef2", "label": "partial", "reason": "The model correctly answers \"No,\" to whether cows can fly, though it slightly muddles the pronoun (\"we\") and gives a nonsensical reason afterwards."}
+{"key": "78af493ad4e91301", "label": "failure", "reason": "The continuation states where the birds are eating (\"from the tree\") instead of answering what they like to eat (e.g., worms, seeds, berries)."}
+{"key": "b1d7a27bef69c312", "label": "failure", "reason": "The model fails to provide the correct answer (\"French\") and instead gives the nonsensical circular answer that the language is called \"language\"."}
+{"key": "0754757ab29e5535", "label": "failure", "reason": "A ball thrown into the air will fall back down to the ground, not \"fly away.\""}
+{"key": "f39bace4ea828ea3", "label": "partial", "reason": "Telling him to \"be careful\" is a plausible thing for a mother to say, though it misses the expected commonsense connection to wearing warm clothes because it is cold."}
+{"key": "2bab242283aa4607", "label": "failure", "reason": "Instead of logically asking for a cat after her request for a dog was denied, Lily nonsensically asks for \"a dog like that.\""}
+{"key": "d4385e99354b5f24", "label": "failure", "reason": "The continuation repeats that Jack gets a banana instead of following the logical consequence of the trade, which is that Jack gives Mary his apple."}
+{"key": "7b38b13a31a6837f", "label": "failure", "reason": "The prompt states that Jack visits his grandmother on weekends and goes to school on weekdays, so on the weekend he should be on his way to his grandmother's house, not school."}
+{"key": "a81c417c79daaa16", "label": "success", "reason": "Lily logically takes the opposing side of the argument by claiming that ice cream (\"it\") is better than cake."}
+{"key": "486373841848c4f8", "label": "failure", "reason": "Since Lily and Ben are arguing between the park and the swimming pool and Ben chose the park, Lily should logically argue for the swimming pool rather than saying \"No\" and also wanting the park."}
+{"key": "b17afa3f7a95de2e", "label": "failure", "reason": "The continuation states that Jack said hello to his mother, which directly contradicts the prompt stating that his mother was not home."}
+{"key": "014089e457620e30", "label": "failure", "reason": "Lily nonsensical addresses herself by name and demands to be listened to instead of expressing her dislike of swimming."}
+{"key": "ac3a22c7bfa0c200", "label": "failure", "reason": "The continuation \"said it was not a cake, but it was a cake\" is nonsensical and does not logically follow the situation of two children wanting a single remaining piece of cake."}
+{"key": "d719700938fcd025", "label": "failure", "reason": "The continuation states that Lily opened the door, which directly contradicts the prompt's statement that she was not at home."}
+{"key": "87876da4b2f30837", "label": "partial", "reason": "The continuation correctly identifies Jane as the speaker responding to Jack, but her dialogue (\"I don't know where to go\") does not logically answer the question about Alice's whereabouts."}
+{"key": "a0bd9c462ffbdd9c", "label": "partial", "reason": "The continuation states that Max has \"a dog,\" which is plausible in response to the kid, though it fails to specify that he actually has two dogs (one white and one black) as set up in the prompt."}
+{"key": "fee1aa1dfbbe798b", "label": "partial", "reason": "Anne says she does not know what is in her pocket, which avoids giving the expected answer, though she mentions candy in the next sentence."}
+{"key": "67deebe71002aebf", "label": "failure", "reason": "Alice had already taken the apple out of the bag and given it to Jack, so only the carrot remained in the bag."}
+{"key": "170a482055a55dca", "label": "partial", "reason": "The continuation only gives one of the two names (Jack, omitting Alice) in a joint statement, and redundantly asks for Jane's name after she just introduced herself."}
+{"key": "19d7c18a89d367d2", "label": "failure", "reason": "The prompt sets up that Diva went out specifically to ask for sugar so she could bake a cake, not to ask someone else to bake a cake for her."}
